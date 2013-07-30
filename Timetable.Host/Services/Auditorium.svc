@@ -1,0 +1,5 @@
+﻿<%@ ServiceHost Language="C#" 
+    Debug="true" 
+    Service="Timetable.Host.Services.AuditoriumService" 
+    CodeBehind="Auditorium.svc.cs" 
+    Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory"%>

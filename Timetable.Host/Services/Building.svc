@@ -1,0 +1,6 @@
+﻿<%@ ServiceHost 
+    Language="C#" 
+    Debug="true" 
+    Service="Timetable.Host.Services.BuildingService"
+    CodeBehind="Building.svc.cs" 
+    Factory="Ninject.Extensions.Wcf.NinjectServiceHostFactory" %>

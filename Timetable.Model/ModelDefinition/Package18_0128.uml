@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="ca082488-0a1a-4747-a6da-48e463cfddb3"
+  name="Interfaces"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="3b41ba93-3719-452f-be84-3c53affb5edf"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Timetable.Data.Context.Interfaces"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="23b84398-f2c6-4bc4-bf52-b172f3fb8b21"
+        name="IDataContext"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a96e1291-7103-45de-8276-dd04e517af1a"
+            handle="viewcode://./CodeSchema_Interface?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.DataEntities/bin/Debug/Timetable.Data.dll Namespace=Timetable.Data.Context.Interfaces Type=IDataContext"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a93368b1-9371-4266-9b9f-170b3b917834"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b9823db6-a781-407c-bfe6-4e0ab1101085">
+                <propertyInstance
+                  Id="bc02e235-e1dd-4dda-ab75-254de7906e93"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e63b9b75-24f8-4b67-9b75-a3e82a24f446">
+                <propertyInstance
+                  Id="150796c0-dff3-4776-870e-1b5b32bf6bf8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8060b531-9ba8-46ed-9c02-a9b46969533a">
+                <propertyInstance
+                  Id="e1ee3302-086d-4317-9ea3-f05da5ee55b5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2f82427a-e949-4f60-8180-527e86f5e752">
+                <propertyInstance
+                  Id="71f7d24c-7c8e-4a1e-944a-c16c24a64ba8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

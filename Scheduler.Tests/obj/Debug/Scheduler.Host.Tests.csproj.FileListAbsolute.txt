@@ -1,0 +1,8 @@
+C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Scheduler.Tests\bin\Debug\Scheduler.Tests.dll.config
+C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Scheduler.Tests\bin\Debug\Scheduler.Tests.dll
+C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Scheduler.Tests\bin\Debug\Scheduler.Tests.pdb
+C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Scheduler.Tests\bin\Debug\nunit.framework.dll
+C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Scheduler.Tests\bin\Debug\nunit.framework.xml
+C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Scheduler.Tests\obj\Debug\Scheduler.Host.Tests.csprojResolveAssemblyReference.cache
+C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Scheduler.Tests\obj\Debug\Scheduler.Tests.dll
+C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Scheduler.Tests\obj\Debug\Scheduler.Tests.pdb

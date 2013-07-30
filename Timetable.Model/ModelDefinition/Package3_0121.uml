@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cb7c2d69-2a77-42f9-9f21-41e78af3edc1"
+  name="Models"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a19f1d47-ddf7-4527-ac20-3aa5d7bf164c"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Timetable.Site.Models"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="7c624eb4-9978-4a96-bf22-7589481ea245"
+        name="SignInModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a3ea0e69-d41f-42da-95b9-e4f14528e5db"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Models Type=SignInModel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2764416b-9cfb-47e0-aead-619f605bbec1"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d404baba-830b-4aa9-bd65-c81b5feeac49">
+                <propertyInstance
+                  Id="dba3f8b9-2ee2-43bb-a107-2e8828445123"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="58bd052b-9a26-4a3e-af8b-f8c64d693717">
+                <propertyInstance
+                  Id="ed32bd6e-06f0-445c-9287-60d0f8864329"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="23dff32a-1b50-4d57-a62b-95d5e585493e">
+                <propertyInstance
+                  Id="fd07d5c7-3241-4215-ac85-eedb1f5af21d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ffe47d2-9ee6-4459-b266-3947cc0e2b97">
+                <propertyInstance
+                  Id="8d2135b6-7fd1-4393-b67c-eeb7aa4bec43"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="974c0743-3f4f-4574-a01a-a55dd1caab0c">
+                <propertyInstance
+                  Id="e572b273-202c-44aa-88cf-37ebb72d9364"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

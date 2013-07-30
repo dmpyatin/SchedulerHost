@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="DataService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://193.232.254.196:6058/SchedulerHost/Services/DataService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://193.232.254.196:6058/SchedulerHost/Services/DataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://193.232.254.196:6058/SchedulerHost/Services/DataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" />
+      <xsd:import schemaLocation="http://193.232.254.196:6058/SchedulerHost/Services/DataService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities.Scheduler" />
+      <xsd:import schemaLocation="http://193.232.254.196:6058/SchedulerHost/Services/DataService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities.Personalization" />
+      <xsd:import schemaLocation="http://193.232.254.196:6058/SchedulerHost/Services/DataService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/Timetable.Host.Interfaces" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDataService_Add_InputMessage">
+    <wsdl:part name="parameters" element="tns:Add" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_Add_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_Update_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_Update_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_Delete_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_Delete_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetBranches_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranches" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetBranches_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBranchesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetAuditoriums_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuditoriums" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetAuditoriums_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuditoriumsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetFreeAuditoriums_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFreeAuditoriums" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetFreeAuditoriums_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFreeAuditoriumsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetAuditoriumTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuditoriumTypes" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetAuditoriumTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAuditoriumTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetBuildings_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildings" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetBuildings_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBuildingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetCources_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCources" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetCources_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCourcesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetDeparmtents_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeparmtents" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetDeparmtents_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDeparmtentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetFaculties_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFaculties" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetFaculties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFacultiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetGroupById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupById" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetGroupById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetsSubGroupsByGroupId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetsSubGroupsByGroupId" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetsSubGroupsByGroupId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetsSubGroupsByGroupIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetGroupsForCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupsForCourse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetGroupsForCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupsForCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetGroupsForSpeciality_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupsForSpeciality" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetGroupsForSpeciality_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupsForSpecialityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturersByDeparmentId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturersByDeparmentId" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturersByDeparmentId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturersByDeparmentIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturersByTutorialId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturersByTutorialId" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturersByTutorialId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturersByTutorialIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturersByTutorialIdAndTutorialTypeId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturersByTutorialIdAndTutorialTypeId" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturersByTutorialIdAndTutorialTypeId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturersByTutorialIdAndTutorialTypeIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturerByFirstMiddleLastname_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturerByFirstMiddleLastname" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturerByFirstMiddleLastname_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturerByFirstMiddleLastnameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturersByFirstMiddleLastname_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturersByFirstMiddleLastname" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetLecturersByFirstMiddleLastname_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLecturersByFirstMiddleLastnameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForScheduleInfoes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForScheduleInfoes" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForScheduleInfoes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForScheduleInfoesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoById" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoesForCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoesForCourse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoesForCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoesForCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoesForSpeciality_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoesForSpeciality" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoesForSpeciality_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoesForSpecialityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoesForGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoesForGroup" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoesForGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoesForGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoesForDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoesForDepartment" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleInfoesForDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleInfoesForDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetUnscheduledInfoes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnscheduledInfoes" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetUnscheduledInfoes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUnscheduledInfoesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_CountScheduleCollisions_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountScheduleCollisions" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_CountScheduleCollisions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountScheduleCollisionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesByDayTime_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesByDayTime" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesByDayTime_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesByDayTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForCourse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForGroup" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_CountSchedulesForScheduleInfoes_InputMessage">
+    <wsdl:part name="parameters" element="tns:CountSchedulesForScheduleInfoes" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_CountSchedulesForScheduleInfoes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CountSchedulesForScheduleInfoesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForSpeciality_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForSpeciality" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForSpeciality_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForSpecialityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForLecturer_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForLecturer" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForLecturer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForLecturerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForAuditorium_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForAuditorium" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSchedulesForAuditorium_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSchedulesForAuditoriumResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleById" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetScheduleById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetScheduleByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSpecialities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpecialities" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetSpecialities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSpecialitiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTimes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimes" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTimes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTimesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialById" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialsForGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialsForGroup" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialsForGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialsForGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialsForSpeciality_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialsForSpeciality" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialsForSpeciality_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialsForSpecialityResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialsForCourse_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialsForCourse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialsForCourse_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialsForCourseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialTypes" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialTypeById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialTypeById" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetTutorialTypeById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTutorialTypeByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetWeekTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeekTypes" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetWeekTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeekTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetStudyYears_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudyYears" />
+  </wsdl:message>
+  <wsdl:message name="IDataService_GetStudyYears_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStudyYearsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDataService">
+    <wsdl:operation name="Add">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBaseService/Add" message="tns:IDataService_Add_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBaseService/AddResponse" message="tns:IDataService_Add_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBaseService/Update" message="tns:IDataService_Update_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBaseService/UpdateResponse" message="tns:IDataService_Update_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <wsdl:input wsaw:Action="http://tempuri.org/IBaseService/Delete" message="tns:IDataService_Delete_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IBaseService/DeleteResponse" message="tns:IDataService_Delete_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBranches">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetBranches" message="tns:IDataService_GetBranches_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetBranchesResponse" message="tns:IDataService_GetBranches_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditoriums">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetAuditoriums" message="tns:IDataService_GetAuditoriums_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetAuditoriumsResponse" message="tns:IDataService_GetAuditoriums_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeAuditoriums">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetFreeAuditoriums" message="tns:IDataService_GetFreeAuditoriums_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetFreeAuditoriumsResponse" message="tns:IDataService_GetFreeAuditoriums_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditoriumTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetAuditoriumTypes" message="tns:IDataService_GetAuditoriumTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetAuditoriumTypesResponse" message="tns:IDataService_GetAuditoriumTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildings">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetBuildings" message="tns:IDataService_GetBuildings_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetBuildingsResponse" message="tns:IDataService_GetBuildings_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCources">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetCources" message="tns:IDataService_GetCources_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetCourcesResponse" message="tns:IDataService_GetCources_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDeparmtents">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetDeparmtents" message="tns:IDataService_GetDeparmtents_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetDeparmtentsResponse" message="tns:IDataService_GetDeparmtents_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFaculties">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetFaculties" message="tns:IDataService_GetFaculties_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetFacultiesResponse" message="tns:IDataService_GetFaculties_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetGroupById" message="tns:IDataService_GetGroupById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetGroupByIdResponse" message="tns:IDataService_GetGroupById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetsSubGroupsByGroupId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetsSubGroupsByGroupId" message="tns:IDataService_GetsSubGroupsByGroupId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetsSubGroupsByGroupIdResponse" message="tns:IDataService_GetsSubGroupsByGroupId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupsForCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetGroupsForCourse" message="tns:IDataService_GetGroupsForCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetGroupsForCourseResponse" message="tns:IDataService_GetGroupsForCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupsForSpeciality">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetGroupsForSpeciality" message="tns:IDataService_GetGroupsForSpeciality_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetGroupsForSpecialityResponse" message="tns:IDataService_GetGroupsForSpeciality_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturersByDeparmentId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetLecturersByDeparmentId" message="tns:IDataService_GetLecturersByDeparmentId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetLecturersByDeparmentIdResponse" message="tns:IDataService_GetLecturersByDeparmentId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturersByTutorialId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetLecturersByTutorialId" message="tns:IDataService_GetLecturersByTutorialId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetLecturersByTutorialIdResponse" message="tns:IDataService_GetLecturersByTutorialId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturersByTutorialIdAndTutorialTypeId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetLecturersByTutorialIdAndTutorialTypeId" message="tns:IDataService_GetLecturersByTutorialIdAndTutorialTypeId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetLecturersByTutorialIdAndTutorialTypeIdResponse" message="tns:IDataService_GetLecturersByTutorialIdAndTutorialTypeId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturerByFirstMiddleLastname">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetLecturerByFirstMiddleLastname" message="tns:IDataService_GetLecturerByFirstMiddleLastname_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetLecturerByFirstMiddleLastnameResponse" message="tns:IDataService_GetLecturerByFirstMiddleLastname_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturersByFirstMiddleLastname">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetLecturersByFirstMiddleLastname" message="tns:IDataService_GetLecturersByFirstMiddleLastname_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetLecturersByFirstMiddleLastnameResponse" message="tns:IDataService_GetLecturersByFirstMiddleLastname_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForScheduleInfoes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForScheduleInfoes" message="tns:IDataService_GetSchedulesForScheduleInfoes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForScheduleInfoesResponse" message="tns:IDataService_GetSchedulesForScheduleInfoes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoById" message="tns:IDataService_GetScheduleInfoById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoByIdResponse" message="tns:IDataService_GetScheduleInfoById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoesForCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoesForCourse" message="tns:IDataService_GetScheduleInfoesForCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoesForCourseResponse" message="tns:IDataService_GetScheduleInfoesForCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoesForSpeciality">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoesForSpeciality" message="tns:IDataService_GetScheduleInfoesForSpeciality_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoesForSpecialityResponse" message="tns:IDataService_GetScheduleInfoesForSpeciality_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoesForGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoesForGroup" message="tns:IDataService_GetScheduleInfoesForGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoesForGroupResponse" message="tns:IDataService_GetScheduleInfoesForGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoesForDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoesForDepartment" message="tns:IDataService_GetScheduleInfoesForDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetScheduleInfoesForDepartmentResponse" message="tns:IDataService_GetScheduleInfoesForDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledInfoes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetUnscheduledInfoes" message="tns:IDataService_GetUnscheduledInfoes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetUnscheduledInfoesResponse" message="tns:IDataService_GetUnscheduledInfoes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CountScheduleCollisions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/CountScheduleCollisions" message="tns:IDataService_CountScheduleCollisions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/CountScheduleCollisionsResponse" message="tns:IDataService_CountScheduleCollisions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesByDayTime">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetSchedulesByDayTime" message="tns:IDataService_GetSchedulesByDayTime_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetSchedulesByDayTimeResponse" message="tns:IDataService_GetSchedulesByDayTime_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForCourse" message="tns:IDataService_GetSchedulesForCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForCourseResponse" message="tns:IDataService_GetSchedulesForCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForGroup" message="tns:IDataService_GetSchedulesForGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForGroupResponse" message="tns:IDataService_GetSchedulesForGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CountSchedulesForScheduleInfoes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/CountSchedulesForScheduleInfoes" message="tns:IDataService_CountSchedulesForScheduleInfoes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/CountSchedulesForScheduleInfoesResponse" message="tns:IDataService_CountSchedulesForScheduleInfoes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForSpeciality">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForSpeciality" message="tns:IDataService_GetSchedulesForSpeciality_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForSpecialityResponse" message="tns:IDataService_GetSchedulesForSpeciality_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForLecturer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForLecturer" message="tns:IDataService_GetSchedulesForLecturer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForLecturerResponse" message="tns:IDataService_GetSchedulesForLecturer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForAuditorium">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForAuditorium" message="tns:IDataService_GetSchedulesForAuditorium_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetSchedulesForAuditoriumResponse" message="tns:IDataService_GetSchedulesForAuditorium_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetScheduleById" message="tns:IDataService_GetScheduleById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetScheduleByIdResponse" message="tns:IDataService_GetScheduleById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecialities">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetSpecialities" message="tns:IDataService_GetSpecialities_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetSpecialitiesResponse" message="tns:IDataService_GetSpecialities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTimes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetTimes" message="tns:IDataService_GetTimes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetTimesResponse" message="tns:IDataService_GetTimes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetTutorialById" message="tns:IDataService_GetTutorialById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetTutorialByIdResponse" message="tns:IDataService_GetTutorialById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialsForGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetTutorialsForGroup" message="tns:IDataService_GetTutorialsForGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetTutorialsForGroupResponse" message="tns:IDataService_GetTutorialsForGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialsForSpeciality">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetTutorialsForSpeciality" message="tns:IDataService_GetTutorialsForSpeciality_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetTutorialsForSpecialityResponse" message="tns:IDataService_GetTutorialsForSpeciality_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialsForCourse">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetTutorialsForCourse" message="tns:IDataService_GetTutorialsForCourse_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetTutorialsForCourseResponse" message="tns:IDataService_GetTutorialsForCourse_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetTutorialTypes" message="tns:IDataService_GetTutorialTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetTutorialTypesResponse" message="tns:IDataService_GetTutorialTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialTypeById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetTutorialTypeById" message="tns:IDataService_GetTutorialTypeById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetTutorialTypeByIdResponse" message="tns:IDataService_GetTutorialTypeById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWeekTypes">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetWeekTypes" message="tns:IDataService_GetWeekTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetWeekTypesResponse" message="tns:IDataService_GetWeekTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStudyYears">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDataService/GetStudyYears" message="tns:IDataService_GetStudyYears_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDataService/GetStudyYearsResponse" message="tns:IDataService_GetStudyYears_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DataServiceEndpoint" type="tns:IDataService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Add">
+      <soap:operation soapAction="http://tempuri.org/IBaseService/Add" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update">
+      <soap:operation soapAction="http://tempuri.org/IBaseService/Update" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete">
+      <soap:operation soapAction="http://tempuri.org/IBaseService/Delete" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBranches">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetBranches" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditoriums">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetAuditoriums" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFreeAuditoriums">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetFreeAuditoriums" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAuditoriumTypes">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetAuditoriumTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBuildings">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetBuildings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCources">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetCources" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDeparmtents">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetDeparmtents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFaculties">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetFaculties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupById">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetGroupById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetsSubGroupsByGroupId">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetsSubGroupsByGroupId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupsForCourse">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetGroupsForCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupsForSpeciality">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetGroupsForSpeciality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturersByDeparmentId">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetLecturersByDeparmentId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturersByTutorialId">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetLecturersByTutorialId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturersByTutorialIdAndTutorialTypeId">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetLecturersByTutorialIdAndTutorialTypeId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturerByFirstMiddleLastname">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetLecturerByFirstMiddleLastname" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLecturersByFirstMiddleLastname">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetLecturersByFirstMiddleLastname" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForScheduleInfoes">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetSchedulesForScheduleInfoes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoById">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetScheduleInfoById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoesForCourse">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetScheduleInfoesForCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoesForSpeciality">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetScheduleInfoesForSpeciality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoesForGroup">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetScheduleInfoesForGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleInfoesForDepartment">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetScheduleInfoesForDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledInfoes">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetUnscheduledInfoes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountScheduleCollisions">
+      <soap:operation soapAction="http://tempuri.org/IDataService/CountScheduleCollisions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesByDayTime">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetSchedulesByDayTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForCourse">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetSchedulesForCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForGroup">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetSchedulesForGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CountSchedulesForScheduleInfoes">
+      <soap:operation soapAction="http://tempuri.org/IDataService/CountSchedulesForScheduleInfoes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForSpeciality">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetSchedulesForSpeciality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForLecturer">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetSchedulesForLecturer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSchedulesForAuditorium">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetSchedulesForAuditorium" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetScheduleById">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetScheduleById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSpecialities">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetSpecialities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTimes">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetTimes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialById">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetTutorialById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialsForGroup">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetTutorialsForGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialsForSpeciality">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetTutorialsForSpeciality" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialsForCourse">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetTutorialsForCourse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialTypes">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetTutorialTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTutorialTypeById">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetTutorialTypeById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWeekTypes">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetWeekTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStudyYears">
+      <soap:operation soapAction="http://tempuri.org/IDataService/GetStudyYears" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DataService">
+    <wsdl:port name="DataServiceEndpoint" binding="tns:DataServiceEndpoint">
+      <soap:address location="http://193.232.254.196:6058/SchedulerHost/Services/DataService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

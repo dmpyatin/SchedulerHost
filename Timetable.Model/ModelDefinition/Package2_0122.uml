@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="c938ee8d-3eaa-4493-8f72-fbb2a5453f4c"
+  name="Services"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f0f01e2e-1ddb-4331-94d0-59df03c705f9"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Timetable.Base.Interfaces.Services"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="9671137d-4a88-4fab-a1bf-3d912c81c1d0"
+        name="AuthenticateTicket"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c40f59d3-aae4-42b4-8295-04ffa992c801"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Namespace=Timetable.Base.Interfaces.Services Type=AuthenticateTicket"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c0d8f045-ca90-4bab-88db-147b25855ef2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e81d0ed4-e34e-42f6-9d92-9af7fd2152e0">
+                <propertyInstance
+                  Id="5ff87843-a676-4022-abe5-baed980190ca"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3a862d28-ae5d-44a4-8731-c8e7042081aa">
+                <propertyInstance
+                  Id="51fc6959-91fc-48ff-9183-362809b63f5b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="70a0830d-68c2-4673-a712-bb063bfcf567">
+                <propertyInstance
+                  Id="9dd7ba5d-f523-41c7-9eb2-708e13543898"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="52899ceb-9520-4f95-ab3a-8a6b7136c7b7">
+                <propertyInstance
+                  Id="9b121aac-051f-4e02-8424-84f0e8091bb0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fc0b55e2-6ab4-4ba7-94f7-2017a35ac6be">
+                <propertyInstance
+                  Id="ca6b1194-de8c-49a3-8a4f-792223152a94"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="ae1b4596-2182-44f9-8aca-7d7ef3ec9946">
+            <interfaceMoniker
+              Id="9229d09b-c96e-4e96-a2e5-1609663ee347"
+              LastKnownName="IAuthenticateTicket"
+              LastKnownLocation="Package_0142.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="37a0099e-419b-4a6d-8340-18787bc1034c"
+            isDerived="false"
+            sourceEndRoleName="AuthenticateTicket"
+            targetEndRoleName="ExpiryPeriod"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="aa4b906c-1d19-48dd-9450-9b16fe75ee1b"
+              LastKnownName="TimeSpan"
+              LastKnownLocation="Package3_0122.uml" />
+            <description>Property ExpiryPeriod references type TimeSpan.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="444e9b64-c443-4dcf-82a7-d218427a972a"
+                  name="AuthenticateTicket"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="01ab82ac-1d6a-4575-96bf-917a9e5a122c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="04350f49-1fcb-41c6-8c83-7d79fe414fd4"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="145995fe-3a4c-41ba-98b8-637d3116feac"
+                  name="ExpiryPeriod"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="10a5a5d5-72ec-4f30-9fde-8c0738aa815a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ce296dcd-f9f3-4363-8a8a-cc36176bc7ca"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b5b4337d-97d7-4526-b7bb-e6cbfb15840b"
+            isDerived="false"
+            sourceEndRoleName="AuthenticateTicket"
+            targetEndRoleName="SignInDateTime"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="12d02a89-e578-412a-b62d-10a128fadc1f"
+              LastKnownName="DateTime"
+              LastKnownLocation="Package3_0122.uml" />
+            <description>Property SignInDateTime references type DateTime.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="51fc4015-7f7b-4999-acb6-f23ad05da978"
+                  name="AuthenticateTicket"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="348f5c57-1f57-4286-b13f-837247ee5d05"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="85033341-8113-4c0e-a16a-63980b9e2a8d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="209ee8d0-177f-4b76-946a-bcbd1b443428"
+                  name="SignInDateTime"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a134b55f-99b2-4734-9240-4f4f28649adc"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8b44d0ea-b817-40ad-8e83-df90c3b055cc"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dbd3d989-56e1-41ca-8cf1-4e4594fc6fe6"
+            isDerived="false"
+            sourceEndRoleName="AuthenticateTicket"
+            targetEndRoleName="User"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="9fe564f1-7c12-4f79-b740-dc70e206783c"
+              LastKnownName="IUser"
+              LastKnownLocation="Package16_0128.uml" />
+            <description>Property User references type IUser.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2e321d8b-0392-407f-b36d-23add9372beb"
+                  name="AuthenticateTicket"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="bb04e17f-ad5f-4d2f-bba7-40e2b581e864"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0a2b68f4-6afe-4af8-b562-bae1f2ebd3e8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="60a17cd3-df06-43fe-bc92-1ee31aebda8d"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5748415a-7378-438d-838f-8833ac578897"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2cdcb6dd-2428-44a2-b8d8-e63e7e3f28e6"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="e011c948-e40a-4e46-adde-bacd91fd1986"
+            name="ExpiryPeriod"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="69c3f9a6-bc99-404f-bfba-8bf80d506c7c"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Namespace=Timetable.Base.Interfaces.Services Type=AuthenticateTicket Member=ExpiryPeriod"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="14882f3a-b5b1-4ddc-a1b6-e02c9013cce5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e8caa0c-6649-4b36-adcd-8c4b977981e0">
+                    <propertyInstance
+                      Id="eb152e19-3ba4-4ac5-b6b1-53d5e7a76304"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15031971-5af8-4539-8502-6b27aeee3edb">
+                    <propertyInstance
+                      Id="90d05c8d-2aa5-4e30-ac1b-39bb7e48f975"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36804d7c-b15c-441c-9612-7eea458fc396">
+                    <propertyInstance
+                      Id="49527931-7224-4803-b079-3fe26e06173f"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c241e1ae-0e81-4092-a792-b8fac537270f">
+                    <propertyInstance
+                      Id="a9f49a5a-dc7a-4451-8c56-f8fa25661d46"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0623334c-e553-459b-8c42-9ceeabe5de73">
+                    <propertyInstance
+                      Id="f1617c09-6d4b-47b1-9f7c-6ea92d471037"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="569889cc-b452-4651-860a-ed69fe7b045b">
+                    <propertyInstance
+                      Id="78f6aa6d-827e-490d-9fe7-a1f31fb4eecb"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="aa4b906c-1d19-48dd-9450-9b16fe75ee1b"
+                LastKnownName="TimeSpan"
+                LastKnownLocation="Package3_0122.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3a26d50f-1d7d-421e-b243-045d8eae8cdf"
+            name="SignInDateTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="63157b8a-7d07-4d81-b4a0-c3f9c8d77f3b"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Namespace=Timetable.Base.Interfaces.Services Type=AuthenticateTicket Member=SignInDateTime"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6541332e-63d4-4a32-a1ba-73e170fb05e6"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="afdf0bd8-14ce-46ac-8198-4a3f5b745504">
+                    <propertyInstance
+                      Id="9d7a0cc2-179f-4cb6-81b7-83187d433d29"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68efe3a2-1d42-4f18-ae17-09e2042b8911">
+                    <propertyInstance
+                      Id="023e1247-0b5f-46ec-b606-4a54b3926fbb"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c78bbdb-e9af-49b0-bcd2-c5f8c30dc823">
+                    <propertyInstance
+                      Id="c99bef6f-d90a-4f93-8d25-7502acd17661"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c532219-3aaf-4a83-8503-7246f31d0bd4">
+                    <propertyInstance
+                      Id="e2d8b603-c8a9-4056-8813-2943782f4c22"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="674ed078-4f91-4c67-a99e-5aedd42a26c3">
+                    <propertyInstance
+                      Id="576dc75b-149b-4099-8c08-dbb79db74435"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c8214b0-dd28-4457-8ee7-35996f89a786">
+                    <propertyInstance
+                      Id="1f8d1d90-8e67-44e4-9d83-c833b5ff34b8"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="12d02a89-e578-412a-b62d-10a128fadc1f"
+                LastKnownName="DateTime"
+                LastKnownLocation="Package3_0122.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="49008999-e720-4a18-a033-64e1ca10c8ab"
+            name="User"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a205796c-e61f-43f1-8227-f9d4fe37ca02"
+                handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Namespace=Timetable.Base.Interfaces.Services Type=AuthenticateTicket Member=User"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0ebbbb16-9c47-4204-9fd4-1ff9eb03e431"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e86a67e1-348f-4b29-bd8e-5f3db26c2d37">
+                    <propertyInstance
+                      Id="7ccba814-49d8-46b4-9d5a-f5e6531edfd9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15b47e99-532d-4f79-8341-0a7a0b7d5b89">
+                    <propertyInstance
+                      Id="5b477480-a4a7-4e50-bb5e-a5af18de14c1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3b1786ce-572d-4551-bb9d-01f4052f0976">
+                    <propertyInstance
+                      Id="cfd1e264-6b76-4438-b156-014bf1e4ab01"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bef436e-4aa0-43dd-89ad-f0c7123b8434">
+                    <propertyInstance
+                      Id="7cea066b-8c4f-41a1-81d9-d5781e286007"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7a7e317-92d7-4d84-bed2-6e5d362218b5">
+                    <propertyInstance
+                      Id="61ac90b1-c182-480a-b257-b1cdbf5c5e74"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c3fb469-b6ed-4160-b4cc-132544a26b4f">
+                    <propertyInstance
+                      Id="4245dc04-3a7e-4efd-9397-4141268b8887"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="9fe564f1-7c12-4f79-b740-dc70e206783c"
+                LastKnownName="IUser"
+                LastKnownLocation="Package16_0128.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="959b9ac3-7db1-4728-bceb-d00b508046af"
+            name="AuthenticateTicket"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="106d6c15-9f57-455c-bbf6-3e9bbfe36975"
+                handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Namespace=Timetable.Base.Interfaces.Services Type=AuthenticateTicket Member=.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cf20a438-f77b-46c7-ae83-f134d0af568a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82158958-bb74-4072-ae27-2f88ed342ef6">
+                    <propertyInstance
+                      Id="e8f1adb3-a1ec-4461-9fc4-7a16d3a8987c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59c29f4f-15ee-4d5a-9464-731a310ea021">
+                    <propertyInstance
+                      Id="75c60f6c-be15-4558-ad3d-55ff2b146e7c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bca34dd0-3c4a-46a1-95ca-ac25413c236a">
+                    <propertyInstance
+                      Id="77aea648-0e51-49f5-9b12-c76e0209a462"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="843f7231-b7ed-4007-9408-07eda1e45acb">
+                    <propertyInstance
+                      Id="3457b6e7-f97e-4378-9ed6-970f39ab8525"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ae33ff7-dea9-4093-b31e-0825b88476e8">
+                    <propertyInstance
+                      Id="0c037d4d-efda-462f-96fc-4338d73b7dbd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

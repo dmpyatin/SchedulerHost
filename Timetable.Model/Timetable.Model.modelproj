@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5261cd41-c1c3-4ad3-872b-24dd9e45da6a}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Timetable.Model</Name>
+    <RootNamespace>Timetable.Model</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <ValidateArchitecture>true</ValidateArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Base\BaseClasses.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Base\BaseClasses.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Base\BaseClasses.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Data\Validators\Validator.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Validators\Validator.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Data\Validators\Validator.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package10_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package11_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package12_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package13_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package14_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package15_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package16_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package17_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package18_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package19_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0121.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0123.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package20_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0121.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0123.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0121.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0123.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_0123.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package8_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package8_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package9_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0121.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0122.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0123.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0128.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0129.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0131.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_0142.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Site\Controllers\Api\ApiController.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Site\Controllers\Api\ApiController.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Site\Controllers\Api\ApiController.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Site\Main.SignIn.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Site\Main.SignIn.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Site\Main.SignIn.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="Site\Site.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Site\Site.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Site\Site.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Tests\TestClasses.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Tests\TestClasses.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Tests\TestClasses.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="Data\Validators" />
+    <Folder Include="ModelDefinition\" />
+    <Content Include="Database\Tables.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Database\Tables.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Database\Tables.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="Installer\InstallerActivities.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Installer\InstallerActivities.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Installer\InstallerActivities.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Timetable.Model.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Installer" />
+    <Folder Include="Database" />
+    <Folder Include="Base" />
+    <Folder Include="Data" />
+    <Folder Include="Site\Controllers" />
+    <Folder Include="Site\Controllers\Api" />
+    <Folder Include="Tests" />
+    <Folder Include="Site" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="LayerDiagram.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="LayerDiagram.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Timetable.Base\Timetable.Base.csproj">
+      <Name>Timetable.Base</Name>
+      <Project>{abdb4f76-d271-433b-ab27-c8ed9ce1df84}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Timetable.DataEntities\Timetable.Data.csproj">
+      <Name>Timetable.Data</Name>
+      <Project>{562ead51-a27a-47de-9cf6-554d0d793fb3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Timetable.Utils\Timetable.Utils.csproj">
+      <Name>Timetable.Utils</Name>
+      <Project>{f7266bb7-8e3a-493a-a8df-f66d8f43acde}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

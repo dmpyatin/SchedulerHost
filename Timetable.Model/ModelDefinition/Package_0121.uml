@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="cbb9c923-0a30-4017-a1ff-d812e7aa7171"
+  name="Timetable"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="07c90fdb-1573-4001-85f6-8339583be109"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Timetable"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="93a3aae3-d8eb-4ba2-9ea5-c510b29ff230"
+        LastKnownName="Site"
+        LastKnownLocation="Package1_0121.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="aeaa9a4f-95bc-4a84-9593-3c7ac08d59e6"
+        LastKnownName="Base"
+        LastKnownLocation="Package_0122.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="31b61724-0197-4a87-892a-08fb2d1e5d6d"
+        LastKnownName="Data"
+        LastKnownLocation="Package_0123.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

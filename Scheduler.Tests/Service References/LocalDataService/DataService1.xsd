@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities.Scheduler" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities.Scheduler" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:18822/Services/DataService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" />
+  <xs:import schemaLocation="http://localhost:18822/Services/DataService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="Auditorium">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q1:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AuditoriumTypIde" type="xs:int" />
+          <xs:element minOccurs="0" name="AuditoriumType" nillable="true" type="tns:AuditoriumType" />
+          <xs:element minOccurs="0" name="Building" nillable="true" type="tns:Building" />
+          <xs:element minOccurs="0" name="BuildingId" type="xs:int" />
+          <xs:element minOccurs="0" name="Capacity" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Info" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Number" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ScheduleInfoes" nillable="true" type="tns:ArrayOfScheduleInfo" />
+          <xs:element minOccurs="0" name="TutorialApplicabilities" nillable="true" type="tns:ArrayOfTutorialType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Auditorium" nillable="true" type="tns:Auditorium" />
+  <xs:complexType name="AuditoriumType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q2:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Auditoriums" nillable="true" type="tns:ArrayOfAuditorium" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="AuditoriumType" nillable="true" type="tns:AuditoriumType" />
+  <xs:complexType name="ArrayOfAuditorium">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Auditorium" nillable="true" type="tns:Auditorium" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAuditorium" nillable="true" type="tns:ArrayOfAuditorium" />
+  <xs:complexType name="Building">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q3:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Info" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Building" nillable="true" type="tns:Building" />
+  <xs:complexType name="Branch">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q4:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Faculties" nillable="true" type="tns:ArrayOfFaculty" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Branch" nillable="true" type="tns:Branch" />
+  <xs:complexType name="ArrayOfFaculty">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Faculty" nillable="true" type="tns:Faculty" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFaculty" nillable="true" type="tns:ArrayOfFaculty" />
+  <xs:complexType name="Faculty">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q5:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Branch" nillable="true" type="tns:Branch" />
+          <xs:element minOccurs="0" name="BranchId" type="xs:int" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ScheduleInfoes" nillable="true" type="tns:ArrayOfScheduleInfo" />
+          <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Specialities" nillable="true" type="tns:ArrayOfSpeciality" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Faculty" nillable="true" type="tns:Faculty" />
+  <xs:complexType name="ArrayOfScheduleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ScheduleInfo" nillable="true" type="tns:ScheduleInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfScheduleInfo" nillable="true" type="tns:ArrayOfScheduleInfo" />
+  <xs:complexType name="ScheduleInfo">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q6="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q6:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Courses" nillable="true" type="tns:ArrayOfCourse" />
+          <xs:element minOccurs="0" name="Department" nillable="true" type="tns:Department" />
+          <xs:element minOccurs="0" name="DepartmentId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Faculties" nillable="true" type="tns:ArrayOfFaculty" />
+          <xs:element minOccurs="0" name="Groups" nillable="true" type="tns:ArrayOfGroup" />
+          <xs:element minOccurs="0" name="HoursPerWeek" type="xs:int" />
+          <xs:element minOccurs="0" name="Lecturer" nillable="true" type="tns:Lecturer" />
+          <xs:element minOccurs="0" name="LecturerId" type="xs:int" />
+          <xs:element minOccurs="0" name="LikeAuditoriums" nillable="true" type="tns:ArrayOfAuditorium" />
+          <xs:element minOccurs="0" name="Schedules" nillable="true" type="tns:ArrayOfSchedule" />
+          <xs:element minOccurs="0" name="Semester" type="xs:int" />
+          <xs:element minOccurs="0" name="Specialities" nillable="true" type="tns:ArrayOfSpeciality" />
+          <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="StudyYear" nillable="true" type="tns:StudyYear" />
+          <xs:element minOccurs="0" name="StudyYearId" type="xs:int" />
+          <xs:element minOccurs="0" name="SubgroupCount" type="xs:int" />
+          <xs:element minOccurs="0" name="Tutorial" nillable="true" type="tns:Tutorial" />
+          <xs:element minOccurs="0" name="TutorialId" type="xs:int" />
+          <xs:element minOccurs="0" name="TutorialType" nillable="true" type="tns:TutorialType" />
+          <xs:element minOccurs="0" name="TutorialTypeId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ScheduleInfo" nillable="true" type="tns:ScheduleInfo" />
+  <xs:complexType name="ArrayOfCourse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Course" nillable="true" type="tns:Course" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCourse" nillable="true" type="tns:ArrayOfCourse" />
+  <xs:complexType name="Course">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q7:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ScheduleInfoes" nillable="true" type="tns:ArrayOfScheduleInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Course" nillable="true" type="tns:Course" />
+  <xs:complexType name="Department">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q8="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q8:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Faculty" nillable="true" type="tns:Faculty" />
+          <xs:element minOccurs="0" name="FacultyId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Lecturers" nillable="true" type="tns:ArrayOfLecturer" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Department" nillable="true" type="tns:Department" />
+  <xs:complexType name="ArrayOfLecturer">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Lecturer" nillable="true" type="tns:Lecturer" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLecturer" nillable="true" type="tns:ArrayOfLecturer" />
+  <xs:complexType name="Lecturer">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q9:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Contacts" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Departments" nillable="true" type="tns:ArrayOfDepartment" />
+          <xs:element minOccurs="0" name="Firstname" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Lastname" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Middlename" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Positions" nillable="true" type="tns:ArrayOfPosition" />
+          <xs:element minOccurs="0" name="ScheduleInfoes" nillable="true" type="tns:ArrayOfScheduleInfo" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lecturer" nillable="true" type="tns:Lecturer" />
+  <xs:complexType name="ArrayOfDepartment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Department" nillable="true" type="tns:Department" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDepartment" nillable="true" type="tns:ArrayOfDepartment" />
+  <xs:complexType name="ArrayOfPosition">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Position" nillable="true" type="tns:Position" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPosition" nillable="true" type="tns:ArrayOfPosition" />
+  <xs:complexType name="Position">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q10:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Lecturers" nillable="true" type="tns:ArrayOfLecturer" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Position" nillable="true" type="tns:Position" />
+  <xs:complexType name="Group">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q11="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q11:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Course" nillable="true" type="tns:Course" />
+          <xs:element minOccurs="0" name="CourseId" type="xs:int" />
+          <xs:element minOccurs="0" name="Parent" nillable="true" type="tns:Group" />
+          <xs:element minOccurs="0" name="ScheduleInfoes" nillable="true" type="tns:ArrayOfScheduleInfo" />
+          <xs:element minOccurs="0" name="Speciality" nillable="true" type="tns:Speciality" />
+          <xs:element minOccurs="0" name="SpecialityId" type="xs:int" />
+          <xs:element minOccurs="0" name="StudentsCount" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Group" nillable="true" type="tns:Group" />
+  <xs:complexType name="Speciality">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q12:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Faculties" nillable="true" type="tns:ArrayOfFaculty" />
+          <xs:element minOccurs="0" name="Groups" nillable="true" type="tns:ArrayOfGroup" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ScheduleInfoes" nillable="true" type="tns:ArrayOfScheduleInfo" />
+          <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Speciality" nillable="true" type="tns:Speciality" />
+  <xs:complexType name="ArrayOfGroup">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Group" nillable="true" type="tns:Group" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGroup" nillable="true" type="tns:ArrayOfGroup" />
+  <xs:complexType name="Schedule">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q13="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q13:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Auditorium" nillable="true" type="tns:Auditorium" />
+          <xs:element minOccurs="0" name="AuditoriumId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DayOfWeek" type="xs:int" />
+          <xs:element minOccurs="0" name="Period" nillable="true" type="tns:Time" />
+          <xs:element minOccurs="0" name="PeriodId" type="xs:int" />
+          <xs:element minOccurs="0" name="ScheduleInfo" nillable="true" type="tns:ScheduleInfo" />
+          <xs:element minOccurs="0" name="ScheduleInfoId" type="xs:int" />
+          <xs:element minOccurs="0" name="WeekType" nillable="true" type="tns:WeekType" />
+          <xs:element minOccurs="0" name="WeekTypeId" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Schedule" nillable="true" type="tns:Schedule" />
+  <xs:complexType name="Time">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q14:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Building" nillable="true" type="tns:Building" />
+          <xs:element minOccurs="0" name="BuildingId" type="xs:int" />
+          <xs:element minOccurs="0" name="End" type="ser:duration" />
+          <xs:element minOccurs="0" name="Position" type="xs:int" />
+          <xs:element minOccurs="0" name="Start" type="ser:duration" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Time" nillable="true" type="tns:Time" />
+  <xs:complexType name="Tutorial">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q15:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Faculty" nillable="true" type="tns:Faculty" />
+          <xs:element minOccurs="0" name="FacultyId" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ScheduleInfoes" nillable="true" type="tns:ArrayOfScheduleInfo" />
+          <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Speciality" nillable="true" type="tns:Speciality" />
+          <xs:element minOccurs="0" name="SpecialityId" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Tutorial" nillable="true" type="tns:Tutorial" />
+  <xs:complexType name="TutorialType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q16:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AuditoriumApplicabilities" nillable="true" type="tns:ArrayOfAuditorium" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TutorialType" nillable="true" type="tns:TutorialType" />
+  <xs:complexType name="WeekType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q17:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="WeekType" nillable="true" type="tns:WeekType" />
+  <xs:complexType name="ArrayOfSchedule">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Schedule" nillable="true" type="tns:Schedule" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSchedule" nillable="true" type="tns:ArrayOfSchedule" />
+  <xs:complexType name="ArrayOfSpeciality">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Speciality" nillable="true" type="tns:Speciality" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSpeciality" nillable="true" type="tns:ArrayOfSpeciality" />
+  <xs:complexType name="StudyYear">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://schemas.datacontract.org/2004/07/Timetable.Base.Entities" base="q18:BaseEntity">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Length" type="xs:int" />
+          <xs:element minOccurs="0" name="StartYear" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StudyYear" nillable="true" type="tns:StudyYear" />
+  <xs:complexType name="ArrayOfTutorialType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TutorialType" nillable="true" type="tns:TutorialType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTutorialType" nillable="true" type="tns:ArrayOfTutorialType" />
+  <xs:complexType name="ArrayOfBranch">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Branch" nillable="true" type="tns:Branch" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBranch" nillable="true" type="tns:ArrayOfBranch" />
+  <xs:complexType name="ArrayOfAuditoriumType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AuditoriumType" nillable="true" type="tns:AuditoriumType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAuditoriumType" nillable="true" type="tns:ArrayOfAuditoriumType" />
+  <xs:complexType name="ArrayOfBuilding">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Building" nillable="true" type="tns:Building" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBuilding" nillable="true" type="tns:ArrayOfBuilding" />
+  <xs:complexType name="ArrayOfTime">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Time" nillable="true" type="tns:Time" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTime" nillable="true" type="tns:ArrayOfTime" />
+  <xs:complexType name="ArrayOfTutorial">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tutorial" nillable="true" type="tns:Tutorial" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTutorial" nillable="true" type="tns:ArrayOfTutorial" />
+  <xs:complexType name="ArrayOfWeekType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="WeekType" nillable="true" type="tns:WeekType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfWeekType" nillable="true" type="tns:ArrayOfWeekType" />
+  <xs:complexType name="ArrayOfStudyYear">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudyYear" nillable="true" type="tns:StudyYear" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudyYear" nillable="true" type="tns:ArrayOfStudyYear" />
+</xs:schema>

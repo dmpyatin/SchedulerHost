@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="e8a66c0a-7d85-4401-8890-aedc383b355d"
+  name="Test"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e5a12fbf-85d4-49dc-b845-71d62aef870f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Test"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="3b0091bd-6eea-4915-97bb-c7495ce0109b"
+        LastKnownName="Fakes"
+        LastKnownLocation="Package1_0128.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c4d215aa-b3f9-43c4-adf5-94506dc39d05"
+        LastKnownName="Controllers"
+        LastKnownLocation="Package6_0128.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c819dd82-9227-467e-a9ec-32f2fcd35bbd"
+        LastKnownName="Data"
+        LastKnownLocation="Package11_0128.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f2afd524-b512-4031-af33-eab63c9598b3"
+        LastKnownName="Services"
+        LastKnownLocation="Package20_0128.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

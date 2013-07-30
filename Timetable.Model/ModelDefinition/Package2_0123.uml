@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="b6d20824-a902-4040-9a02-e3b2079f3f4c"
+  name="Ninject"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e644521f-6bb3-4673-8b42-433d45641b5e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Ninject"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="d749df98-9a06-4d5e-92e9-20bb3f96d02b"
+        name="IKernel"
+        isAbstract="true"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="566b2b6f-28c4-4e90-b10a-defca38cc96e"
+            handle="viewcode://./CodeSchema_Interface?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Libs/Ninject.dll Namespace=Ninject Type=IKernel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9648b8b3-f601-4725-8e1c-127881b5c3ba"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b1fb9db8-8a7b-48f2-995c-30014079f154">
+                <propertyInstance
+                  Id="fa7c8fda-a4e4-4672-8f5d-b6f86ee03f91"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="297079bb-3484-4390-a953-425479e08c7a">
+                <propertyInstance
+                  Id="3db2ecf3-61c3-4fd5-b899-b02ad384eb99"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4aa44f70-f1a5-4577-a80b-1517d8dc2106">
+                <propertyInstance
+                  Id="a5713ad7-5ba2-459b-91de-02610e7ef7f9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="088b8f00-922f-479f-9c0f-3174429db7b6">
+                <propertyInstance
+                  Id="7e97ff6a-a0d4-41a8-a6ef-27bcfb1bef0c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1749d493-29e8-4213-bf79-59dec6c6dee2"
+        LastKnownName="Web"
+        LastKnownLocation="Package3_0123.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="1f5e43c2-2b23-4e71-94a6-0db108e3d769"
+        LastKnownName="Modules"
+        LastKnownLocation="Package12_0128.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9047164f-4fb0-4eee-803c-d267e36c2072"
+        name="KernelBase"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="625b453e-199f-4612-a849-6b304319efef"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Libs/Ninject.dll Namespace=Ninject Type=KernelBase"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="677c0316-e665-468b-b381-5a0afed08728"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b9554a05-b08a-4c64-9724-2c6582031b0d">
+                <propertyInstance
+                  Id="cfffabda-4165-41ce-9932-707ef78499d0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="decb3c18-d4e0-429c-8929-630210ff4dd2">
+                <propertyInstance
+                  Id="4695d73b-1fe4-4b7f-b0c2-a23a231d352d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1cbc2c84-63cf-4c4b-b9e9-4b5b091a8e39">
+                <propertyInstance
+                  Id="7b7b2961-219f-465a-a57f-d5f684464763"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ccdba8e5-bcfd-41ee-a28d-cd6dda19619f">
+                <propertyInstance
+                  Id="d64c052b-650d-476c-851c-715edfe8b850"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="28d6b49f-af26-4035-b13b-76c3c08696a1">
+                <propertyInstance
+                  Id="34371e40-10a0-437c-9b68-e5b635a96c32"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d45ce598-450f-4058-85df-c492ab130529">
+            <interfaceMoniker
+              Id="d749df98-9a06-4d5e-92e9-20bb3f96d02b"
+              LastKnownName="IKernel"
+              LastKnownLocation="Package2_0123.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

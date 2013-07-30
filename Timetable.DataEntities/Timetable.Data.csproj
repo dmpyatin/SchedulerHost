@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{562EAD51-A27A-47DE-9CF6-554D0D793FB3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Timetable.Data</RootNamespace>
+    <AssemblyName>Timetable.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\Libs\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\Libs\Ninject.3.0.1.10\lib\net40\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebActivator, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\WebActivator.1.5.2\lib\net40\WebActivator.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\BaseContext.cs" />
+    <Compile Include="Context\DbContextExtensions.cs" />
+    <Compile Include="Context\SchedulerContext.cs" />
+    <Compile Include="Context\UserContext.cs" />
+    <Compile Include="Mapping\AuditoriumMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\AuditoriumTypeMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\BranchMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\BuildingMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\CourseMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\DepartmentMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\FacultyMapping.cs" />
+    <Compile Include="Mapping\GroupMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\LecturersMapping.cs" />
+    <Compile Include="Mapping\ScheduleInfoesMapping.cs" />
+    <Compile Include="Mapping\ScheduleMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\SpecialityMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\TimeMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mapping\TutorialMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Migrations\201306070734041_Foreign_keys_updated.cs" />
+    <Compile Include="Migrations\201306070734041_Foreign_keys_updated.Designer.cs">
+      <DependentUpon>201306070734041_Foreign_keys_updated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201307110658161_AddStartEndTimeToSchedules.cs" />
+    <Compile Include="Migrations\201307110658161_AddStartEndTimeToSchedules.Designer.cs">
+      <DependentUpon>201307110658161_AddStartEndTimeToSchedules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201307120626393_Add_AutoDeleteField_In_Schedules.cs" />
+    <Compile Include="Migrations\201307120626393_Add_AutoDeleteField_In_Schedules.Designer.cs">
+      <DependentUpon>201307120626393_Add_AutoDeleteField_In_Schedules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Schedule\201305122003080_Remove_StudyYear_entity.cs" />
+    <Compile Include="Migrations\Schedule\201305122003080_Remove_StudyYear_entity.Designer.cs">
+      <DependentUpon>201305122003080_Remove_StudyYear_entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Schedule\201305122018495_Add_StudyYear_entity.cs" />
+    <Compile Include="Migrations\Schedule\201305122018495_Add_StudyYear_entity.Designer.cs">
+      <DependentUpon>201305122018495_Add_StudyYear_entity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Schedule\201303031905385_Initial_create.cs" />
+    <Compile Include="Migrations\Schedule\201303031905385_Initial_create.Designer.cs">
+      <DependentUpon>201303031905385_Initial_create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Schedule\201303040739543_Add_branches.cs" />
+    <Compile Include="Migrations\Schedule\201303040739543_Add_branches.Designer.cs">
+      <DependentUpon>201303040739543_Add_branches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Schedule\201303171657069_Create_many_to_many_for_lecturers_and_departments.cs" />
+    <Compile Include="Migrations\Schedule\201303171657069_Create_many_to_many_for_lecturers_and_departments.Designer.cs">
+      <DependentUpon>201303171657069_Create_many_to_many_for_lecturers_and_departments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Schedule\201303171744445_Create_many_to_many_for_faculties_and_specialities.cs" />
+    <Compile Include="Migrations\Schedule\201303171744445_Create_many_to_many_for_faculties_and_specialities.Designer.cs">
+      <DependentUpon>201303171744445_Create_many_to_many_for_faculties_and_specialities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Schedule\201304061253125_Add_StudyYears_and_AuditoriumTypes.cs" />
+    <Compile Include="Migrations\Schedule\201304061253125_Add_StudyYears_and_AuditoriumTypes.Designer.cs">
+      <DependentUpon>201304061253125_Add_StudyYears_and_AuditoriumTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Auth\201304201431152_Add_users_and_roles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Migrations\Auth\201304201431152_Add_users_and_roles.Designer.cs">
+      <DependentUpon>201304201431152_Add_users_and_roles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\NonSystemTableSqlGenerator.cs" />
+    <Compile Include="Migrations\Schedule\SchedulerConfiguration.cs" />
+    <Compile Include="Resources\Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Context\Interfaces\IDataContext.cs" />
+    <Compile Include="DataContainer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Timetable.Base\Timetable.Base.csproj">
+      <Project>{ABDB4F76-D271-433B-AB27-C8ED9CE1DF84}</Project>
+      <Name>Timetable.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201306070734041_Foreign_keys_updated.resx">
+      <DependentUpon>201306070734041_Foreign_keys_updated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307110658161_AddStartEndTimeToSchedules.resx">
+      <DependentUpon>201307110658161_AddStartEndTimeToSchedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201307120626393_Add_AutoDeleteField_In_Schedules.resx">
+      <DependentUpon>201307120626393_Add_AutoDeleteField_In_Schedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Schedule\201305122003080_Remove_StudyYear_entity.resx">
+      <DependentUpon>201305122003080_Remove_StudyYear_entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Schedule\201305122018495_Add_StudyYear_entity.resx">
+      <DependentUpon>201305122018495_Add_StudyYear_entity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Schedule\201303031905385_Initial_create.resx">
+      <DependentUpon>201303031905385_Initial_create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Schedule\201303040739543_Add_branches.resx">
+      <DependentUpon>201303040739543_Add_branches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Schedule\201303171657069_Create_many_to_many_for_lecturers_and_departments.resx">
+      <DependentUpon>201303171657069_Create_many_to_many_for_lecturers_and_departments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Schedule\201303171744445_Create_many_to_many_for_faculties_and_specialities.resx">
+      <DependentUpon>201303171744445_Create_many_to_many_for_faculties_and_specialities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Schedule\201304061253125_Add_StudyYears_and_AuditoriumTypes.resx">
+      <DependentUpon>201304061253125_Add_StudyYears_and_AuditoriumTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\Auth\201304201431152_Add_users_and_roles.resx">
+      <DependentUpon>201304201431152_Add_users_and_roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="19e6b9e0-e2ae-4b97-9335-bda1c6f65632" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="7c7ad396-b94f-401a-a9c3-628c38f915cc" name="Core&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="5149b13f-30a8-4e3d-b9ad-985b8d48db30" direction="Forward">
+          <layerMoniker Id="7acb7438-b94e-46c1-824f-0b0c4e782a54" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="cfd04991-a6aa-45b0-9259-7ecef47f395c" name="Base&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="f266ac6c-19a5-4c21-adae-c510437a915e" direction="Forward">
+              <layerMoniker Id="c40e41c8-0d6f-4c5e-a1e5-77a077f92065" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="ea6cf6bd-12d4-4af3-87dd-5b35f473c0f6" name="Entities&#xD;&#xA;">
+              <references>
+                <reference Id="530ca820-992f-4038-a53f-5c3e20adfad6" name="Entities">
+                  <ArtifactNode Label="Entities" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.Base/Entities/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Auditorium)" Label="Auditorium" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=BaseEntity)" Label="BaseEntity" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Building)" Label="Building" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Course)" Label="Course" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Department)" Label="Department" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Faculty)" Label="Faculty" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Group)" Label="Group" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Lecturer)" Label="Lecturer" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Log)" Label="Log" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Rank)" Label="Rank" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Schedule)" Label="Schedule" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=ScheduleAttribute)" Label="ScheduleAttribute" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Speciality)" Label="Speciality" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Time)" Label="Time" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=Tutorial)" Label="Tutorial" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=TutorialType)" Label="TutorialType" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=User)" Label="User" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Entities Type=WeekType)" Label="WeekType" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="8b794c49-35a7-41c6-8542-6b17d640819f" name="Interfaces&#xD;&#xA;">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="2c78f0b6-4674-4c34-af3b-f37b8b797382" direction="Forward">
+                  <layerMoniker Id="ea6cf6bd-12d4-4af3-87dd-5b35f473c0f6" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+              <childLayers>
+                <layer Id="16ca368c-b002-48cc-b957-291b73b0aa8c" name="DataSources&#xD;&#xA;">
+                  <references>
+                    <reference Id="ea974073-a5a8-49dc-a930-3097523cb6b4" name="DataSources">
+                      <ArtifactNode Label="DataSources" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.Base/Interfaces/DataSources/)">
+                        <Category Ref="ProjectFolder" />
+                      </ArtifactNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.DataSources Type=IDatabase)" Label="IDatabase" Category="CodeSchema_Interface">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                    </reference>
+                  </references>
+                </layer>
+                <layer Id="c8272443-743e-4d0d-b968-58384ec7abfd" name="Repositories&#xD;&#xA;">
+                  <dependencyToLayers>
+                    <dependencyFromLayerToLayer Id="795671cd-aed6-40df-8abc-0e7429703a7f" direction="Forward">
+                      <layerMoniker Id="16ca368c-b002-48cc-b957-291b73b0aa8c" />
+                    </dependencyFromLayerToLayer>
+                  </dependencyToLayers>
+                  <references>
+                    <reference Id="bd86a1f4-48d3-486c-bfe6-9b0a414854a9" name="Repositories">
+                      <ArtifactNode Label="Repositories" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.Base/Interfaces/Repositories/)">
+                        <Category Ref="ProjectFolder" />
+                      </ArtifactNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Repositories Type=(Name=IRepository GenericParameterCount=1))" Label="IRepository&lt;TEntity&gt;" Category="CodeSchema_Interface">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                    </reference>
+                  </references>
+                </layer>
+                <layer Id="f3120880-767f-4b5b-9c5e-ff253a5be11a" name="Services&#xD;&#xA;">
+                  <dependencyToLayers>
+                    <dependencyFromLayerToLayer Id="c6c5737d-ac3b-4896-83f2-347243465043" direction="Forward">
+                      <layerMoniker Id="c8272443-743e-4d0d-b968-58384ec7abfd" />
+                    </dependencyFromLayerToLayer>
+                    <dependencyFromLayerToLayer Id="4cc2991e-4122-4626-8733-23c6c63d2f1f" direction="Forward">
+                      <layerMoniker Id="a5ee9e03-345f-42bb-89d6-7a809facad96" />
+                    </dependencyFromLayerToLayer>
+                  </dependencyToLayers>
+                  <references>
+                    <reference Id="1ad5d4bd-fec2-4a0c-87b1-ad329ecc81e6" name="Services">
+                      <ArtifactNode Label="Services" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.Base/Interfaces/Services/)">
+                        <Category Ref="ProjectFolder" />
+                      </ArtifactNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=AuthenticateTicket)" Label="AuthenticateTicket" Category="CodeSchema_Class">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=AuditoriumService)" Label="AuditoriumService" Category="CodeSchema_Class">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=GroupService)" Label="GroupService" Category="CodeSchema_Class">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=LecturerService)" Label="LecturerService" Category="CodeSchema_Class">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=ScheduleService)" Label="ScheduleService" Category="CodeSchema_Class">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=TimeService)" Label="TimeService" Category="CodeSchema_Class">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices Type=(Name=IDataService GenericParameterCount=1))" Label="IDataService&lt;T&gt;" Category="CodeSchema_Interface">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=(Name=IAccessValidateService GenericParameterCount=1))" Label="IAccessValidateService&lt;T&gt;" Category="CodeSchema_Interface">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=IAuthenticateService)" Label="IAuthenticateService" Category="CodeSchema_Interface">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=IAuthenticateTicket)" Label="IAuthenticateTicket" Category="CodeSchema_Interface">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=IConfigurationService)" Label="IConfigurationService" Category="CodeSchema_Interface">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=IRegistrationService)" Label="IRegistrationService" Category="CodeSchema_Interface">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                    </reference>
+                  </references>
+                </layer>
+                <layer Id="a5ee9e03-345f-42bb-89d6-7a809facad96" name="Validators">
+                  <references>
+                    <reference Id="b788928c-ef2f-4e40-80a6-43983b4464e4" name="Validators">
+                      <ArtifactNode Label="Validators" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.Base/Interfaces/Validators/)">
+                        <Category Ref="ProjectFolder" />
+                      </ArtifactNode>
+                      <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Validators Type=(Name=IValidator GenericParameterCount=1))" Label="IValidator&lt;T&gt;" Category="CodeSchema_Interface">
+                        <LinkCategory Ref="Represents" />
+                      </ExpandedNode>
+                    </reference>
+                  </references>
+                </layer>
+              </childLayers>
+              <references>
+                <reference Id="49fb6107-d980-498b-ab6e-598b03f201c5" name="Interfaces">
+                  <ArtifactNode Label="Interfaces" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.Base/Interfaces/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.DataSources Type=IDatabase)" Label="IDatabase" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Repositories Type=(Name=IRepository GenericParameterCount=1))" Label="IRepository&lt;TEntity&gt;" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=AuthenticateTicket)" Label="AuthenticateTicket" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=AuditoriumService)" Label="AuditoriumService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=GroupService)" Label="GroupService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=LecturerService)" Label="LecturerService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=ScheduleService)" Label="ScheduleService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices.Extensions Type=TimeService)" Label="TimeService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services.DataServices Type=(Name=IDataService GenericParameterCount=1))" Label="IDataService&lt;T&gt;" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=(Name=IAccessValidateService GenericParameterCount=1))" Label="IAccessValidateService&lt;T&gt;" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=IAuthenticateService)" Label="IAuthenticateService" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=IAuthenticateTicket)" Label="IAuthenticateTicket" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=IConfigurationService)" Label="IConfigurationService" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Services Type=IRegistrationService)" Label="IRegistrationService" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Base Namespace=Timetable.Base.Interfaces.Validators Type=(Name=IValidator GenericParameterCount=1))" Label="IValidator&lt;T&gt;" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+          </childLayers>
+          <references>
+            <reference Id="85537dce-71bb-43ca-9ca9-89b32758a830" name="Timetable.Base">
+              <ArtifactNode Label="Timetable.Base" Category="CodeSchema_Project" Id="(Assembly=../Timetable.Base/Timetable.Base.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Timetable.Base)" Label="Timetable.Base.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="16eaa2b2-e151-4648-ac60-4bb225c12649" name="Data&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="d93efdfc-cacb-4898-bebf-abc3f3499134" direction="Forward">
+              <layerMoniker Id="cfd04991-a6aa-45b0-9259-7ecef47f395c" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="e3809bad-65b5-4408-857d-fa24d3702862" direction="Forward">
+              <layerMoniker Id="7acb7438-b94e-46c1-824f-0b0c4e782a54" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="d9138ae9-4748-4041-a80b-22094bed59f4" direction="Forward">
+              <layerMoniker Id="c40e41c8-0d6f-4c5e-a1e5-77a077f92065" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="db95b245-2d1b-4bee-9170-430ec774a5d5" name="Context">
+              <references>
+                <reference Id="e105ef0c-9929-475c-a434-e3cb44448758" name="Context">
+                  <ArtifactNode Label="Context" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.DataEntities/Context/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Context Type=DataContext)" Label="DataContext" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Context.Interfaces Type=IDataContext)" Label="IDataContext" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="00be820a-70e5-4234-a330-ee695e943ea0" name="Repository">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="8f685915-fec5-4d45-9e13-187f4a044abd" direction="Forward">
+                  <layerMoniker Id="db95b245-2d1b-4bee-9170-430ec774a5d5" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+              <references>
+                <reference Id="dfdfac07-c5f5-4f50-9ff0-0f421f47189e" name="Repositories">
+                  <ArtifactNode Label="Repositories" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.DataEntities/Repositories/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Repositories Type=(Name=Repository GenericParameterCount=1))" Label="Repository&lt;TEntity&gt;" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="8faf8f5e-8f4d-4dee-bca5-39914db30ed8" name="Services">
+              <references>
+                <reference Id="d9a85415-4677-4fad-8f0a-f86affe402be" name="Services">
+                  <ArtifactNode Label="Services" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.DataEntities/Services/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services Type=AuthenticateService)" Label="AuthenticateService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services Type=ConfigurationService)" Label="ConfigurationService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=AuditoriumService)" Label="AuditoriumService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=(Name=BaseDataService GenericParameterCount=1))" Label="BaseDataService&lt;T&gt;" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=BuildingService)" Label="BuildingService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=CourseService)" Label="CourseService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=FacultyService)" Label="FacultyService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=GroupService)" Label="GroupService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=LecturerService)" Label="LecturerService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=ScheduleService)" Label="ScheduleService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=TimeService)" Label="TimeService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=TutorialService)" Label="TutorialService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services.DataServices Type=TutorialTypeService)" Label="TutorialTypeService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Services Type=RegistrationService)" Label="RegistrationService" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="a0aca2fb-0c3b-4fae-b5b0-f40d85f9333f" name="Validators">
+              <references>
+                <reference Id="904dcadd-18f6-4589-b608-98d186a3ab9f" name="Validators">
+                  <ArtifactNode Label="Validators" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.DataEntities/Validators/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Validators Type=FacultyValidator)" Label="FacultyValidator" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Validators Type=(Name=BaseValidator GenericParameterCount=1))" Label="BaseValidator&lt;T&gt;" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Data Namespace=Timetable.Data.Validators Type=UserValidator)" Label="UserValidator" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+          </childLayers>
+          <references>
+            <reference Id="a143bf15-697f-49a9-9d57-b4addba5d3ca" name="Timetable.Data">
+              <ArtifactNode Label="Timetable.Data" Category="CodeSchema_Project" Id="(Assembly=../Timetable.DataEntities/Timetable.Data.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Timetable.Data)" Label="Timetable.Data.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="c40e41c8-0d6f-4c5e-a1e5-77a077f92065" name="Utils&#xD;&#xA;">
+          <childLayers>
+            <layer Id="38bd7183-a19c-43e3-891c-9c241bb8cbfd" name="EventArgs">
+              <references>
+                <reference Id="f75da921-1757-46c9-9141-1a0f94a83e1c" name="EventArgs">
+                  <ArtifactNode Label="EventArgs" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.Utils/EventArgs/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Utils Namespace=Timetable.Utils.EventArgs Type=ValidationFailEventArgs)" Label="ValidationFailEventArgs" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Utils Namespace=Timetable.Utils.EventArgs Type=ValidationSuccessEventArgs)" Label="ValidationSuccessEventArgs" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="18122bf1-b0bd-471b-a215-1b6d311bc98a" name="Exceptions&#xD;&#xA;">
+              <references>
+                <reference Id="d4f53fd4-6691-43fb-bb75-741b03e5a523" name="Exceptions">
+                  <ArtifactNode Label="Exceptions" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.Utils/Exceptions/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Utils Namespace=Timetable.Utils.Exceptions Type=EntityNotFoundException)" Label="EntityNotFoundException" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Utils Namespace=Timetable.Utils.Exceptions Type=RegistrationException)" Label="RegistrationException" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+          </childLayers>
+          <references>
+            <reference Id="7d2d14bd-df8a-4aeb-9a63-2d56fb38af06" name="Timetable.Utils">
+              <ArtifactNode Label="Timetable.Utils" Category="CodeSchema_Project" Id="(Assembly=../Timetable.Utils/Timetable.Utils.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Timetable.Utils)" Label="Timetable.Utils.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="b08d3374-c0c6-464c-8c26-dab4c18b11ad" name="Proxy&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="e82c6f79-fbcd-4354-a7da-0c34d547d25d" direction="Forward">
+              <layerMoniker Id="cfd04991-a6aa-45b0-9259-7ecef47f395c" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="4c55d22f-3ef9-49e3-847f-9214887b9f77" direction="Forward">
+              <layerMoniker Id="16eaa2b2-e151-4648-ac60-4bb225c12649" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="f3ccae2b-9748-4ecb-be23-54871c7b30fa" name="Container">
+              <references>
+                <reference Id="34d4ad5e-ab57-4230-89f5-9e9212fb7e0d" name="RegisterContainers.cs">
+                  <ArtifactNode Label="RegisterContainers.cs" Category="CodeSchema_ProjectItem" Id="(Assembly=../Timetable.Proxy/Container/RegisterContainers.cs)">
+                    <Category Ref="CodeSchema_SourceFile" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Proxy Namespace=Timetable.Proxy.Container Type=RegisterContainers)" Label="RegisterContainers" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Contains" />
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+          </childLayers>
+          <references>
+            <reference Id="df45f197-8b7e-4888-8aa4-f0c64aa283ac" name="Timetable.Proxy">
+              <ArtifactNode Label="Timetable.Proxy" Category="CodeSchema_Project" Id="(Assembly=../Timetable.Proxy/Timetable.Proxy.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Timetable.Proxy)" Label="Timetable.Proxy.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="8df3ca60-3501-4a63-809f-f58ece35b496" name="Timetable.Data">
+          <ArtifactNode Label="Timetable.Data" Category="CodeSchema_Project" Id="(Assembly=../Timetable.DataEntities/Timetable.Data.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Timetable.Data)" Label="Timetable.Data.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="b9b57b79-ad11-4f06-9ed2-a5aba8fc0825" name="Timetable.Base">
+          <ArtifactNode Label="Timetable.Base" Category="CodeSchema_Project" Id="(Assembly=../Timetable.Base/Timetable.Base.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Timetable.Base)" Label="Timetable.Base.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="44ed22a6-3791-497b-a81b-4cdba85def72" name="Timetable.Utils">
+          <ArtifactNode Label="Timetable.Utils" Category="CodeSchema_Project" Id="(Assembly=../Timetable.Utils/Timetable.Utils.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Timetable.Utils)" Label="Timetable.Utils.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+        <reference Id="6c31cf59-5565-4c6a-861a-0f4d5f45ab46" name="Timetable.Proxy">
+          <ArtifactNode Label="Timetable.Proxy" Category="CodeSchema_Project" Id="(Assembly=../Timetable.Proxy/Timetable.Proxy.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Timetable.Proxy)" Label="Timetable.Proxy.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="49e39ec0-203c-4e30-88f0-93c1898e79a4" name="Clients&#xD;&#xA;">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="b8d46e73-45a0-4f01-a7cb-2d6ec4842492" direction="Forward">
+          <layerMoniker Id="7c7ad396-b94f-401a-a9c3-628c38f915cc" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="b9b506dd-c04a-4a3b-983b-82013ce1f0a2" name="Site&#xD;&#xA;">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="14e00e2d-b584-4ee3-9037-9d9b2ba1deb8" direction="Forward">
+              <layerMoniker Id="cfd04991-a6aa-45b0-9259-7ecef47f395c" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="138843f3-4b7d-48f7-bcc1-604487dbd223" direction="Forward">
+              <layerMoniker Id="c40e41c8-0d6f-4c5e-a1e5-77a077f92065" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="ca070c5b-709c-44a1-a7c9-0636e65c0d3f" direction="Forward">
+              <layerMoniker Id="b08d3374-c0c6-464c-8c26-dab4c18b11ad" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="69bfb9b9-c94b-484d-a3c1-242871d215c2" name="Controllers">
+              <dependencyToLayers>
+                <dependencyFromLayerToLayer Id="5d618838-8e16-4595-b17b-fa59884ce468" direction="Forward">
+                  <layerMoniker Id="3f9088b2-06f4-47bf-bb2e-e31e63c8904e" />
+                </dependencyFromLayerToLayer>
+              </dependencyToLayers>
+              <references>
+                <reference Id="a1da4e0c-9ac7-4678-821b-3680f99973e3" name="Controllers">
+                  <ArtifactNode Label="Controllers" Category="CodeSchema_ProjectItem" Id="(Assembly=../timetable.site/controllers/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers Type=ScheduleController)" Label="ScheduleController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=AuditoriumController)" Label="AuditoriumController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=(Name=BaseApiController GenericParameterCount=1))" Label="BaseApiController&lt;T&gt;" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=BuildingController)" Label="BuildingController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=CourseController)" Label="CourseController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=FacultyController)" Label="FacultyController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=GroupController)" Label="GroupController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=LecturerController)" Label="LecturerController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=ScheduleController)" Label="ScheduleController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=TimeController)" Label="TimeController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=TutorialController)" Label="TutorialController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers.Api Type=TutorialTypeController)" Label="TutorialTypeController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers Type=BaseController)" Label="BaseController" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Controllers Type=IBaseController)" Label="IBaseController" Category="CodeSchema_Interface">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+            <layer Id="3f9088b2-06f4-47bf-bb2e-e31e63c8904e" name="Models">
+              <references>
+                <reference Id="5a9c0016-62f5-4f3d-aeba-b736dcbf2266" name="Models">
+                  <ArtifactNode Label="Models" Category="CodeSchema_ProjectItem" Id="(Assembly=../timetable.site/models/)">
+                    <Category Ref="ProjectFolder" />
+                  </ArtifactNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Models Type=GetScheduleModel)" Label="GetScheduleModel" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Models.Schedule Type=AddModel)" Label="AddModel" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Models.Schedule Type=DeleteModel)" Label="DeleteModel" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Models.Schedule Type=UpdateModel)" Label="UpdateModel" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Models Type=SignInModel)" Label="SignInModel" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Models Type=SignUpModel)" Label="SignUpModel" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                  <ExpandedNode Id="(Assembly=Timetable.Site Namespace=Timetable.Site.Models Type=TimeModel)" Label="TimeModel" Category="CodeSchema_Class">
+                    <LinkCategory Ref="Represents" />
+                  </ExpandedNode>
+                </reference>
+              </references>
+            </layer>
+          </childLayers>
+          <references>
+            <reference Id="80489d26-883f-4e3c-a441-505905cf4c6f" name="Timetable.Site">
+              <ArtifactNode Label="Timetable.Site" Category="CodeSchema_Project" Id="(Assembly=../Timetable.Site/Timetable.Site.csproj)">
+                <Category Ref="CodeSchema_SourceFile" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=Timetable.Site)" Label="Timetable.Site.dll" Category="FileSystem.Category.FileOfType.dll">
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+      <references>
+        <reference Id="f42704c4-ad4a-489d-8566-5fe578a888b0" name="Timetable.Site">
+          <ArtifactNode Label="Timetable.Site" Category="CodeSchema_Project" Id="(Assembly=../Timetable.Site/Timetable.Site.csproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Timetable.Site)" Label="Timetable.Site.dll" Category="FileSystem.Category.FileOfType.dll">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="7acb7438-b94e-46c1-824f-0b0c4e782a54" name="Database&#xD;&#xA;">
+      <references>
+        <reference Id="2ef28fcc-64b9-4fe5-afb9-a2ad2aed3534" name="Timetable.Database">
+          <ArtifactNode Label="Timetable.Database" Category="CodeSchema_Project" Id="(Assembly=../Timetable.Database/Timetable.Database.sqlproj)">
+            <Category Ref="CodeSchema_SourceFile" />
+          </ArtifactNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

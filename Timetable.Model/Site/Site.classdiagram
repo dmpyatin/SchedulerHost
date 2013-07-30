@@ -1,0 +1,1425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="838716fa-a7de-4c50-8191-2e752ad5f5dd" name="UMLClassDiagram1" linkedPackageId="a0cfb34c-8e78-4b80-9c43-d3ebe4c37c6d" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c8eb1a03-7c50-461e-be55-c6164fef69a4">
+      <profileInstance Id="24cfa138-79af-4b62-82e3-c435cdd6dd15" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f5afe3bc-2752-4064-8073-faed937ef981">
+      <profileInstance Id="7dfe820f-9e10-442d-8b39-9068ae995f20" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="42f0159f-fd7e-42a9-9c4d-087ed0714fe4">
+      <profileInstance Id="431e8c30-9879-4638-a890-aec2a98b4340" name="CSharpProfile">
+        <elementDefinition Id="8a9ea48b-ec73-434f-b0ef-453fe6890315" />
+      </profileInstance>
+      <elementDefinition Id="2a225dfc-1d8c-4c01-95c1-42c284cbfb47" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ad1d37cc-c7be-4eee-9e57-42aa81855a77" name="ApiController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="c1f4390c-0e5e-4161-922b-f323a08a2362" handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=ApiController" tag="ViewCode">
+            <elementDefinition Id="ebc80a4a-5989-4e85-adf6-00f7ecdaedc0" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="ae08f141-f89f-4025-8cf6-12b0d6a204cb" name="class" profile="CSharpProfile">
+            <elementDefinition Id="f2aa2ca8-42a1-4b46-baff-be282a021452" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="0ad39217-da74-4545-9a0a-d46cd3236790">
+                <propertyInstance Id="6c9e6823-9dc6-40c8-a9bb-2e2029217c0b" name="ClrAttributes">
+                  <elementDefinition Id="82295586-1fd1-419e-92ff-bb0dc5896235" />
+                </propertyInstance>
+                <elementDefinition Id="3239fa4a-feb6-4b60-985d-72abd0275e94" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6bf8c3b9-1ab2-4b51-8c16-8f7a76adb215">
+                <propertyInstance Id="42603ae1-02b6-4b3d-aad5-1cb8d73d10d7" name="IsPartial" value="false">
+                  <elementDefinition Id="11a61867-5a9f-409d-bb31-6f33b20fa476" />
+                </propertyInstance>
+                <elementDefinition Id="41b7e35a-fa36-4e3d-a8a9-5d3618f9679e" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1edcb8f7-086d-4cb6-b741-0a6e42c681f8">
+                <propertyInstance Id="972e28de-fa5f-41d2-b02e-6bdfcf40bff0" name="IsStatic" value="False">
+                  <elementDefinition Id="c5a3fc36-85be-42d0-b39f-252119f399d2" />
+                </propertyInstance>
+                <elementDefinition Id="5e321e90-525d-496b-a334-26e0f32ea31a" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="fa026179-bf71-4692-a68d-0af85231f5ab">
+                <propertyInstance Id="b7045fe1-5f75-4ddd-911d-564ff7f2f79b" name="IsUnsafe" value="false">
+                  <elementDefinition Id="5c8594c0-5281-4374-8280-424e1290d4db" />
+                </propertyInstance>
+                <elementDefinition Id="4cee5a78-95cc-4cb3-91f8-3446a81c5b54" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="0136045d-0981-4c78-a797-f2509025a8ff">
+                <propertyInstance Id="f6659106-c9cc-44f5-858e-bd3f4e640904" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="b09f2699-0915-4a7f-848a-143b8727b981" />
+                </propertyInstance>
+                <elementDefinition Id="0c67d803-0f25-4151-a98c-fbc0c95e24e1" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="a4b5909d-0b9e-4fb7-b78d-a9a74ab8318a" />
+        <generalsInternal>
+          <generalization Id="fd046bff-b292-4552-bfcc-28acfc970967" isSubstitutable="false">
+            <classMoniker Id="5fd743cb-90ad-4f6c-bdf3-9ee0808ceb6b" LastKnownName="BaseApiController" />
+            <elementDefinition Id="ce744295-6bf3-47a1-a4ef-f0f65e1779f1" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="13ad73ef-46b0-44a7-b84b-e9b37c3560e1" name="SignIn" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="b93bbaa1-5faf-442c-980a-92c105432550" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=ApiController Member=(Name=SignIn OverloadingParameters=[(Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Models Type=SignInModel)])" tag="ViewCode">
+                <elementDefinition Id="e3930795-3a3b-4fa4-9cd3-b6157d53e5e7" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="d2d85ddd-f5fb-41e3-85d1-a5194f89f3fe" name="method" profile="CSharpProfile">
+                <elementDefinition Id="0bfb754a-0030-41a9-ba06-4dda96a1ab99" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="df8009e7-a862-4551-9174-9940c58c8759">
+                    <propertyInstance Id="8609d6b8-5b18-40d3-b15c-bc6bfab2956b" name="ClrAttributes">
+                      <elementDefinition Id="2314e423-3586-4699-99b2-3e405ae5ee09" />
+                    </propertyInstance>
+                    <elementDefinition Id="f930c3eb-ef7b-4b3f-860f-d8178e435f8a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="75093eae-4b1b-461c-b4c1-17889482f247">
+                    <propertyInstance Id="4b906ac0-d8f8-4ae7-b635-ca2f347d2ecc" name="IsPartial" value="false">
+                      <elementDefinition Id="210697d2-b6a7-41ce-9b32-4a77dae9f626" />
+                    </propertyInstance>
+                    <elementDefinition Id="a4d789db-6310-4fb2-b03e-945dbab03164" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4b886eab-5d56-402c-b03c-faf5d6ab37fb">
+                    <propertyInstance Id="697a74a7-153f-4b07-b5b6-56aeb5f0fe53" name="IsUnsafe" value="false">
+                      <elementDefinition Id="00ddc528-7627-411f-ac16-cde27f3d5bb6" />
+                    </propertyInstance>
+                    <elementDefinition Id="33fcb980-0e72-4566-9cc7-30e0e844c375" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bf3f9c9e-708c-4a2a-a82a-8e385e26f796">
+                    <propertyInstance Id="6a9743d4-3252-42e3-931c-d1afa5539a57" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4f8b0050-3990-4570-b2a1-fd9c86eb9c89" />
+                    </propertyInstance>
+                    <elementDefinition Id="51327956-e3f0-4952-8ccd-6a1f6acea81a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="49b3909a-21bf-406a-a49a-c9b988d624f8">
+                    <propertyInstance Id="0bbeda25-92d5-4e36-9297-8c6d83af1cf2" name="params" value="false">
+                      <elementDefinition Id="aa4a46e5-1e65-4e70-85ce-87d30a7de2c9" />
+                    </propertyInstance>
+                    <elementDefinition Id="16aef06e-4db7-4cc8-a44e-4a09473952a0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="66995bc6-8c5b-4a73-80bb-009da63adb8c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0947cad6-07bf-4fc4-8e79-29b977a5ef3a" name="user" direction="In">
+                  <referencesInternal>
+                    <reference Id="42c46c68-9f45-48ce-8a83-0fcbbc469f8a" handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=ApiController Member=(Name=SignIn OverloadingParameters=[(Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Models Type=SignInModel)]) ParameterIdentifier=user" tag="ViewCode">
+                      <elementDefinition Id="08cf4a17-123b-49ed-95ea-636aa5aa9a82" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="c1a8d2d7-87ab-42a9-ae2b-a2d2812bf81d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="af5c6d5b-af8c-48c5-b947-127fbb694df1" LastKnownName="SignInModel" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="311d3117-9357-41dc-b9c4-e0882bfa9e1a" name="ApiController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="70e2947f-0f3f-43cd-9c49-df15dc7089b0" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=ApiController Member=.ctor" tag="ViewCode">
+                <elementDefinition Id="b5229ae7-fb8b-4c39-ad5d-b31fe1fc8c6f" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a3cb007a-e166-4764-a8d5-9cf2fe2b49e6" name="method" profile="CSharpProfile">
+                <elementDefinition Id="3fa3a3ef-8cac-46f1-80be-a409bbfb3fa8" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b2ef0f75-85e9-418c-8b4d-a78569e81de6">
+                    <propertyInstance Id="665200b5-ba8d-4aba-b08a-f41fc488ba64" name="ClrAttributes">
+                      <elementDefinition Id="a7eddaaa-212c-461a-92a0-56478d4db0a1" />
+                    </propertyInstance>
+                    <elementDefinition Id="73c96d2d-4555-45ad-a344-289fcfd3d832" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="41325dee-4ac2-458a-a671-a3efea3b4dbb">
+                    <propertyInstance Id="bdb89b1c-3e76-4aba-b32c-87b88350b160" name="IsPartial" value="false">
+                      <elementDefinition Id="4d9647c5-0273-42b3-b93a-84ac106569af" />
+                    </propertyInstance>
+                    <elementDefinition Id="9a9fcba1-4d3a-4d7e-b541-3589fe1f1d32" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="265a6c97-789a-4fa0-949b-f8044d3994b2">
+                    <propertyInstance Id="dd90d42d-be48-460d-8a21-c13dc5f480b4" name="IsUnsafe" value="false">
+                      <elementDefinition Id="fa3d2f15-b4e4-45a3-ba45-fdb57b0ee6c6" />
+                    </propertyInstance>
+                    <elementDefinition Id="76bf8413-18fd-4af2-8118-8e23dd7c7ad7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2dbf3b3d-193a-44d2-8749-54e4c720a061">
+                    <propertyInstance Id="86570744-e54f-4948-b06c-58eeea87a703" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="bbeb5006-64ad-4b47-8fc4-e4b9a5108dbb" />
+                    </propertyInstance>
+                    <elementDefinition Id="1dc09a09-6554-4a9a-9da6-1871f614f8aa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="708bda72-ff3b-4ee6-ba7c-9aa121fafe7f">
+                    <propertyInstance Id="b6a3e293-f06e-45f4-bbe5-d5f211fd320a" name="params" value="false">
+                      <elementDefinition Id="444e78ab-f228-4408-80a7-724564ebea64" />
+                    </propertyInstance>
+                    <elementDefinition Id="053952fe-6305-4a67-b39b-4859663f073a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="a173290a-eae0-4d50-bc2a-afb9872fb494" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="af5c6d5b-af8c-48c5-b947-127fbb694df1" name="SignInModel" isAbstract="false" isLeaf="false" cachedFullName="Timetable.Model::Timetable::Site::Models::SignInModel">
+        <elementDefinition Id="7c624eb4-9978-4a96-bf22-7589481ea245" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5fd743cb-90ad-4f6c-bdf3-9ee0808ceb6b" name="BaseApiController" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="9a76fcac-4f98-4904-a51e-29ff9b2ebba3" handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=BaseApiController" tag="ViewCode">
+            <elementDefinition Id="77ec11e6-2fbd-4b02-94ba-35689d36b188" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="bd02ab23-7e85-45cb-ba62-83a708879c47" name="class" profile="CSharpProfile">
+            <elementDefinition Id="d8952f3d-c6fd-429f-b9be-a175a1fb0078" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="7e7d453f-99a1-4e99-90e2-5c2ab7c0eb42">
+                <propertyInstance Id="d4683a7f-9230-4820-9274-a6ee74dffc66" name="ClrAttributes">
+                  <elementDefinition Id="bbf026b7-6ae3-4b7a-addc-21c5c4a56856" />
+                </propertyInstance>
+                <elementDefinition Id="c3fcf1f8-4972-4234-93e1-7b63c050b4e7" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="2dcd1381-45ad-41a5-a0a8-99eba036adc7">
+                <propertyInstance Id="6b50968e-aa17-4692-9bed-a44c0983a2a7" name="IsPartial" value="false">
+                  <elementDefinition Id="d0d9388c-e26c-4a52-959f-6f58b7110303" />
+                </propertyInstance>
+                <elementDefinition Id="9cec93e4-0c50-493e-99f3-fa28c83e9a4d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a756e767-a9ea-4630-af0d-8b200614260f">
+                <propertyInstance Id="b8b8709c-5efe-4a28-8f69-645c84c9e0a9" name="IsStatic" value="False">
+                  <elementDefinition Id="8f372f23-41f4-412b-9952-ca2a1794a154" />
+                </propertyInstance>
+                <elementDefinition Id="b8044041-9505-4375-bcd8-0b9064751173" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="482e170a-5e2c-4116-ab40-88ea46e7caa5">
+                <propertyInstance Id="3b5225f3-2eac-4e08-914f-dcc1ec1f68a9" name="IsUnsafe" value="false">
+                  <elementDefinition Id="af03f033-bf3c-40a8-ba29-9ab585f8fe0e" />
+                </propertyInstance>
+                <elementDefinition Id="bcb29769-2677-48da-a18f-1d3d2d2c1092" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="7d37ac87-463b-4675-9924-76e4a180ddd4">
+                <propertyInstance Id="e865c771-e42e-4a69-a317-8f0cc369a87c" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="0ee75601-f1de-40cd-a0f1-b2c157447b1f" />
+                </propertyInstance>
+                <elementDefinition Id="2d8eb902-cc38-4571-a675-0a354fd17743" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="a6df018e-e1ff-4658-b016-3fb1a009aea7" />
+        <ownedAttributesInternal>
+          <property Id="7edbf664-f085-4e7c-9bad-03b7b027d892" name="AuthenticateService" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="5042cf21-5bbd-4d46-a6a2-71858947f82d" handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=BaseApiController Member=AuthenticateService" tag="ViewCode">
+                <elementDefinition Id="1f581226-d2c7-4615-b095-77171e6ac8ce" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="63990b71-5a80-4a7a-8811-5979edff44df" name="property" profile="CSharpProfile">
+                <elementDefinition Id="d927da66-4006-4b39-9fa6-8af28836eb94" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b2f7b295-c8d9-423f-8f3c-d180304ef659">
+                    <propertyInstance Id="fb57cb74-be29-4e8d-ae00-050538831faf" name="ClrAttributes">
+                      <elementDefinition Id="1a0470b4-4edb-4578-bf7f-50ff159d6098" />
+                    </propertyInstance>
+                    <elementDefinition Id="abe5f1e2-be85-45e3-b786-b9257d7f30e0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cc22f4bf-3ed3-4ba7-bd74-6ae7e540e71c">
+                    <propertyInstance Id="dcc9266b-fffe-486f-8a3d-02c94e767a97" name="Get" value="public">
+                      <elementDefinition Id="81213a9d-dfa4-465a-af91-91cad3316fe8" />
+                    </propertyInstance>
+                    <elementDefinition Id="f9771c94-d178-426b-825f-19264f91a173" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2507c4cd-8c13-490a-9d83-f073903b2078">
+                    <propertyInstance Id="94ccd340-9803-4cb5-9e99-b1f88842b0d2" name="HasBody" value="false">
+                      <elementDefinition Id="b87f351a-9efc-4a96-9f53-5a0a8b6ef8be" />
+                    </propertyInstance>
+                    <elementDefinition Id="6a10583e-6b1b-4682-a210-4c290979db31" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="57dadf2c-c930-491f-988a-2fd85ae240df">
+                    <propertyInstance Id="1a8cad87-a65f-458e-84e0-ec51f0b63651" name="IsUnsafe" value="false">
+                      <elementDefinition Id="da8d6d26-6f15-4ad5-b214-0d5d6bc82810" />
+                    </propertyInstance>
+                    <elementDefinition Id="b5c9879d-6579-402b-916a-32b2a0674f3e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="40c4e946-d584-4990-8357-2e1d2b7945cb">
+                    <propertyInstance Id="3f75cb3c-2bd6-4388-b9eb-73b38ab59961" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="8b1421c1-6eff-4236-8abe-2afd539f9999" />
+                    </propertyInstance>
+                    <elementDefinition Id="dfbbafc2-7600-422d-a7f7-0ac568ce35b9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ae46f9db-460f-45f7-aa37-1f3d4760a4f8">
+                    <propertyInstance Id="39521b30-f5e8-4844-80e3-7a19f75b0354" name="Set" value="public">
+                      <elementDefinition Id="ed863751-3832-430b-ae68-ce5f47eea1d0" />
+                    </propertyInstance>
+                    <elementDefinition Id="cc651f2c-8d67-4477-be38-e23069a35804" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f9038269-0a7e-48b8-86de-cfbe99d84ad6" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5e38d47e-5402-43f6-8c2b-8e90ea03e1dc" LastKnownName="IAuthenticateService" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="70b1587e-9871-467c-899c-dbe5abc55281" name="BaseApiController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="edef344f-b772-465b-b056-1183aca3258f" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=BaseApiController Member=.ctor" tag="ViewCode">
+                <elementDefinition Id="8463982a-8991-4721-b369-9190ce0a0c38" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="98861523-ea69-421a-bdf8-5193c2565d8e" name="method" profile="CSharpProfile">
+                <elementDefinition Id="0990639f-382e-43b7-a66d-6780ffa201dc" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2397c6e2-e4b3-446e-8e15-7ad597ffadf4">
+                    <propertyInstance Id="5e862937-6d52-4319-9660-1bb42ddafebc" name="ClrAttributes">
+                      <elementDefinition Id="0acb186b-bf10-4f5e-8373-1e94cf708a43" />
+                    </propertyInstance>
+                    <elementDefinition Id="c9338cfc-250a-4fea-8094-5dae44ef9c1b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="824dd522-5940-4bbb-972d-c45c50d48554">
+                    <propertyInstance Id="e195aa34-db25-4b25-8422-e61be7ff23fd" name="IsPartial" value="false">
+                      <elementDefinition Id="fca4af16-5c70-4740-ba9f-51743abd25ee" />
+                    </propertyInstance>
+                    <elementDefinition Id="04ead50d-0a54-4608-b007-7a06aed0010c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b59d57f0-0828-48db-99fc-ff44982d7a5b">
+                    <propertyInstance Id="5ffa8b54-12fe-4dc0-b35c-02e327973d6c" name="IsUnsafe" value="false">
+                      <elementDefinition Id="76e001da-4c49-4435-b75e-165a2a5a900e" />
+                    </propertyInstance>
+                    <elementDefinition Id="9aad3f51-6ebd-439e-9ec3-7b236b76ea6d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d66a1a23-c749-43e1-8134-64e863814f25">
+                    <propertyInstance Id="673693f4-c472-4b5d-88b2-1adaf691a494" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="e994d7a0-d81d-4f37-8911-ec7303974266" />
+                    </propertyInstance>
+                    <elementDefinition Id="9f3acd12-c578-4e7d-9c03-52790a4d3030" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="3593b585-6e42-4b4f-9a0c-cec68c09e28a">
+                    <propertyInstance Id="a8677e2d-b1a7-49b0-9077-8224e24f0bb6" name="params" value="false">
+                      <elementDefinition Id="25bc7f72-2ce0-4a46-b97d-a046e9100feb" />
+                    </propertyInstance>
+                    <elementDefinition Id="ee119598-aa62-46a3-a96a-fa5a5e1fdd19" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="52932584-c534-40c2-b5c7-54afbd17822c" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5e38d47e-5402-43f6-8c2b-8e90ea03e1dc" name="IAuthenticateService" isAbstract="false" isLeaf="false" cachedFullName="Timetable.Model::Timetable::Base::Interfaces::Services::IAuthenticateService">
+        <elementDefinition Id="594254b5-b2cb-48ae-baac-fc9370c171f0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7e32fdf5-d7a9-4389-a3b1-da08006c9267" name="BaseController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="dc1b6b14-3ac3-44a7-b5e4-e2b215c5414d" handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=BaseController" tag="ViewCode">
+            <elementDefinition Id="bd6699a4-5cc6-40b5-b9aa-fb5b70d61b68" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="1bc7955e-a59a-44d6-adf8-42d7c7801fa1" name="class" profile="CSharpProfile">
+            <elementDefinition Id="587f433a-7988-4a90-b446-63f24e3ee053" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ea42d80e-4d3b-466f-a9e4-acc7a856bb62">
+                <propertyInstance Id="d510d87d-c968-4d73-b026-1d19f0e059b1" name="ClrAttributes">
+                  <elementDefinition Id="149600c8-fff4-47c9-b567-5dab73ef2a5f" />
+                </propertyInstance>
+                <elementDefinition Id="30289e29-76cf-4134-8f3a-f1b7cb1e7e1e" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="d16e7455-9007-4bfb-b8e9-d433e92c9126">
+                <propertyInstance Id="dd30c86e-0427-4e1a-9f18-15bb8e1432e6" name="IsPartial" value="false">
+                  <elementDefinition Id="0496873d-39b6-431e-855c-c68638072281" />
+                </propertyInstance>
+                <elementDefinition Id="a7538cc6-acac-46a0-ad8b-e18ac4277664" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="64d9982d-6a94-4003-8065-749188c363e5">
+                <propertyInstance Id="15521765-20a9-499b-b48c-9ac8e188890a" name="IsStatic" value="False">
+                  <elementDefinition Id="3965a8ed-fff2-4c98-b114-acffa2b4343e" />
+                </propertyInstance>
+                <elementDefinition Id="884853d3-a08d-48aa-868d-ad1196f0ab55" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9bafe553-8d58-48a4-8efb-edc5af35b8db">
+                <propertyInstance Id="69c0b020-e9fe-4399-9571-f078fc150b9d" name="IsUnsafe" value="false">
+                  <elementDefinition Id="6005259c-15cf-4895-a5f4-ab56a594703a" />
+                </propertyInstance>
+                <elementDefinition Id="fbb65f81-73ca-4917-a032-89a50669c704" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="3f99dc84-4935-4a52-8415-aed66088732f">
+                <propertyInstance Id="fcd73967-48b3-40c6-9a58-bf59250af5a0" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="1bc078aa-0254-40df-ac2d-70b38be5386d" />
+                </propertyInstance>
+                <elementDefinition Id="eb2771c4-0191-408d-bc00-5e5bdea9b905" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="4b57776f-aebf-4323-961c-31b444ad9090" />
+        <ownedAttributesInternal>
+          <property Id="62384543-985f-46be-96d6-d998911288cc" name="AuthenticateService" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="9373c089-b7c6-4053-a020-0cbaf6ebdcd4" handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=BaseController Member=AuthenticateService" tag="ViewCode">
+                <elementDefinition Id="296fa9b9-6604-4e26-898e-bd1eadeb10db" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="23fb05c8-59b1-4880-94ae-4cf0dbbc5e5f" name="property" profile="CSharpProfile">
+                <elementDefinition Id="d1473cfd-0b5a-4a60-adbf-a79528246929" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="02ac2a2d-0e8d-42c5-9833-20081f898f82">
+                    <propertyInstance Id="a7076095-f372-4827-9973-ed96f32cf9cf" name="ClrAttributes">
+                      <elementDefinition Id="1934e9cb-1625-4ecd-b5a1-215f2e375b27" />
+                    </propertyInstance>
+                    <elementDefinition Id="aaed3b0a-1398-4db4-a05c-98774a72699f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7ba5b243-8647-41a7-a4d0-4a2e6a163bba">
+                    <propertyInstance Id="a1d274c0-5b6d-49ea-aa38-d42334fad20d" name="Get" value="public">
+                      <elementDefinition Id="41b65107-0c74-4151-b96b-75a20d49dcb1" />
+                    </propertyInstance>
+                    <elementDefinition Id="f3d99a5c-360f-4642-902c-aa0d98c7dd18" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="68252642-4a00-4ccc-b68e-b381091f8247">
+                    <propertyInstance Id="a0a83b00-8813-4607-a925-e34d3a7cc7fa" name="HasBody" value="false">
+                      <elementDefinition Id="99a968a2-ff56-4451-8fe1-fa0bf7db6c7a" />
+                    </propertyInstance>
+                    <elementDefinition Id="e34af506-b89f-4a64-a35b-ebc79d69ebf9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0200ba1c-a7f0-45ba-9efa-7aaae81d6f22">
+                    <propertyInstance Id="b1805b7a-1238-4969-884f-5eb73871f1ba" name="IsUnsafe" value="false">
+                      <elementDefinition Id="079c4a05-32ca-4c12-b60e-00e0422f4d8c" />
+                    </propertyInstance>
+                    <elementDefinition Id="164493c7-c221-43a3-be87-f3dc8257cbe6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="71526166-a24d-470b-bee1-ab3a4d5d8a3d">
+                    <propertyInstance Id="2f2562a8-953f-4a0a-9b49-da41b6fa2bea" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="23e7c1e8-4e54-4209-8d1a-dd9b915ada47" />
+                    </propertyInstance>
+                    <elementDefinition Id="787fa2f0-b57c-4d65-9474-66d80e6b1e9f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7979720d-2a81-423a-a8c6-46854c545e8a">
+                    <propertyInstance Id="732cdf23-7f97-4304-9e13-3591a399d5a0" name="Set" value="public">
+                      <elementDefinition Id="deb73fe1-8f64-4f89-8b1d-26946a385039" />
+                    </propertyInstance>
+                    <elementDefinition Id="4e35669a-86e0-441f-90c9-ce5ee9311e43" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="cfa8ddd8-331c-4f67-bd70-e9b0fac79643" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5e38d47e-5402-43f6-8c2b-8e90ea03e1dc" LastKnownName="IAuthenticateService" />
+            </type_NamedElement>
+          </property>
+          <property Id="8feebeaa-e3da-4f4b-84fb-1549aa26c16a" name="UserRepository" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="9707f786-c161-4a48-b8cd-25d802ee0623" handle="viewcode://./CodeSchema_Property?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=BaseController Member=UserRepository" tag="ViewCode">
+                <elementDefinition Id="a6ecc192-076d-4f65-bd91-49b62b0dff92" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="4e4a8bbf-aeb1-490c-93d5-2394d014cb2e" name="property" profile="CSharpProfile">
+                <elementDefinition Id="2ca8d0ca-2f42-436a-8ab2-1fca5c52855d" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="659c07d1-edc3-4629-98b6-1d3b5469e36d">
+                    <propertyInstance Id="96d4eb63-f466-47b1-8bb8-24de4a86cd18" name="ClrAttributes">
+                      <elementDefinition Id="6924ce38-7548-4c00-b0ad-ccdd9f257128" />
+                    </propertyInstance>
+                    <elementDefinition Id="512314db-f47a-40b2-8ed5-028176a20f41" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d5bdc926-55da-45bc-b90f-4d0e015728ec">
+                    <propertyInstance Id="aef69198-1a1e-43a5-aa56-0a4c0295151a" name="Get" value="public">
+                      <elementDefinition Id="9105343b-61ca-4753-bf0f-d28f9cf25605" />
+                    </propertyInstance>
+                    <elementDefinition Id="0d5597d4-7910-4b61-90d0-d7203a8a7fc8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="127d384f-e9a9-4a62-b2d7-8d68712b972d">
+                    <propertyInstance Id="eb91662c-7339-4fea-a1e9-424c1d697d6c" name="HasBody" value="false">
+                      <elementDefinition Id="c0bc5cd7-d43d-4b82-a257-cf83b7938994" />
+                    </propertyInstance>
+                    <elementDefinition Id="43f64241-5b54-4ad2-b2d5-716d198ff1c0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="76f32a7e-9cb0-4d4d-af05-41fed14985ae">
+                    <propertyInstance Id="839695c2-1487-4d1d-ace2-586e616f9ac3" name="IsUnsafe" value="false">
+                      <elementDefinition Id="c66aaee7-f4e6-485e-a47a-d9ac18447606" />
+                    </propertyInstance>
+                    <elementDefinition Id="1009c4c6-1f4e-4e8f-bff9-d9fcc5d18e23" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7b79acea-a87d-49f3-b21a-dc8c070dc640">
+                    <propertyInstance Id="b468f375-a679-4cfd-ab6e-71f2d2c77745" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="64a125c7-c3d5-4298-8089-b078937056d9" />
+                    </propertyInstance>
+                    <elementDefinition Id="ae2b0467-2870-4772-9ddb-a7df41e68233" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a81036dc-fa88-44fa-8d5f-1265e1516374">
+                    <propertyInstance Id="7f99d05f-add1-4b6b-8d78-a65f2d6b6bd7" name="Set" value="public">
+                      <elementDefinition Id="86b1ac5b-a378-4d14-a385-8e144198c0bf" />
+                    </propertyInstance>
+                    <elementDefinition Id="69feefe3-7d0f-4243-b44f-7e7241c87f20" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b4933816-7219-4989-8bfb-131fe1b312f4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="17a1b7bd-c7f2-4ac3-85e9-d5b1da88189f" LastKnownName="IRepository&lt;User&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1ec2af2c-5595-4087-8baa-12ebf9f60848" name="BaseController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="dbf3b1a4-ba9e-4f9e-bc96-0f544854a242" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=BaseController Member=.ctor" tag="ViewCode">
+                <elementDefinition Id="2acedd28-cfa9-4e35-bfdb-6a9bb88d6e6d" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6769a607-eb11-4d14-9e78-fb0012aa3542" name="method" profile="CSharpProfile">
+                <elementDefinition Id="f7afc0d4-28cd-4372-85b0-5ff4191f83a5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="07fcc661-c42c-4cd5-a3c6-483cad2ecf2b">
+                    <propertyInstance Id="df5dc16f-3eae-4643-b38e-588d96736e20" name="ClrAttributes">
+                      <elementDefinition Id="9dd1b27a-7198-4fcc-aec3-5d2450313ccf" />
+                    </propertyInstance>
+                    <elementDefinition Id="da7fd420-3fcc-4087-8e55-ad8d180e2a20" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6eb9410e-d130-4b49-8c75-34a6edaee5cd">
+                    <propertyInstance Id="614088f6-1521-4021-8f15-3f03235c6a9a" name="IsPartial" value="false">
+                      <elementDefinition Id="8590ff37-1778-4b57-b3d0-5eaf0ed20190" />
+                    </propertyInstance>
+                    <elementDefinition Id="9aedda8e-11e0-4145-8b41-cfad8f56f774" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="49402d41-9016-418a-89b6-5bf0609dc9c4">
+                    <propertyInstance Id="fc8c818e-438f-4117-8396-c9af8d4bf572" name="IsUnsafe" value="false">
+                      <elementDefinition Id="d32730ae-47b8-4faf-8bae-9021e2877cf7" />
+                    </propertyInstance>
+                    <elementDefinition Id="5cdbd08e-9c1b-4748-9caf-42c7ad51e4c0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c33941f3-d93b-4da4-95a3-bb3b82eab86d">
+                    <propertyInstance Id="bfc17c9e-7f11-42ff-962f-c481292bc9d8" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="5b1ce633-4e05-4d1e-9d19-896356a15f35" />
+                    </propertyInstance>
+                    <elementDefinition Id="1330b02c-8e39-4f0c-8731-f718f4521b4e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6420a59f-c80e-423c-8b35-2b2392b77e16">
+                    <propertyInstance Id="f722c382-a498-490a-8a86-20766b0d2770" name="params" value="false">
+                      <elementDefinition Id="80770b72-c5d3-4843-87dc-57c148662b54" />
+                    </propertyInstance>
+                    <elementDefinition Id="a61021c1-ea09-4259-9ebb-4988f8526b43" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="d3636d40-a2d6-4fe0-b95b-27cee21a00b9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="17a1b7bd-c7f2-4ac3-85e9-d5b1da88189f" name="IRepository&lt;User&gt;" isAbstract="false" isLeaf="false" cachedFullName="Timetable.Model::Timetable::Base::Interfaces::Repositories::IRepository&lt;User&gt;">
+        <elementDefinition Id="01b6b343-5cb7-4140-adca-3d76e98e785f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c7f79f8d-9079-4d1a-8770-09f202ba8a3e" name="MainController" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="2c284887-d7d4-456b-8dfd-71a729b45309" handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController" tag="ViewCode">
+            <elementDefinition Id="009071c9-81dd-414e-8549-bb2f0c0ef462" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="e679ba81-8a54-4f8c-b249-e76ce0f70ed2" name="class" profile="CSharpProfile">
+            <elementDefinition Id="0f1e764c-93c4-49da-98e4-3b635af6270e" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6fc07485-06aa-4f8f-96e7-3ec94f509cf3">
+                <propertyInstance Id="e0e3935b-1809-4974-b96f-99e23d0ba366" name="ClrAttributes">
+                  <elementDefinition Id="eeaa8798-8927-4547-86b0-62cc88384a84" />
+                </propertyInstance>
+                <elementDefinition Id="131bccd3-df68-4eef-b1af-561530ff91ae" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="a07a1b58-65cd-4973-a1b2-737e7066c8b4">
+                <propertyInstance Id="b1a99409-2e01-41c7-8ebc-c64d20e24fc0" name="IsPartial" value="false">
+                  <elementDefinition Id="54bcbee5-6699-451c-8ed1-7d7537f4f26a" />
+                </propertyInstance>
+                <elementDefinition Id="5c218905-9690-4643-bd0a-d29ab98f3a10" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="2c17e03f-81af-4274-99ee-8d4d5d562d37">
+                <propertyInstance Id="ebb9b037-8e1b-4103-828e-668cf09e94a0" name="IsStatic" value="False">
+                  <elementDefinition Id="a3faa8aa-d72d-4f91-b6e0-310723f7472b" />
+                </propertyInstance>
+                <elementDefinition Id="2f61b431-f303-4f68-b107-b130bf13997f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="0be77139-f9ca-41c0-98f5-7d8d541cb8f1">
+                <propertyInstance Id="c47d3026-c48b-4ad0-ad14-72f4e0f2eaec" name="IsUnsafe" value="false">
+                  <elementDefinition Id="e5fa4017-9b95-45c5-a988-e61e42ccd528" />
+                </propertyInstance>
+                <elementDefinition Id="2790b372-ce95-4a97-b1ed-f732e1766c2c" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="b7c814e0-1183-4c66-9e17-5a6ab1822ceb">
+                <propertyInstance Id="4544f848-307f-4527-9ff6-681bcaf3ea7a" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="827c702c-f9bd-4a46-a45f-d64e5695b9b0" />
+                </propertyInstance>
+                <elementDefinition Id="1706d2fb-c83a-46dc-b6c2-e64995f6c6a1" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="186339ae-76af-4582-935b-c3c064342824" />
+        <generalsInternal>
+          <generalization Id="f07bd6e2-e970-4155-9938-a9f34292cac8" isSubstitutable="false">
+            <classMoniker Id="7e32fdf5-d7a9-4389-a3b1-da08006c9267" LastKnownName="BaseController" />
+            <elementDefinition Id="6f4b5a91-4129-4357-bc01-c0b252167f73" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="f09cb29c-13ab-43af-bec4-e1bec4ba67aa" name="AuthenticateService_OnFail" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="314e8c1f-94ce-468f-a639-4be1b6433f6e" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=(Name=AuthenticateService_OnFail OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=EventArgs)])" tag="ViewCode">
+                <elementDefinition Id="6f3e03b3-d0b7-4d8f-95f0-0b951eecf162" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="5127761f-95ca-4c25-895d-163b5792d1cf" name="method" profile="CSharpProfile">
+                <elementDefinition Id="87975177-8bc6-4e4d-953c-444c986ea23d" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0a095b28-87eb-4808-9e9f-9344f6e0e0bf">
+                    <propertyInstance Id="c7dbd48e-e97b-45ed-a843-ce979b1ac6c8" name="ClrAttributes">
+                      <elementDefinition Id="dd28c670-a2b0-4a7b-92ea-8d3c687250f4" />
+                    </propertyInstance>
+                    <elementDefinition Id="cd968edd-a441-4d6a-9f9c-348291e6c0c1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="85bad747-f0a8-4008-adb2-434330f2c5af">
+                    <propertyInstance Id="e9867db1-7bf4-4a50-bfca-82b5d4503edd" name="IsPartial" value="false">
+                      <elementDefinition Id="a5c9a677-20f7-4b1d-b1ae-ce8c35d87885" />
+                    </propertyInstance>
+                    <elementDefinition Id="4445bcb0-a22c-4db9-90b6-1c391c5d503a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5394a280-2de6-48fe-b919-725350b9c288">
+                    <propertyInstance Id="446b9545-65fd-4d72-8290-43813dedf227" name="IsUnsafe" value="false">
+                      <elementDefinition Id="36fe3edb-b520-4250-aa8c-f59795172aa1" />
+                    </propertyInstance>
+                    <elementDefinition Id="1fac36b9-1959-4545-9a13-28d78c60641d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2f7967c3-12df-4e8a-ab41-323ca9a7c235">
+                    <propertyInstance Id="f5d0ba87-0de1-4a24-bf02-9c5c9b3a00e8" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4098548f-fc72-4c48-8dd7-21140d3043be" />
+                    </propertyInstance>
+                    <elementDefinition Id="900d67f6-780b-44b9-927d-49fe5ad89004" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e482b4b7-b142-434b-b092-ad1e80fa71ff">
+                    <propertyInstance Id="bf216e77-810c-46be-8b65-7f8da8a194a8" name="params" value="false">
+                      <elementDefinition Id="3cafa305-0b8a-47fc-98fb-5854f728175e" />
+                    </propertyInstance>
+                    <elementDefinition Id="f791346b-d4ec-445b-bc40-9076d063e68e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="4c2b7b02-06ac-429d-8895-0d39aeb68c0f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4dfc8a14-e21f-4140-8f68-bfea34dc794c" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="097eb374-c87c-4582-84d4-8d38e319d9ae" handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=(Name=AuthenticateService_OnFail OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=EventArgs)]) ParameterIdentifier=sender" tag="ViewCode">
+                      <elementDefinition Id="ae33a794-b823-4076-a647-75b39b4976a8" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="c09cd086-890e-49ab-a9dc-27518fdf5914" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="858bec94-373d-4663-a9f8-8903bcaf93d5" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ab5effa9-a1ed-465f-b393-aebd5e200826" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="648cb853-14a8-4b4f-85b5-042e173d9f57" handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=(Name=AuthenticateService_OnFail OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=EventArgs)]) ParameterIdentifier=e" tag="ViewCode">
+                      <elementDefinition Id="e0232263-b08c-4c3a-a0e4-eed115cff34a" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="82e6852b-b175-4825-bae4-6971501b5a89" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7ea8de2c-2a47-4277-9e1f-beb9522caf82" LastKnownName="EventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="633c50de-913d-4f05-9fd6-d17239b651db" name="AuthenticateService_OnSuccess" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="f2e6521b-4be4-4ffb-a0c0-3036efdbabbe" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=(Name=AuthenticateService_OnSuccess OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Namespace=Timetable.Base Type=AuthenticateEventArgs)])" tag="ViewCode">
+                <elementDefinition Id="013a98ef-cb45-4a17-97ab-a14e03c7bb63" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="73bc8cd6-814b-4161-8041-ed4fbe950f0c" name="method" profile="CSharpProfile">
+                <elementDefinition Id="9ee80c96-7a21-4842-9799-b74426d2e8c2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9b808958-a25e-426d-a068-e57e7e67478f">
+                    <propertyInstance Id="bc57404a-8945-411a-a6b1-409be5252c2b" name="ClrAttributes">
+                      <elementDefinition Id="19eccaf5-0c8f-4f00-b0cd-ae62fb55a402" />
+                    </propertyInstance>
+                    <elementDefinition Id="9b5058fa-0070-4793-bc84-a57e3501ea4c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="664b33db-dca1-4c60-9914-53836c78c034">
+                    <propertyInstance Id="a66ce592-44b2-4b54-af9c-067213c48066" name="IsPartial" value="false">
+                      <elementDefinition Id="ab489ffd-7c23-4633-b8a7-5667d56a9fcd" />
+                    </propertyInstance>
+                    <elementDefinition Id="470a83a7-3ec6-4072-bdbf-d73dc7957f84" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="23860b6f-1135-4014-af92-3631c47304c0">
+                    <propertyInstance Id="d6263912-f8a8-4cef-a5bb-e9ba53e346b5" name="IsUnsafe" value="false">
+                      <elementDefinition Id="f6ac42f7-f4ab-49bd-a0ef-c7359d87fb6b" />
+                    </propertyInstance>
+                    <elementDefinition Id="4aa8f54c-134b-4c2b-8a6b-dde5d6028cac" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="528723ea-0faa-492b-8656-09c408a25766">
+                    <propertyInstance Id="b4d448cc-76f4-4fa4-a788-69de8856c181" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="7b5dcb44-d380-4719-98bd-baa98ab6af95" />
+                    </propertyInstance>
+                    <elementDefinition Id="31804557-aedb-48f7-bbf4-ea7d99eb74a7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="14363f34-0003-47a6-bc21-89428e6d95ac">
+                    <propertyInstance Id="07a79601-de96-40f5-89d9-d9679b25596a" name="params" value="false">
+                      <elementDefinition Id="09e0c071-fa4c-479c-9863-e36e939c59f6" />
+                    </propertyInstance>
+                    <elementDefinition Id="3e7be1bc-d6fb-4739-b4a2-15c9e36a3d29" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="c34c4004-9bff-453a-af26-b50bea4ef02d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6fd13ad0-717b-40f7-950d-af936815fa9a" name="sender" direction="In">
+                  <referencesInternal>
+                    <reference Id="8eb42519-8454-462c-8c2b-e11d42551439" handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=(Name=AuthenticateService_OnSuccess OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Namespace=Timetable.Base Type=AuthenticateEventArgs)]) ParameterIdentifier=sender" tag="ViewCode">
+                      <elementDefinition Id="04d6c3e0-9cff-4bbb-b683-68298acd9a6a" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="c821355e-6e71-44b3-b46b-04eb2be0f9c9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="858bec94-373d-4663-a9f8-8903bcaf93d5" LastKnownName="Object" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="38dd98dc-49c0-4598-b051-40c143e7a8df" name="e" direction="In">
+                  <referencesInternal>
+                    <reference Id="cf3a13e9-4482-4d6c-a343-aeac9076fc96" handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=(Name=AuthenticateService_OnSuccess OverloadingParameters=[(Assembly=&quot;file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.0/mscorlib.dll&quot; Namespace=System Type=Object),(Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Namespace=Timetable.Base Type=AuthenticateEventArgs)]) ParameterIdentifier=e" tag="ViewCode">
+                      <elementDefinition Id="f7a70ab1-4f3b-4b6c-8028-72b3670e2712" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="8c16295c-163d-403a-b5b6-ea7f32d2cf20" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f00b9c8f-0edb-431b-89ee-861117053349" LastKnownName="AuthenticateEventArgs" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d12e3dd9-058c-4dee-8985-6009cdf1f607" name="SignIn" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="052f7a75-1030-42e6-bbfa-1dd9a60706ab" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=(Name=SignIn OverloadingParameters=[(Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Models Type=SignInModel)])" tag="ViewCode">
+                <elementDefinition Id="7716c7b2-79fc-42c9-9c9d-7e113d5a3383" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b40f1278-6b6f-4a72-be9f-82708221d909" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8f1257c7-b4ec-4eec-ac49-6abf7302b83b" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4e14cd2a-28c9-4152-83b6-2250ab695276">
+                    <propertyInstance Id="0801d802-b6e7-4369-9c5d-23ba6b493d38" name="ClrAttributes">
+                      <elementDefinition Id="aec15293-da94-45ab-a29c-78d070e85f14" />
+                    </propertyInstance>
+                    <elementDefinition Id="a7fda503-041a-4f7c-96d8-716ffbe76391" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ab2866e0-488f-4ad2-9327-832707d0f758">
+                    <propertyInstance Id="c140fded-b0b4-490c-927e-edefb3e15516" name="IsPartial" value="false">
+                      <elementDefinition Id="1b708c74-5345-4903-85c4-068034d1636a" />
+                    </propertyInstance>
+                    <elementDefinition Id="3aae9ab6-c1f0-4c3e-89a8-9e24f3255452" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1359f9f7-53ae-4f5d-87c2-4e11adc48784">
+                    <propertyInstance Id="f587d691-db8d-4221-83d3-ae20c7987681" name="IsUnsafe" value="false">
+                      <elementDefinition Id="5461d9da-77fc-4b88-a1b6-70b7ae8915d6" />
+                    </propertyInstance>
+                    <elementDefinition Id="f33ffc08-707d-4bd5-a416-77f4b8435aa1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="07bb22fe-5c0b-4503-a2e6-b55e4e209499">
+                    <propertyInstance Id="581ec76c-d2a7-437d-99e7-fea2a437f59e" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="0b6dec94-6e38-4cb4-8a4c-86cb1615b91a" />
+                    </propertyInstance>
+                    <elementDefinition Id="e39ee54f-92ef-4bd0-8b59-a14b51955d6c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b355ee7c-c7e7-4179-89f5-addab19150bc">
+                    <propertyInstance Id="aab52dc2-e4b9-46ba-9551-410ec1b38caa" name="params" value="false">
+                      <elementDefinition Id="dd79d983-9011-4031-b394-e0c35473390d" />
+                    </propertyInstance>
+                    <elementDefinition Id="4963b9ee-94f1-46d1-bf24-39e0c5c84b30" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="2f01bf1b-cdbc-49ba-b2da-fd00b3c80d10" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="df2915d7-d7cc-4a89-9b80-6009179fef2b" direction="Return">
+                  <elementDefinition Id="1691f893-0969-4592-955c-45bf1c0ada5b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b755eb11-b751-4868-86d7-279bbf7893da" LastKnownName="ActionResult" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d6011571-5df3-4155-93ec-354ab818105e" name="model" direction="In">
+                  <referencesInternal>
+                    <reference Id="2efb2f46-f2b9-40a7-87aa-3c91e90d2f35" handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=(Name=SignIn OverloadingParameters=[(Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Models Type=SignInModel)]) ParameterIdentifier=model" tag="ViewCode">
+                      <elementDefinition Id="66ada7a3-da51-46c1-8a83-5afa9f77bd00" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="40a64532-888a-4aa5-a9ef-ae6114772295" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="af5c6d5b-af8c-48c5-b947-127fbb694df1" LastKnownName="SignInModel" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="780027ed-acc1-4647-a3e8-fe0690fb8dea" name="MainController" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="0dda71c7-edd3-4b5b-89ba-3d88615ae02f" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=.ctor" tag="ViewCode">
+                <elementDefinition Id="0028a6f8-a358-439b-9f7c-fb207627719c" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="7b92149d-8cdb-4d70-89e7-78e74255e6e4" name="method" profile="CSharpProfile">
+                <elementDefinition Id="75b91a68-760c-4746-bbab-503e2b45bdf5" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2af38185-82be-4998-bf32-1b880cdfc329">
+                    <propertyInstance Id="95a73f8d-fbfa-4b45-8b2d-bb7dcf6d6f27" name="ClrAttributes">
+                      <elementDefinition Id="4b5cd566-e5e0-436d-98b6-bb8e626eacb4" />
+                    </propertyInstance>
+                    <elementDefinition Id="b8a0a1b3-3aee-4050-88f4-0f965cc79a17" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="109dc15a-fe88-4a6e-9c8e-bd51f7affa2e">
+                    <propertyInstance Id="28edbfdb-df49-4c66-9290-526b4a7391c6" name="IsPartial" value="false">
+                      <elementDefinition Id="1b83e24a-4e13-427a-ad9a-609e56d4b721" />
+                    </propertyInstance>
+                    <elementDefinition Id="48fdbb6b-ae0f-41e8-a539-f00519358bc1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9935aaa4-6f31-44e5-9808-126ff0545c2c">
+                    <propertyInstance Id="94ddbb56-ded7-4612-a4eb-c446335e7ac0" name="IsUnsafe" value="false">
+                      <elementDefinition Id="92920145-8ef5-44be-9a24-0979084e941f" />
+                    </propertyInstance>
+                    <elementDefinition Id="1a789234-74fe-49da-a117-b56925e240b6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="19b1c667-93ac-4237-bff1-6b7102d8ec3b">
+                    <propertyInstance Id="2ada0146-1383-4558-bee1-1d73c77e13de" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="3dbddbf4-3f73-4a0f-a827-104193861f5f" />
+                    </propertyInstance>
+                    <elementDefinition Id="2bedb309-5a2d-40a7-9aa6-8df383e3e5a7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="07bc70db-7356-4a4f-bb1f-fde3d5992e8c">
+                    <propertyInstance Id="cefaa859-48d9-46c1-bc1a-800b33666cfb" name="params" value="false">
+                      <elementDefinition Id="56900952-7507-4bc9-8264-4aa2fbab9fb7" />
+                    </propertyInstance>
+                    <elementDefinition Id="b58f9f98-11ed-43ed-b3d7-7e32ba0c8d79" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="16c97407-1d17-480d-9a2d-5360a51b299d" />
+          </operation>
+          <operation Id="17fd4f9e-7444-4051-8dc5-b1d8d44cf5d9" name="Index" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="725c6658-a3b5-43e3-8cc0-0fba4df69cea" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=Index" tag="ViewCode">
+                <elementDefinition Id="f153b206-32e7-47cc-a744-6258689e9710" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9bb86bad-635a-4281-8ac9-2ba1354dbd7d" name="method" profile="CSharpProfile">
+                <elementDefinition Id="64568f0c-6a3b-4531-a0db-3aba12635eb9" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="613b731a-f0c1-4d92-ad17-c0c784159d2c">
+                    <propertyInstance Id="48c63b94-cb06-46c8-9a9e-43b8e29ff75d" name="ClrAttributes">
+                      <elementDefinition Id="10dd25b5-d7de-4948-8262-f356c6732dda" />
+                    </propertyInstance>
+                    <elementDefinition Id="974fbb9f-0d48-4155-aa89-170f12d1a503" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="08424779-181d-4183-8ccb-6b4fe157eca4">
+                    <propertyInstance Id="f8357a7c-214e-4687-b0d8-fc8886f8d99f" name="IsPartial" value="false">
+                      <elementDefinition Id="b11e72ef-2b65-43e8-b3bd-7e8181c4ae0d" />
+                    </propertyInstance>
+                    <elementDefinition Id="179e47a6-582b-431d-9bf9-fce43148696d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7aae2f95-efeb-4ca0-ab69-aa1e1c563fc6">
+                    <propertyInstance Id="02b3a324-8727-4fc2-897c-69a51dc0ef1a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="46e80957-a56c-4033-b36b-7abcd1cdb9e9" />
+                    </propertyInstance>
+                    <elementDefinition Id="534aefc7-7c94-4741-92a5-bddb5a703e0f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e0919d1d-7f37-498b-9715-1292a6ebbf02">
+                    <propertyInstance Id="11633ec3-4c99-4f86-9b96-d2be568b21a4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f19c98df-7b63-4870-b142-a5d10034d385" />
+                    </propertyInstance>
+                    <elementDefinition Id="32d0d310-a6a2-4ab9-b0df-9ddbb5385056" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="be2ebbce-6090-4f43-b52d-95c7d9254f04">
+                    <propertyInstance Id="7a2252fc-4964-40ae-9b40-af1d8668e9b8" name="params" value="false">
+                      <elementDefinition Id="a5ff5efa-27a1-4d19-b7d1-a38ec3e8da86" />
+                    </propertyInstance>
+                    <elementDefinition Id="41490f54-399a-4f51-b232-ffada2cd69ff" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="cef243d7-425b-4a52-8943-b21a977ff41a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a2906a94-4f6b-4807-90b6-5e14cdf50afa" direction="Return">
+                  <elementDefinition Id="4048ba1d-bd1d-4ea3-94dd-43ccff234680" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b755eb11-b751-4868-86d7-279bbf7893da" LastKnownName="ActionResult" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="2cedf13f-a24c-4b19-a012-f96d2721fb10" name="Schedule" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="4b57393f-26dd-4bb0-b3c4-686981259944" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=Schedule" tag="ViewCode">
+                <elementDefinition Id="021ebabb-ce7e-42a6-a6d8-76c77bd23fd5" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="43e70936-32c9-4c8e-87f0-c94becf7e36a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="4a3ab2c4-5921-4363-a38a-9b23195fc5a3" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2fa52daa-e547-45c1-84c0-a35afc42db65">
+                    <propertyInstance Id="16538675-1796-428c-81e9-78e4ec883565" name="ClrAttributes">
+                      <elementDefinition Id="741090b2-d6fc-42fa-af2d-2eeee24b3115" />
+                    </propertyInstance>
+                    <elementDefinition Id="8433f1a0-1e6f-4733-bd53-08afe8f48c74" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9d17222b-92f6-460a-9482-481a3bd10d84">
+                    <propertyInstance Id="cda8fa71-2264-4482-b4a3-182a7f8628d5" name="IsPartial" value="false">
+                      <elementDefinition Id="90d0070e-be38-46bf-a7b3-98c93fa7f5ca" />
+                    </propertyInstance>
+                    <elementDefinition Id="8c22e37e-03bb-4e66-9e64-d04e9a15ae84" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="45ecdb80-557c-4742-aa24-328c2b2096be">
+                    <propertyInstance Id="578f181e-8675-4cc7-945f-f2243fb76ab0" name="IsUnsafe" value="false">
+                      <elementDefinition Id="972d11c5-199e-47d8-a92a-605397d092eb" />
+                    </propertyInstance>
+                    <elementDefinition Id="5262bd34-f329-4b04-9e17-2c40d9cb9cfd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0585867b-991e-41f9-8441-9bbbe4250782">
+                    <propertyInstance Id="ab81260e-d619-41f1-84f4-31325fa99a09" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="ab1b05bf-489a-4281-a820-18b70ae24277" />
+                    </propertyInstance>
+                    <elementDefinition Id="837b1bd9-a136-44d1-9456-8984af7d480f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dc822e70-304b-45c4-acbd-ada98608fa6f">
+                    <propertyInstance Id="9bfe785d-7a34-4dda-ab02-5ff9c27c1f5e" name="params" value="false">
+                      <elementDefinition Id="11755485-f216-41c7-94b2-ead4be6d36d8" />
+                    </propertyInstance>
+                    <elementDefinition Id="0c375f57-48e6-4aaf-b634-60e086069e5f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ff8ecf00-6394-4aba-a742-44af11cdb970" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d41bae6b-6f50-48be-90a6-63465315733f" direction="Return">
+                  <elementDefinition Id="a1d8c848-0713-46cc-b4db-0d73b30f656e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b755eb11-b751-4868-86d7-279bbf7893da" LastKnownName="ActionResult" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6302ee61-a1a3-441b-9abf-902ba786aa9d" name="SignIn" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="5280461e-f185-4941-acc2-f5c3762a63ba" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=SignIn" tag="ViewCode">
+                <elementDefinition Id="1c217ca7-e77f-4bac-b676-933a633cfe44" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="c449e3c1-3702-4e06-9ff6-c7d04c73c980" name="method" profile="CSharpProfile">
+                <elementDefinition Id="e93f53b4-a90c-48ae-a958-b3618d53e1e8" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="40f326e4-906e-462e-8264-cfd654982ca4">
+                    <propertyInstance Id="d48c04a4-553e-4b76-bb92-f62050bb9fad" name="ClrAttributes">
+                      <elementDefinition Id="35d76d32-98f8-4469-a6a6-efd6f7ed993a" />
+                    </propertyInstance>
+                    <elementDefinition Id="9bb1f6e4-afd3-4926-9819-c6d07521c40a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c6cd44ba-3aaa-4308-b4a4-144111a30af8">
+                    <propertyInstance Id="59b2e059-c04d-4c86-813b-387b3f5bcb66" name="IsPartial" value="false">
+                      <elementDefinition Id="8eb4ab7e-054d-4009-b6a2-23a4fa63a69f" />
+                    </propertyInstance>
+                    <elementDefinition Id="2231bc5b-155a-41e4-aac8-a4f148b5f1fb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="62080b24-d36d-466c-94d1-28d73c0234f5">
+                    <propertyInstance Id="6d927764-0cec-4d86-b168-4cd4ed61956f" name="IsUnsafe" value="false">
+                      <elementDefinition Id="6d04576f-de43-4ec6-8735-674b979841b9" />
+                    </propertyInstance>
+                    <elementDefinition Id="75a20208-b004-4a16-b764-32f22a9e4739" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f636fd53-4da5-4772-9773-7c1431918416">
+                    <propertyInstance Id="33dc78e1-7613-4010-a9a9-ed577cef0de4" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="661f440f-ef37-4171-b98e-f669a5a8ea0d" />
+                    </propertyInstance>
+                    <elementDefinition Id="bcc7e69d-432d-427b-ba3d-d3fb21089d4d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c6fc75a6-e553-45fa-99f1-91d838d99b3d">
+                    <propertyInstance Id="a4b897b6-76b2-42a7-b31b-14610d18a051" name="params" value="false">
+                      <elementDefinition Id="be674901-5b1d-4057-ab51-cb8d5864d944" />
+                    </propertyInstance>
+                    <elementDefinition Id="27638a0f-3e63-441e-81c4-4330a9bec6ff" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0a1a7390-2a2f-4ea4-9847-8e7d23d110a5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="50e38b80-d733-4b73-a4f6-b451cbcd5893" direction="Return">
+                  <elementDefinition Id="b37952fe-6d3b-4504-8701-dcb6b5001885" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b755eb11-b751-4868-86d7-279bbf7893da" LastKnownName="ActionResult" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0297446a-69c0-4bac-8065-d1402b070dcd" name="SignOut" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="0486cd9b-33c9-4961-80a8-7bea60ca79e2" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Site.Controllers Type=MainController Member=SignOut" tag="ViewCode">
+                <elementDefinition Id="a405e7b8-d737-4211-9efc-c8dae1ec53fb" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8dea6676-00fd-47e4-ab4a-4430c95e9623" name="method" profile="CSharpProfile">
+                <elementDefinition Id="d06dea83-819c-4499-ba52-9c1d87e018c4" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="66d81324-bd5e-4a38-8c68-7b23ad86524c">
+                    <propertyInstance Id="eeac3d45-1668-4d78-ac90-c567901c1a30" name="ClrAttributes">
+                      <elementDefinition Id="590adc5f-4e90-40e1-a1ac-1ae8946d6f02" />
+                    </propertyInstance>
+                    <elementDefinition Id="a650886e-f07b-45c0-bac0-7d708b3a7187" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e67cb78f-fb3d-4a9a-92e0-bffe2d150f9b">
+                    <propertyInstance Id="42d84572-e16c-4e18-ab70-e7930365a30c" name="IsPartial" value="false">
+                      <elementDefinition Id="e317a171-30d0-4c8b-b752-2d053fe04a1a" />
+                    </propertyInstance>
+                    <elementDefinition Id="cf74b416-78aa-458f-acc6-f4ca4b5ea25d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d81ae165-98d9-48b9-9b6b-f119ccb8f2e3">
+                    <propertyInstance Id="1839ac63-6593-4004-b230-88c4645b16d1" name="IsUnsafe" value="false">
+                      <elementDefinition Id="5ba5b45b-7bc9-4afb-8c2d-b96dce5d0764" />
+                    </propertyInstance>
+                    <elementDefinition Id="f35f8bff-e414-41cd-9cf9-1fd3a96af76e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="85983b26-c314-4449-988f-2e262d2d7c09">
+                    <propertyInstance Id="f2f28dc4-c866-42bd-9721-b811be1ed56a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a0b24b73-aa70-4a33-bd56-a428c80588bf" />
+                    </propertyInstance>
+                    <elementDefinition Id="ab9eeebf-66f9-49f2-bc97-e874d0edd1ba" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b46285b3-8b69-4324-bb9d-27bb8d300a0c">
+                    <propertyInstance Id="2c6d1f96-70f3-4ac6-879a-adac50786645" name="params" value="false">
+                      <elementDefinition Id="8469e62b-b20b-44d5-9aac-2a8b1ce3f05c" />
+                    </propertyInstance>
+                    <elementDefinition Id="6d978320-e53e-4e9c-90e4-76e4cc3e04bd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="f08ce8e0-cc82-4bb9-accc-659077f9884a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="29031971-6f0d-470f-8313-ffadefa2ac3e" direction="Return">
+                  <elementDefinition Id="c799b533-cb25-4cb0-b789-d21b21f1c8af" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b755eb11-b751-4868-86d7-279bbf7893da" LastKnownName="ActionResult" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="858bec94-373d-4663-a9f8-8903bcaf93d5" name="Object" isAbstract="false" isLeaf="false" cachedFullName="Timetable.Model::System::Object">
+        <elementDefinition Id="5023fc96-f982-4748-95a9-755ded89b385" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7ea8de2c-2a47-4277-9e1f-beb9522caf82" name="EventArgs" isAbstract="false" isLeaf="false" cachedFullName="Timetable.Model::System::EventArgs">
+        <elementDefinition Id="f6ac09a1-b2f4-469f-b5a3-23e88a9acf3a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f00b9c8f-0edb-431b-89ee-861117053349" name="AuthenticateEventArgs" isAbstract="false" isLeaf="false" cachedFullName="Timetable.Model::Timetable::Base::AuthenticateEventArgs">
+        <elementDefinition Id="0e8215ce-29ed-4025-9cf5-bc824fd147cf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b755eb11-b751-4868-86d7-279bbf7893da" name="ActionResult" isAbstract="false" isLeaf="false" cachedFullName="Timetable.Model::System::Web::Mvc::ActionResult">
+        <elementDefinition Id="15ceb738-1213-4e65-b6db-84e7c2ed54f9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="43585b78-cc2b-49f1-bc5f-af8f270558c1" name="NinjectWebCommon" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="ddc052bf-2887-4841-acb1-1456098c278e" handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Data.App_Start Type=NinjectWebCommon" tag="ViewCode">
+            <elementDefinition Id="f14f732a-ce82-499e-9cd9-93b3bf78b598" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="b1e20d28-a22f-4915-9af5-5c00fb335f14" name="class" profile="CSharpProfile">
+            <elementDefinition Id="f4c1adf2-bdbe-4880-8683-e1a7a65199e3" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="9428756f-c0b5-42c6-b847-60c6df8b9800">
+                <propertyInstance Id="4ffbd1b1-1d61-44f2-818b-ff235cbf3d7f" name="ClrAttributes">
+                  <elementDefinition Id="52bd2c51-e653-4990-b6dd-a567e7a19583" />
+                </propertyInstance>
+                <elementDefinition Id="bcf8952c-30ec-4e96-af0c-3b95c5860c93" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="abe94b6b-5123-4d7b-a146-f7146637d56b">
+                <propertyInstance Id="e2bdb0fd-66a5-41f2-be14-6af8dc9b477a" name="IsPartial" value="false">
+                  <elementDefinition Id="451bef2e-00fd-437b-b5e4-8955419afa67" />
+                </propertyInstance>
+                <elementDefinition Id="fb2034c6-a46f-48d9-b860-3034de6b3a71" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="1c61900f-76ea-4dd1-b283-e19e071a08b0">
+                <propertyInstance Id="2af4b8ee-1709-4b89-8c48-e6f222a79ba9" name="IsStatic" value="True">
+                  <elementDefinition Id="d489f3e6-e2a0-485c-b26a-fc1b9abb06ec" />
+                </propertyInstance>
+                <elementDefinition Id="2614fd39-bfbf-4a8e-89cf-0898b781299f" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="5b020971-b210-4696-abe1-a45a0bd045e1">
+                <propertyInstance Id="91f18506-9029-4cc4-be3d-f853f43da0c2" name="IsUnsafe" value="false">
+                  <elementDefinition Id="f7524513-259d-446b-85c9-04fc4364ae63" />
+                </propertyInstance>
+                <elementDefinition Id="4ebe06db-7797-4806-8032-46544fab073d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="411797f8-d79e-420a-8002-5d16bc9fabd5">
+                <propertyInstance Id="9665095a-cf7f-42a6-8d1c-81db770aac54" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="18ee4fd9-d5a6-4732-85ea-0ae231c4c0d8" />
+                </propertyInstance>
+                <elementDefinition Id="a227c9b5-6d6c-4994-bd54-f5792352a6a4" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="d4fa0108-c669-4650-90b2-37642d299a0c" />
+        <ownedAttributesInternal>
+          <property Id="593ed60c-6e92-4b36-97ed-aee66e950d80" name="bootstrapper" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="2da01734-e5c3-4c89-834b-5611a2aa2ed9" handle="viewcode://./CodeSchema_Field?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Data.App_Start Type=NinjectWebCommon Member=bootstrapper" tag="ViewCode">
+                <elementDefinition Id="49084c41-a567-4523-b236-adba7281638d" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e6e0afd9-749b-4e0d-949c-b612d5f33ddf" name="field" profile="CSharpProfile">
+                <elementDefinition Id="35cf41e4-07ec-4ffa-9023-9b71574b91ae" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="90abdff9-507f-442d-9a11-fa5db8055668">
+                    <propertyInstance Id="f29e4987-5913-445f-aa95-a73aa2dad045" name="ClrAttributes">
+                      <elementDefinition Id="971bb74e-3b2d-42a1-9409-e76bdba3c578" />
+                    </propertyInstance>
+                    <elementDefinition Id="7073dd98-b439-4bae-87bd-099ed4a90d0b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2385a466-738d-4f3c-9ba9-5f56bb49547b">
+                    <propertyInstance Id="e7a36266-f736-4042-933c-e8122306571c" name="IsConst" value="false">
+                      <elementDefinition Id="d730e94b-b9d0-48d0-875b-f71ff9a1728d" />
+                    </propertyInstance>
+                    <elementDefinition Id="541252d0-5bd0-4cd1-9681-17f57aa9462d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b538f3da-5924-4c88-9fe2-6029c954ed8e">
+                    <propertyInstance Id="7f2fc5f4-3146-4374-bfb7-46f6482bfff6" name="IsNullable" value="false">
+                      <elementDefinition Id="5a360c04-5a85-4cb9-ab21-7d61fba3a160" />
+                    </propertyInstance>
+                    <elementDefinition Id="bf1ac2b4-4418-44d1-a346-a8e3f3eda0ad" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="bc193e1f-baba-41d8-a1a7-81a02c85a4b1">
+                    <propertyInstance Id="8ef5beb6-5352-4c10-974c-74f93fccd892" name="IsVolatile" value="false">
+                      <elementDefinition Id="c4bc5c50-d730-4a7a-8c50-4d007dde6e86" />
+                    </propertyInstance>
+                    <elementDefinition Id="ec275be8-6574-4439-a740-14aa2aa1d652" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b247baca-d44a-46d8-8e72-a091a2df0118">
+                    <propertyInstance Id="df8c0642-7146-48b2-8642-0eab7403c49d" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="4e3c54a6-3960-49c3-8695-5a5de9340050" />
+                    </propertyInstance>
+                    <elementDefinition Id="83f59f90-da0b-4c27-98c9-ae53b087b316" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="be92ff19-3968-468a-8469-51e2f1678117" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="22597d69-ec45-4e97-ba23-0f7cdac93134" LastKnownName="Bootstrapper" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="106d92f7-e7a6-4e8d-9875-6c5f0a10a50c" name="Start" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="20de1942-7bb7-4c6e-81d2-6cb1ebe0132e" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Data.App_Start Type=NinjectWebCommon Member=Start" tag="ViewCode">
+                <elementDefinition Id="66fc2975-c238-4b1d-afe9-9f6505b78905" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="187dd7a1-9081-41e7-9e19-61aac07d6749" name="method" profile="CSharpProfile">
+                <elementDefinition Id="5c307bb0-6f22-449b-98a2-867a72d8a02e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="036b74f5-6c60-40b4-83d9-3f96e8893482">
+                    <propertyInstance Id="e56b6a58-7c77-4a31-8ad8-d47d2232fe16" name="ClrAttributes">
+                      <elementDefinition Id="6da128e6-7da6-4383-a775-365b86d5edc6" />
+                    </propertyInstance>
+                    <elementDefinition Id="f098e34d-3634-48cd-b0c5-c2a17dfc7989" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c97ec902-9b50-4ed1-9078-26c5fca21cff">
+                    <propertyInstance Id="be7e51cb-8675-42f5-b422-df0e8d19c2ba" name="IsPartial" value="false">
+                      <elementDefinition Id="0d6c05a6-31b8-476f-bdbb-e9bdc2484091" />
+                    </propertyInstance>
+                    <elementDefinition Id="df86bf61-17f6-4c4c-a633-94f1fe29d408" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7d29c68c-c28d-4787-820b-5524e1dc3cd9">
+                    <propertyInstance Id="8bf62144-b777-4db7-a70a-c02d93298e64" name="IsUnsafe" value="false">
+                      <elementDefinition Id="4dbdf4af-a11a-459e-a685-2d7bf93378e4" />
+                    </propertyInstance>
+                    <elementDefinition Id="fc7c3a96-033d-42a7-91ad-22a1a66f5995" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0ca842ad-5b5d-46d5-801a-6c2a0e205d64">
+                    <propertyInstance Id="09ed947d-7ed6-4a1c-a766-c06d93cf3fe9" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="09859d6e-152f-4e29-8df6-dc5e53395a91" />
+                    </propertyInstance>
+                    <elementDefinition Id="aad41565-5807-4dfd-bf8f-c8dcef9623c0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="73523af2-eb50-4ebf-bcaa-824f69bc6e4b">
+                    <propertyInstance Id="6ac1ae8f-59e6-45b8-81a3-5e2079299295" name="params" value="false">
+                      <elementDefinition Id="eb348e80-4a8a-48f5-8db4-874bca2b40b0" />
+                    </propertyInstance>
+                    <elementDefinition Id="2e761c32-dc61-4c77-aaa1-4e2d955e029e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="27122e9d-0908-446b-979c-90dca5479fbb" />
+          </operation>
+          <operation Id="c6c3b272-fc72-4a30-99ff-4dbd70126b34" name="Stop" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="7740e36e-3072-43de-a372-b07eb69c47d7" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Data.App_Start Type=NinjectWebCommon Member=Stop" tag="ViewCode">
+                <elementDefinition Id="e408605c-681e-4e00-b34c-a1436b295936" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="1c4be898-8cfa-447b-9c39-649aaccf973a" name="method" profile="CSharpProfile">
+                <elementDefinition Id="8f1da102-4711-4275-97f7-b32773e7f7d8" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d8f33918-5bae-43ea-9502-9d5948fe8142">
+                    <propertyInstance Id="9a662452-1071-4e0f-859c-28485fc2c4ba" name="ClrAttributes">
+                      <elementDefinition Id="d1d6a9aa-aaf3-487c-87ac-f451b463fcf3" />
+                    </propertyInstance>
+                    <elementDefinition Id="231dbe57-7c53-420d-80d9-6d7b1c3848fa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4bd1c23e-9e10-4168-bccd-d6133c1ed2b2">
+                    <propertyInstance Id="7f24942a-9dc1-4296-9c67-9c74694b8bba" name="IsPartial" value="false">
+                      <elementDefinition Id="918b1dc8-5062-41ab-ac71-889b4ca47d6b" />
+                    </propertyInstance>
+                    <elementDefinition Id="31dca648-2f05-46de-8040-95949bf00493" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5bf881b4-c7a9-4fca-add8-b96362a43101">
+                    <propertyInstance Id="ff241136-6e14-4a7f-ad2b-626cda57cc96" name="IsUnsafe" value="false">
+                      <elementDefinition Id="849f2af7-6c4e-4eb5-ba11-5b94d97b27cd" />
+                    </propertyInstance>
+                    <elementDefinition Id="8dbdcdfb-998e-45cb-a574-b0849fe6f78d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2a0bb517-5570-4036-88de-831c4add5362">
+                    <propertyInstance Id="21963610-700b-4f91-9d13-4bd22ac2e017" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="f4bcc0f9-79ac-4c73-8786-f02bef2b07a7" />
+                    </propertyInstance>
+                    <elementDefinition Id="dfa0a5e7-1467-4cc2-b0ac-dec9c6ae56cd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a57423b5-6fd4-4a54-86fe-1b45f7c77e45">
+                    <propertyInstance Id="a0c0b824-e1cf-4a73-9980-caac1d1b7099" name="params" value="false">
+                      <elementDefinition Id="edce6acb-a59b-423a-964e-3e56ce118e47" />
+                    </propertyInstance>
+                    <elementDefinition Id="1a12c967-d208-4ca4-8fb7-f919c4d23fa0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="0cf76f20-0f83-482a-b9ef-493f629f7b07" />
+          </operation>
+          <operation Id="99091c25-620e-4ff6-9ac2-bbb6fb6a99dd" name="CreateKernel" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="4ccf004c-14cf-4531-a41f-d728d055f516" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Data.App_Start Type=NinjectWebCommon Member=CreateKernel" tag="ViewCode">
+                <elementDefinition Id="fc610ebe-490c-48f6-9afa-adda60b630cf" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="9957a8f0-6cf8-4d8d-bf15-e90a51f480f3" name="method" profile="CSharpProfile">
+                <elementDefinition Id="2f7ca497-c20d-4670-a3bb-a285a52c6b1c" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7932038b-b46c-40a3-bbf0-99564f1192b5">
+                    <propertyInstance Id="4f766d3a-4d7b-43b4-8c9d-68d0b6837317" name="ClrAttributes">
+                      <elementDefinition Id="f020a9b2-710e-474d-93d7-9604d1740777" />
+                    </propertyInstance>
+                    <elementDefinition Id="55e7e25b-bc4f-4666-a7f1-e07970186ea8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="849ac289-641d-4441-862b-a323e84a5215">
+                    <propertyInstance Id="d9aa985d-88bb-41a2-ac84-61981bc4416f" name="IsPartial" value="false">
+                      <elementDefinition Id="7372b459-a70b-480b-85fd-bb7d74515434" />
+                    </propertyInstance>
+                    <elementDefinition Id="e0f55807-5416-4560-b8a4-77ee7148af8c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5d7b481a-9633-46fa-a74c-88a8ddc13fb6">
+                    <propertyInstance Id="0b176ec4-e44d-4a1d-9422-a83a4ea157ce" name="IsUnsafe" value="false">
+                      <elementDefinition Id="40973207-61b5-4a18-a3b8-78e9ae16db02" />
+                    </propertyInstance>
+                    <elementDefinition Id="481ad78b-4f96-4ca0-b6c9-1771e73de3c3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="40f8011f-2404-43f4-b734-209c0caaa18c">
+                    <propertyInstance Id="f455161f-191c-4c18-ba25-c175f05df522" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9bc7575e-74da-480b-a4f8-3848733fc0af" />
+                    </propertyInstance>
+                    <elementDefinition Id="259fd51c-3e95-4e04-a4fd-7c7e98fb28ff" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="20b1bfca-15c7-4cd9-90f6-73fc1a4c364b">
+                    <propertyInstance Id="89b4e500-3055-4d9b-86c9-53e88644e234" name="params" value="false">
+                      <elementDefinition Id="e9a41460-f11a-4c03-8a6f-99a77c9c75f9" />
+                    </propertyInstance>
+                    <elementDefinition Id="891355a5-f55c-4680-9893-787a85d7fec6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="14653a90-09ec-4cc6-9b12-68c357e99f15" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="707d3aad-9252-4317-8beb-fa0de1620007" direction="Return">
+                  <elementDefinition Id="bac68b90-d12a-4ba5-9a3e-ba99034ceba7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6637d0da-036a-4f41-a554-95ee2de7c840" LastKnownName="IKernel" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="fb6f417d-7608-4604-bec6-bbc862739c10" name="RegisterServices" visibility="Private" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="bc718d70-419c-433e-8265-35a97cd0abd2" handle="viewcode://./CodeSchema_Method?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Data.App_Start Type=NinjectWebCommon Member=(Name=RegisterServices OverloadingParameters=[(Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Libs/Ninject.dll Namespace=Ninject Type=IKernel)])" tag="ViewCode">
+                <elementDefinition Id="19fabba9-4742-4642-8cb1-5b7ac1f13074" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="1d2e3df4-e305-4b4c-916f-c9a82311bf47" name="method" profile="CSharpProfile">
+                <elementDefinition Id="16806868-8016-40fa-8c85-9760269e987f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1f5e4dde-c986-4cde-a8c9-54ac15042f81">
+                    <propertyInstance Id="031c1d33-c57c-4d50-960b-ca36c0e8bade" name="ClrAttributes">
+                      <elementDefinition Id="e8434259-cd3d-4680-8caa-ed4538a87e3f" />
+                    </propertyInstance>
+                    <elementDefinition Id="873db69c-05dc-4250-881e-82df8441c9ff" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="34378f7d-8360-4767-9fa4-07480bba4040">
+                    <propertyInstance Id="00578f4f-3540-4ee6-96ef-24022e5a3bdb" name="IsPartial" value="false">
+                      <elementDefinition Id="1d49878e-a4fc-4ae9-8a27-d52f9ff8582d" />
+                    </propertyInstance>
+                    <elementDefinition Id="15c3caaf-2809-47fc-89d0-9959c0124130" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="99a2eeb6-9357-4638-96f0-39a1a3ad3417">
+                    <propertyInstance Id="cc3f55e1-0acc-464a-9741-2f600c3ab833" name="IsUnsafe" value="false">
+                      <elementDefinition Id="50f35103-9f6b-47ca-85bb-d4d8ef7fff76" />
+                    </propertyInstance>
+                    <elementDefinition Id="569c1703-0465-4cab-a33e-45c06c8c55b2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="96e69912-5f83-4b39-821c-ba7cb7adaa72">
+                    <propertyInstance Id="8ca5aa70-ecf8-4224-86ec-e9e1eceafac3" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="945c2330-1c7f-44fa-a660-3c781bb63c88" />
+                    </propertyInstance>
+                    <elementDefinition Id="c66fbe53-d0ef-41b2-a86c-d3c5f30057b8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="fbfe991a-41ac-4937-bbc9-cd78dcef6ff9">
+                    <propertyInstance Id="e18c9592-f771-40ae-89ac-74e7e0785db4" name="params" value="false">
+                      <elementDefinition Id="ee2fe34c-ba0e-4fa0-a667-64b62cf3bf39" />
+                    </propertyInstance>
+                    <elementDefinition Id="14a683a3-9055-468e-8bea-6803cd1cca62" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ceb0e711-be18-4068-b6b6-90d19687fe7a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b63fef1-6811-4eb1-baeb-850cddbd56b8" name="kernel" direction="In">
+                  <referencesInternal>
+                    <reference Id="694c3438-8711-4c19-ac6f-da4e3975fe43" handle="viewcode://./CodeSchema_Parameter?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Site/bin/Timetable.Site.dll Namespace=Timetable.Data.App_Start Type=NinjectWebCommon Member=(Name=RegisterServices OverloadingParameters=[(Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Libs/Ninject.dll Namespace=Ninject Type=IKernel)]) ParameterIdentifier=kernel" tag="ViewCode">
+                      <elementDefinition Id="87d72463-b242-40ea-91a0-c1ad420a2a79" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="12875cd1-7efd-482a-aef5-f669fadf1dbe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6637d0da-036a-4f41-a554-95ee2de7c840" LastKnownName="IKernel" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="22597d69-ec45-4e97-ba23-0f7cdac93134" name="Bootstrapper" isAbstract="false" isLeaf="false" cachedFullName="Timetable.Model::Ninject::Web::Common::Bootstrapper">
+        <elementDefinition Id="6d07e35a-5bb8-44fa-a22e-ef802a1c3614" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6637d0da-036a-4f41-a554-95ee2de7c840" name="IKernel" isAbstract="false" isLeaf="false" cachedFullName="Timetable.Model::Ninject::IKernel">
+        <elementDefinition Id="d749df98-9a06-4d5e-92e9-20bb3f96d02b" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a0cfb34c-8e78-4b80-9c43-d3ebe4c37c6d" name="Timetable.Model">
+    <elementDefinition Id="37eafb3e-86bd-4662-9de3-8598bead3b72" />
+  </package>
+</logicalClassDesignerModel>

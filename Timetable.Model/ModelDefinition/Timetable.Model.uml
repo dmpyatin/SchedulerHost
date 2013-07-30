@@ -1,0 +1,3218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="37eafb3e-86bd-4662-9de3-8598bead3b72"
+  name="Timetable.Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="c5bfd367-fdf9-46ec-bb75-a0be1b974d90"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=::"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="2a225dfc-1d8c-4c01-95c1-42c284cbfb47">
+      <profileInstance
+        Id="8a9ea48b-ec73-434f-b0ef-453fe6890315"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="0f2a7ea4-cdb5-43cc-98a8-cd2dd286780c"
+        name="Login"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="0d2b1ba3-af35-4ba1-a466-e3c13a412134"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="790fea2b-2f1b-4103-ab4f-126f68fa3dcf"
+        name="InstallerActivities"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="bd718f1f-0f12-400b-9566-b6e50b5a710e"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="bb1694a7-70c2-4767-a581-084265b8c25c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c527c384-1217-4e8f-a4dc-000da95a0818"
+                  LastKnownName="Get connection string"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="a4ac919e-885a-4b3c-bcc6-d3c6c6aa5c58"
+            name="Execute DDL scripts"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b3a28878-7e08-450e-8842-f5a460fe32de"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c27a0463-435d-4e1c-a86d-ad8ba494876c"
+                  LastKnownName="DB fill default data"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c527c384-1217-4e8f-a4dc-000da95a0818"
+            name="Get connection string"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6efc7ded-a726-4e11-aa69-54a3078e7b64"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a4ac919e-885a-4b3c-bcc6-d3c6c6aa5c58"
+                  LastKnownName="Execute DDL scripts"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c27a0463-435d-4e1c-a86d-ad8ba494876c"
+            name="DB fill default data"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0a3a5a01-002f-440c-ae62-d4553fec849f"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="291741f8-fb22-4f4c-a5c1-29849155c05d"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="291741f8-fb22-4f4c-a5c1-29849155c05d"
+            name="ActivityFinal1"
+            isLeaf="false" />
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a59c87ba-cc9d-40f7-9d00-85b6af7b7d31"
+        name="Auditoruim"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8d5a5f99-6054-4bf3-bc78-fe2924c71005"
+            name="Building_Id">
+            <classMoniker
+              Id="b3f6718a-2c36-40d3-8976-47dd1e212de1"
+              LastKnownName="Building"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="45df923b-bbb7-468c-8165-5642cf8b66f3"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8569cc36-034d-4b85-a1d2-88a13d9ac889"
+            name="Number"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="adae5b6a-191a-4036-b60b-d0e1eadb9e58"
+            name="Capacity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7cc312de-4390-4a21-9ad6-0235a47dbec9"
+            name="Info"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="578f44c3-e557-4f95-8dbe-ad11075a5a0a"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="15f758ef-e1c0-414d-8588-10cd5c84901c"
+            name="Building_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b3f6718a-2c36-40d3-8976-47dd1e212de1"
+        name="Building"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="7a6dd4e9-4e68-4493-b4e7-313d71ea45a9"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f3ebd407-0cf3-40a9-8f76-ac7a15dd4142"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0e61305e-6b32-4457-b85a-b89c135ec20d"
+            name="Address"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ee90c2a4-4cb4-4088-a4a7-cd92deb7b20c"
+            name="Info"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="34298ec7-1d17-44cb-9dc4-406deebbf0d2"
+            name="ShortName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="74fbfcc6-b47b-46b5-879a-8ec9a756ee05"
+        name="Tutorial"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="b6d71559-69a0-4490-b02e-705745314628"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="785d7391-4215-4942-a9fd-2382c57164cd"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a5a44779-e445-442b-86e5-278fa4e59851"
+            name="ShortName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b0ef6a02-9e42-4e49-b9cd-505d08d37c71"
+        name="TutorialType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="8c7562ca-2e19-49b8-b986-92054b070eae"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="55164ace-27c2-46b1-9e34-e92fe91b9f49"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="358b0596-a3a2-45d6-a044-155f5c8b4763"
+        name="Department"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="7e8c3e47-a3a9-4c37-9d68-942ba25639db"
+            name="Faculty_Id?">
+            <classMoniker
+              Id="e10bbfbf-73ac-4a0a-ae92-e6d7a16df4cc"
+              LastKnownName="Faculty"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="4bd2ef4e-1608-48c1-b464-ce315ebc1ab7"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b3d6b484-5f22-493c-832c-71c9400ac31e"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1cd12b8c-0f46-4471-aab6-dc5f8625036e"
+            name="ShortName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="3be7b839-10c7-4af6-9425-ac450d863a60"
+            name="Faculty_Id?"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e10bbfbf-73ac-4a0a-ae92-e6d7a16df4cc"
+        name="Faculty"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="90454cfb-279c-4637-880d-a1a2cc695b28"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9aabddb3-df6c-41e2-8d3f-9ba30991baba"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="13fbdd40-1fc4-43c1-94dc-0c75b1c09c2d"
+            name="ShortName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e77626b8-0235-4fcd-937f-f9540130a602"
+        name="Speciality"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="a390b11d-681e-482b-82d1-a70efbafeee2"
+            name="Department_Id">
+            <classMoniker
+              Id="358b0596-a3a2-45d6-a044-155f5c8b4763"
+              LastKnownName="Department"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="24066bd6-1ad6-43fe-af55-779dec90e20e"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="123c4547-2b92-4930-a764-93a6d70f59b0"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6cebfc95-595e-4e09-8fd6-1e55f1b140ad"
+            name="ShortName"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="77d01d40-394c-474c-8497-2ab0fedeecf3"
+            name="Code"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c43d60d7-0b91-4940-afef-d395ac1c8947"
+            name="Department_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="856ae4de-d609-4e18-a9cf-79ed8986b9a6"
+        name="Lecturer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ea4afa10-21b2-4e3b-8475-0c6bf2d0293b"
+            name="Department_Id">
+            <classMoniker
+              Id="358b0596-a3a2-45d6-a044-155f5c8b4763"
+              LastKnownName="Department"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="13147289-b2b0-4423-ba61-3051630780f2"
+            name="Rank_Id">
+            <classMoniker
+              Id="29991283-53be-4812-821f-f2ced88e085e"
+              LastKnownName="Rank"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="06de56f2-1f20-4202-a8cf-58f02584cd9b"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dcf45dcc-72b3-4fa0-985c-aa7e15b4b34c"
+            name="Firstname"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4d3eeb3d-09bb-4552-8794-60f271713a04"
+            name="Middlename"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5f499246-2120-4061-b293-57611517df55"
+            name="Lastname"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4b5e30d9-c6a0-4eba-b80c-c19d85043c57"
+            name="Contacts"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="5feebb05-f5b6-48c8-b7ed-8fe7c5081ce7"
+            name="Department_Id?"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eee2c0fb-53b5-449e-bdde-f3ee155c6641"
+            name="Rank_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="29991283-53be-4812-821f-f2ced88e085e"
+        name="Rank"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="2a33888c-9e92-4ab5-a838-504cc65a1c34"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="08effa94-0586-4ad2-bf70-45ff90ca8858"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="88986ca5-e088-4b73-b698-054733480eb3"
+            name="Position"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d72b25bf-18f1-4e07-89b4-4ed5c2d4db74"
+        name="Shilft"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="e8db6132-0154-4dd9-9841-f61b22cf107b"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="08dfd4fc-3cb8-4986-91de-365b3cba7e2d"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="acc6bb4f-f0d2-41d7-9ee6-4e2f546e3987"
+        name="SubGroup"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="41286027-4a50-4e1d-a55c-129b1f16bf88"
+            name="Group_Id">
+            <classMoniker
+              Id="fd241728-fdd3-4daa-b60b-83f1a13c4513"
+              LastKnownName="Group"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0941d598-5e45-40db-a4b8-3ffd46a83001"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4d75a988-c2f3-44c1-9893-b99fea2877f6"
+            name="StudentsCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ad12c733-4087-4d59-981f-be85322f3531"
+            name="Group_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fd241728-fdd3-4daa-b60b-83f1a13c4513"
+        name="Group"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8e1b1179-7c21-4559-8ffd-16bfcf98c1c5"
+            name="Course_Id">
+            <classMoniker
+              Id="3f599575-f530-42fc-b187-988774fcb214"
+              LastKnownName="Course"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="558ba5c3-1a10-4dc3-93f2-bbd0bfae0105"
+            name="Speciality_Id">
+            <classMoniker
+              Id="e77626b8-0235-4fcd-937f-f9540130a602"
+              LastKnownName="Speciality"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="786db648-33ba-431a-ab3d-d1fba94c54f0"
+            name="Parent_Id">
+            <classMoniker
+              Id="fd241728-fdd3-4daa-b60b-83f1a13c4513"
+              LastKnownName="Group"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a43c8b89-bc44-404a-987e-516e29915e93"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1a0a8063-de15-4537-9a82-2bd355ef55a4"
+            name="Code"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4eb0141d-d9d7-46c4-a54d-12f016591e51"
+            name="Course_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c8cb567e-0808-4059-b498-325a5ad8d0c8"
+            name="Speciality_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6dfb0437-e681-4bd4-af9b-860c6a4e9199"
+            name="StudentsCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9d3c6edd-eb2b-44fa-8259-895372f23d21"
+            name="Parent_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3f599575-f530-42fc-b187-988774fcb214"
+        name="Course"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="8f88ec11-d5c4-4d91-9cd7-98281266e26c"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e650c86e-ab09-4375-a541-facdfcea0146"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d00c3f16-a383-49ed-bdbd-70861e4cdc4a"
+        name="Schedule"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="543238ba-3611-46bc-85d1-14fd138b4056"
+            name="Auditorium_Id">
+            <classMoniker
+              Id="a59c87ba-cc9d-40f7-9d00-85b6af7b7d31"
+              LastKnownName="Auditoruim"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="c652a1c9-be67-4186-972d-f37304b666a9"
+            name="SubGroup_Id">
+            <classMoniker
+              Id="acc6bb4f-f0d2-41d7-9ee6-4e2f546e3987"
+              LastKnownName="SubGroup"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="e2c3172f-b91b-4449-8667-0ac2a9b1446d"
+            name="Time_Id">
+            <classMoniker
+              Id="9e6fa1a6-d9b4-4358-b0fc-e863ac19c1d6"
+              LastKnownName="Time"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="1b1d9a85-c017-4bd6-914c-9d3f8549a938"
+            name="DayOfWeek_Id">
+            <classMoniker
+              Id="39c6ffbd-082d-4004-9b3a-066699cb9d4b"
+              LastKnownName="DayOfWeek"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="48cd9788-421c-4172-85c6-89f15b5df0f9"
+            name="WeekType_Id">
+            <classMoniker
+              Id="90b9296a-a9f6-49e7-8e4f-079a1dbed991"
+              LastKnownName="WeekType"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="171af3db-6b39-42e9-a770-3810dcc3808f"
+            name="ScheduleAttribute_Id">
+            <classMoniker
+              Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0"
+              LastKnownName="ScheduleAttribute"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="3a8f67e3-2dcf-4fae-bdf7-3b9546bb8b3f"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="29ed3095-1fa3-4ac5-8fc4-0cb80d3d7432"
+            name="Auditorium_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e54de3ae-2bda-4f89-adc4-4ae64f81366b"
+            name="Time_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6d7657db-a7ef-4cef-9458-aad9e043fa9b"
+            name="DayOfWeek"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="33f82651-3a80-431b-9448-bacb298fa568"
+            name="StartDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="09a258c5-d6b9-4836-a657-4186aa6a30c4"
+            name="EndDate"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1b57b50f-eed0-40de-9dbf-bd6a5dd3dd97"
+            name="WeekType_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="52b4b218-7cc3-45a0-8138-24cf067107e3"
+            name="ScheduleAttribute_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9e6fa1a6-d9b4-4358-b0fc-e863ac19c1d6"
+        name="Time"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="138f10ef-43e8-4d04-a9e3-f98942372d1c"
+            name="StartTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="868eefe9-be12-4274-966f-569406e1e034"
+            name="EndTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="244102d3-1db5-4597-8d55-7923c48041bf"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1df31c08-84d6-458b-acb2-8cd85d1ca8f3"
+        name="AuditoriumApplicabilities"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="db37bdf5-e545-43ff-9c75-97f9b9bb9aba"
+            name="TutorialType_Id">
+            <classMoniker
+              Id="b0ef6a02-9e42-4e49-b9cd-505d08d37c71"
+              LastKnownName="TutorialType"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="c0dafe13-ac85-415b-94f6-3be488cdbf30"
+            name="Auditorium_Id">
+            <classMoniker
+              Id="a59c87ba-cc9d-40f7-9d00-85b6af7b7d31"
+              LastKnownName="Auditoruim"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="30673d44-9fb5-4d53-974a-828b7d78c909"
+            name="Auditorium_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="bf650fc3-4689-4bd9-8d1f-6b3d7c067292"
+            name="TutorialType_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="c00ec30a-07ff-493c-acd3-22dfa0a15e08"
+        name="Main.SignIn"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="67ffebcc-6860-4f06-9b3a-449ab1b00960"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="24a843c4-193c-4539-8567-68a9f3df6003"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ac95afbe-4d3e-4e17-86b4-3f41b2dbee32"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="b8338d52-0911-4579-a7ed-cec33601a6b2"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="e1a00f58-b93a-4c76-b30d-d214e887f5d9"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Timetable.Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="40290d8f-3968-4925-a818-52849dde3b96"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="Timetable.Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="18aaa82f-355e-4302-b777-b8173cabc196"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b7c74641-9024-4fb7-9d26-c076269f6589"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Timetable.Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ac95afbe-4d3e-4e17-86b4-3f41b2dbee32"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a097b4d7-c5df-4506-bdde-87660e722ba6"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="01ce7dd9-ae8e-4a66-9378-3a3375c766a8"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="c0e4287a-0d91-438b-9587-a3a6f3c293c8"
+                LastKnownName="SignIn View"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b8338d52-0911-4579-a7ed-cec33601a6b2"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="2badd8c5-b6b6-48cf-a1f8-7b6f294ab66f"
+            name="BehaviorExecutionSpecification4">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="440c8170-320c-49ae-bbf0-5f10a0ddfc85"
+                LastKnownName="IAuthenticateService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="731ead51-cdd6-414b-ac77-8aaed3673c3a"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Timetable.Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="18156658-9f30-406f-b63b-e5271566c7ed"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Timetable.Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="89c56fce-7811-40e5-b07d-0f70d6637a6e"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f398f858-bafa-47ac-9788-b47cb8e52163"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="Timetable.Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="18156658-9f30-406f-b63b-e5271566c7ed"
+            name="ExecutionOccurrenceSpecification7">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e712b1f2-1ae0-4aec-bd51-7ac14254f2ba"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="440c8170-320c-49ae-bbf0-5f10a0ddfc85"
+                LastKnownName="IAuthenticateService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="89c56fce-7811-40e5-b07d-0f70d6637a6e"
+            name="MessageOccurrenceSpecification14">
+            <covered>
+              <lifelineMoniker
+                Id="440c8170-320c-49ae-bbf0-5f10a0ddfc85"
+                LastKnownName="IAuthenticateService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e1a00f58-b93a-4c76-b30d-d214e887f5d9"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b6c0c42d-31e7-4109-825d-13d8dd2c8e14"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="18aaa82f-355e-4302-b777-b8173cabc196"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="Timetable.Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="40290d8f-3968-4925-a818-52849dde3b96"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="Timetable.Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c90d2263-79e2-44d2-9086-e16b57599054"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="Timetable.Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="40290d8f-3968-4925-a818-52849dde3b96"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d783d477-bd17-4776-9d9f-ff7246629f0e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c90d2263-79e2-44d2-9086-e16b57599054"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f398f858-bafa-47ac-9788-b47cb8e52163"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="440c8170-320c-49ae-bbf0-5f10a0ddfc85"
+                LastKnownName="IAuthenticateService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="731ead51-cdd6-414b-ac77-8aaed3673c3a"
+            name="ExecutionOccurrenceSpecification8">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ac3b3bcc-b424-4090-ad64-6d43df31380b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="440c8170-320c-49ae-bbf0-5f10a0ddfc85"
+                LastKnownName="IAuthenticateService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="18aaa82f-355e-4302-b777-b8173cabc196"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d094006a-2ea3-469d-9fa1-827a2b74aae9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c4304c50-f84f-47e0-b33f-0c703698a4df"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="c0e4287a-0d91-438b-9587-a3a6f3c293c8"
+                LastKnownName="SignIn View"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b7c74641-9024-4fb7-9d26-c076269f6589"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="24a843c4-193c-4539-8567-68a9f3df6003"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6dc722e3-49d1-4a04-9be0-c20c014ff315"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+                LastKnownName="MainController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="c0e4287a-0d91-438b-9587-a3a6f3c293c8"
+            name="SignIn View"
+            isActor="false"
+            lifelineDisplayName="SignIn View">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="01ce7dd9-ae8e-4a66-9378-3a3375c766a8"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c4304c50-f84f-47e0-b33f-0c703698a4df"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Timetable.Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="920a44ea-2fce-4403-a684-6df123abcf0f"
+            name="MainController"
+            isActor="false"
+            lifelineDisplayName="MainController">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="ac95afbe-4d3e-4e17-86b4-3f41b2dbee32"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="24a843c4-193c-4539-8567-68a9f3df6003"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="440c8170-320c-49ae-bbf0-5f10a0ddfc85"
+            name="IAuthenticateService"
+            isActor="false"
+            lifelineDisplayName="IAuthenticateService">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="18156658-9f30-406f-b63b-e5271566c7ed"
+                LastKnownName="ExecutionOccurrenceSpecification7"
+                LastKnownLocation="Timetable.Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="731ead51-cdd6-414b-ac77-8aaed3673c3a"
+                LastKnownName="ExecutionOccurrenceSpecification8"
+                LastKnownLocation="Timetable.Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="9be5849c-c776-468c-b6f9-2b196255b5a8"
+            name="SignIn(model : SignInModel)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="01ce7dd9-ae8e-4a66-9378-3a3375c766a8"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b8338d52-0911-4579-a7ed-cec33601a6b2"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ca9382ec-5ed8-4381-b91f-344adefd29af"
+            name="Authenticate(Login, Password : string)"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e1a00f58-b93a-4c76-b30d-d214e887f5d9"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="89c56fce-7811-40e5-b07d-0f70d6637a6e"
+                LastKnownName="MessageOccurrenceSpecification14"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="dd75b444-1f2b-4ace-8afc-0e7ee1e178a4"
+            name="OnSuccess()"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f398f858-bafa-47ac-9788-b47cb8e52163"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c90d2263-79e2-44d2-9086-e16b57599054"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c60ebf5a-838c-4220-9300-714535fdf41f"
+            name="View()"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b7c74641-9024-4fb7-9d26-c076269f6589"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c4304c50-f84f-47e0-b33f-0c703698a4df"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a097b4d7-c5df-4506-bdde-87660e722ba6"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6dc722e3-49d1-4a04-9be0-c20c014ff315"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e712b1f2-1ae0-4aec-bd51-7ac14254f2ba"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ac3b3bcc-b424-4090-ad64-6d43df31380b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d783d477-bd17-4776-9d9f-ff7246629f0e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d094006a-2ea3-469d-9fa1-827a2b74aae9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="cbb9c923-0a30-4017-a1ff-d812e7aa7171"
+        LastKnownName="Timetable"
+        LastKnownLocation="Package_0121.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fc8a8422-d16d-4881-b04f-6dd541dead37"
+        LastKnownName="System"
+        LastKnownLocation="Package3_0122.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b6d20824-a902-4040-9a02-e3b2079f3f4c"
+        LastKnownName="Ninject"
+        LastKnownLocation="Package2_0123.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e8a66c0a-7d85-4401-8890-aedc383b355d"
+        LastKnownName="Test"
+        LastKnownLocation="Package_0128.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c7e9b5b4-b926-4da9-80dd-9253bdd17c74"
+        LastKnownName="Microsoft"
+        LastKnownLocation="Package7_0128.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7437f74e-b167-4f42-8272-424d00f175e1"
+        name="ISpecialty"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6111d5f0-e53a-4f8a-9dca-6079c60420ba"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Type=ISpecialty"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e05ce236-e361-43d2-858e-509949d65735"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ffff5ce6-4cac-43b3-8df1-840ed5a59d2d">
+                <propertyInstance
+                  Id="cbbd9062-ca87-42b3-a661-36fe550b5f67"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0178e61a-05f0-40ca-969b-34e0997f18fa">
+                <propertyInstance
+                  Id="ac171828-a26c-43cf-ba61-520bd14048bb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b05cb79a-6ce2-4ed3-bd6e-f5d35c369d62">
+                <propertyInstance
+                  Id="c0f7c08b-97e6-401d-b793-18711d7a7539"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="82e3053c-afde-490b-9e52-74f410fc6e37">
+                <propertyInstance
+                  Id="d9e59ab7-1903-4a9a-a07e-e53665e37b68"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5e6f4dc0-a945-46d9-bf48-0b761045ba18">
+                <propertyInstance
+                  Id="4d379ed0-ca5c-40b3-96b8-9b17b059fcf1"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="66e9437b-cbff-450e-b0b4-2495c10274fa"
+        LastKnownName="Fakes"
+        LastKnownLocation="Package_0129.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b7ceb540-c6db-4e36-9085-f87a88bbf29b"
+        LastKnownName="Tests"
+        LastKnownLocation="Package_0131.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2c381d6e-2315-4fe7-a3bf-d308a3a26f92"
+        name="IParent"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="118df41b-0bb2-4c65-a0a9-4730df9a59e2"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Type=IParent"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6de7c611-080f-4642-a53e-d4685a6b751c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0368e61-1fc6-451c-97c6-e7ee328f38f0">
+                <propertyInstance
+                  Id="880af4f5-2500-4534-a6e3-91356a707ae4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8fd26d78-1c60-4c36-8319-5d08210adbe8">
+                <propertyInstance
+                  Id="1a9ce347-9e2a-4be6-92d3-ebc178c39ffb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="353574c0-4bf7-4cfc-83a8-fbaf4f356ebe">
+                <propertyInstance
+                  Id="3879636e-bcf1-4354-bed8-8d88e13f6c19"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba60226e-19fe-4a16-a7f7-d2b01efce3ac">
+                <propertyInstance
+                  Id="f30de5d5-e41d-4727-b4f7-f3cfc0879e1d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4954fc85-eb5c-461e-aa5e-1f0a0a19bbc5">
+                <propertyInstance
+                  Id="457cead0-06af-4cf1-9a98-b344dced6867"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e439fea1-ecf6-4d25-859c-f29f07e2ff71"
+        name="Parent"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3903cbe3-98f4-4482-899c-021867ad251d"
+            handle="viewcode://./CodeSchema_Class?Assembly=file:///C:/Users/ITryapitsin/Documents/PetrSU/Timetable/Timetable.Base/bin/Debug/Timetable.Base.dll Type=Parent"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f63dad9b-5102-4c5a-a36c-81549cb4e4c0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef8b5e4c-c29d-4de1-bec2-32c75326396d">
+                <propertyInstance
+                  Id="46426ab0-63d4-4afd-8093-abb19e15c4ba"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dd272970-0c02-4a71-ac70-9bf39a3ed38e">
+                <propertyInstance
+                  Id="0e249e76-23f5-4c18-a3d4-0df152ee28c6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="569695aa-68dd-472c-94cf-2d0ba0362a5c">
+                <propertyInstance
+                  Id="d4fa4ddc-72a9-4090-9380-0724083b9982"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba943f7b-05c0-4dfc-9ba4-7d3012ecdb07">
+                <propertyInstance
+                  Id="8960bfc4-44f4-49ed-9cbe-da7b76a3f340"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ea6c0c9c-dd08-4785-995e-09f9a89aed1c">
+                <propertyInstance
+                  Id="b063403c-736f-4e12-8301-865961f9e16b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5c312cc5-8878-4abd-bd62-355fbb20ec57"
+        LastKnownName="Interfaces"
+        LastKnownLocation="Package_0142.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="39c6ffbd-082d-4004-9b3a-066699cb9d4b"
+        name="DayOfWeek"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="352ee546-48d2-4366-bc72-095507fa1cf0"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b57e453f-049d-4e4a-9cd8-0b5a039f368c"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="ecc70e9c-f8f0-4800-ba04-a05f4c8698fa"
+        name="ApiController"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="aab5863f-3f47-4a73-9867-c2a7727ab5f2"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+                LastKnownName="DataService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e525f5e8-5c70-4886-bbe0-e51d55b7546f"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="bd19e058-bec0-4513-8f1a-eb01dd0f8c96"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="60aae822-c981-4fd6-a09e-bf4593fbeee6"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="67ca05bf-4b58-420f-a18d-31fd6e416fc4"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ef150dc5-da8c-494e-8e8d-ca02f77faef3"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d471fc64-1f70-44ba-86ba-e0a72240283d"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="19af577e-d98f-476a-81f5-aecbe8a7fb0c"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="66c76c5f-1804-42de-88da-63576b09c78f"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Timetable.Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="bd19e058-bec0-4513-8f1a-eb01dd0f8c96"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e79dc7f8-a871-4c71-8046-d0d9400a7f34"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+                LastKnownName="DataService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="bc1608b0-d2ad-45bd-9812-a8bbf15501f1"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="c9b675d2-2bce-4e54-8866-12189409ac69"
+                LastKnownName="ApiController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="60aae822-c981-4fd6-a09e-bf4593fbeee6"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+                LastKnownName="DataService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e357e278-ff2f-45fa-9a14-50fbf8e2aaaf"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="b7592e00-17c1-44c7-99db-018a2131b4b0"
+                LastKnownName="Validator"
+                LastKnownLocation="Timetable.Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="76ef2932-7804-4574-9b2e-8e92cb027857"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Timetable.Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="bf3ece50-aaf6-465e-9704-22ed684117a2"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Timetable.Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="14857762-80cc-4b9b-93da-0287a2fdeb22"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="814ebdea-bf95-407b-adbe-cad4da97978b"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Timetable.Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="bf3ece50-aaf6-465e-9704-22ed684117a2"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="560585aa-b71e-473d-bd3d-e1237b486105"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b7592e00-17c1-44c7-99db-018a2131b4b0"
+                LastKnownName="Validator"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="14857762-80cc-4b9b-93da-0287a2fdeb22"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="b7592e00-17c1-44c7-99db-018a2131b4b0"
+                LastKnownName="Validator"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="67ca05bf-4b58-420f-a18d-31fd6e416fc4"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+                LastKnownName="DataService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="814ebdea-bf95-407b-adbe-cad4da97978b"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="b7592e00-17c1-44c7-99db-018a2131b4b0"
+                LastKnownName="Validator"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ef150dc5-da8c-494e-8e8d-ca02f77faef3"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+                LastKnownName="DataService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="76ef2932-7804-4574-9b2e-8e92cb027857"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c5d641f0-eb14-4576-9515-a0ec337389a0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="b7592e00-17c1-44c7-99db-018a2131b4b0"
+                LastKnownName="Validator"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e3592f7c-2990-4d66-8294-a1c774b0e57d"
+            name="BehaviorExecutionSpecification2">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="98f7ffd5-3ff0-4ada-b004-4d27ad96f00e"
+                LastKnownName="Repository"
+                LastKnownLocation="Timetable.Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="e3b3cdcf-3a64-4543-a6da-e0f9a2e504bd"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Timetable.Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="12599701-409f-471d-8a0a-ccc676ff406b"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Timetable.Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="1874555e-7bbc-4afe-97fe-3f78799c28d7"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="40f9bc4c-c437-43ad-bc94-319918958af6"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Timetable.Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="12599701-409f-471d-8a0a-ccc676ff406b"
+            name="ExecutionOccurrenceSpecification3">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b34ce476-a1ff-4cc5-bdf8-3d032733451f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="98f7ffd5-3ff0-4ada-b004-4d27ad96f00e"
+                LastKnownName="Repository"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="1874555e-7bbc-4afe-97fe-3f78799c28d7"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="98f7ffd5-3ff0-4ada-b004-4d27ad96f00e"
+                LastKnownName="Repository"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d471fc64-1f70-44ba-86ba-e0a72240283d"
+            name="MessageOccurrenceSpecification5">
+            <covered>
+              <lifelineMoniker
+                Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+                LastKnownName="DataService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="40f9bc4c-c437-43ad-bc94-319918958af6"
+            name="MessageOccurrenceSpecification7">
+            <covered>
+              <lifelineMoniker
+                Id="98f7ffd5-3ff0-4ada-b004-4d27ad96f00e"
+                LastKnownName="Repository"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="19af577e-d98f-476a-81f5-aecbe8a7fb0c"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+                LastKnownName="DataService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e3b3cdcf-3a64-4543-a6da-e0f9a2e504bd"
+            name="ExecutionOccurrenceSpecification4">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="98571d7e-ac65-4efd-97c7-cab0a9933dad"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="98f7ffd5-3ff0-4ada-b004-4d27ad96f00e"
+                LastKnownName="Repository"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="66c76c5f-1804-42de-88da-63576b09c78f"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+                LastKnownName="DataService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="aecac8ef-f1c6-4214-8cf1-e0da045e58e0"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="c9b675d2-2bce-4e54-8866-12189409ac69"
+                LastKnownName="ApiController"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="e525f5e8-5c70-4886-bbe0-e51d55b7546f"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2a113c84-5422-4003-8ecd-1b27a7e8aa01"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+                LastKnownName="DataService"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="c9b675d2-2bce-4e54-8866-12189409ac69"
+            name="ApiController"
+            isActor="false"
+            lifelineDisplayName="ApiController">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="bc1608b0-d2ad-45bd-9812-a8bbf15501f1"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="aecac8ef-f1c6-4214-8cf1-e0da045e58e0"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Timetable.Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="358a6223-961e-4b8c-8719-3a98d0490e21"
+            name="DataService"
+            isActor="false"
+            lifelineDisplayName="DataService">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="bd19e058-bec0-4513-8f1a-eb01dd0f8c96"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e525f5e8-5c70-4886-bbe0-e51d55b7546f"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="98f7ffd5-3ff0-4ada-b004-4d27ad96f00e"
+            name="Repository"
+            isActor="false"
+            lifelineDisplayName="Repository">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="12599701-409f-471d-8a0a-ccc676ff406b"
+                LastKnownName="ExecutionOccurrenceSpecification3"
+                LastKnownLocation="Timetable.Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="e3b3cdcf-3a64-4543-a6da-e0f9a2e504bd"
+                LastKnownName="ExecutionOccurrenceSpecification4"
+                LastKnownLocation="Timetable.Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="b7592e00-17c1-44c7-99db-018a2131b4b0"
+            name="Validator"
+            isActor="false"
+            lifelineDisplayName="Validator">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="bf3ece50-aaf6-465e-9704-22ed684117a2"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="Timetable.Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="76ef2932-7804-4574-9b2e-8e92cb027857"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="Timetable.Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="7ad1da47-d6f6-4dae-ae83-fe15be347417"
+            name="DataService method"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="bc1608b0-d2ad-45bd-9812-a8bbf15501f1"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="60aae822-c981-4fd6-a09e-bf4593fbeee6"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="da9e443f-8808-4dab-a5a5-4fd86ebee461"
+            name="Validate action"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="67ca05bf-4b58-420f-a18d-31fd6e416fc4"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="14857762-80cc-4b9b-93da-0287a2fdeb22"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b9f0134a-a52e-4d31-9f07-dc556594b46d"
+            name="Validation result"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="814ebdea-bf95-407b-adbe-cad4da97978b"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ef150dc5-da8c-494e-8e8d-ca02f77faef3"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c0613c0b-4915-456a-91cf-bd0ef31a371e"
+            name="if validation success do Repository method"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d471fc64-1f70-44ba-86ba-e0a72240283d"
+                LastKnownName="MessageOccurrenceSpecification5"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="1874555e-7bbc-4afe-97fe-3f78799c28d7"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6879feb9-25fa-4648-9c45-31c3ea2e85dc"
+            name="Repository result"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="40f9bc4c-c437-43ad-bc94-319918958af6"
+                LastKnownName="MessageOccurrenceSpecification7"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="19af577e-d98f-476a-81f5-aecbe8a7fb0c"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="bd845dca-1e7d-4e49-80ac-536b56420904"
+            name="DataService method result"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="66c76c5f-1804-42de-88da-63576b09c78f"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="aecac8ef-f1c6-4214-8cf1-e0da045e58e0"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e79dc7f8-a871-4c71-8046-d0d9400a7f34"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2a113c84-5422-4003-8ecd-1b27a7e8aa01"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b34ce476-a1ff-4cc5-bdf8-3d032733451f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="98571d7e-ac65-4efd-97c7-cab0a9933dad"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="560585aa-b71e-473d-bd3d-e1237b486105"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c5d641f0-eb14-4576-9515-a0ec337389a0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="1ce70c7c-bcb5-41d1-b66b-c16d49b0480d"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="e9c3ef9d-1fd8-48bb-a028-813dd427dbdd"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="090ed17f-3285-42c4-9e02-758658dfe1c4"
+                LastKnownName="Repositroy"
+                LastKnownLocation="Timetable.Model.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="f9f9ff83-d221-49fc-8a5e-b091341f7279"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="3fc461f8-fd0e-494d-8b2e-593c52de7aff"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="0da7c260-b3ae-491e-ad0b-6367efdd5ac2"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a4633831-f76f-401e-b093-1b50cd146268"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Timetable.Model.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="3fc461f8-fd0e-494d-8b2e-593c52de7aff"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="27a63429-34d1-4cd1-9fb7-e637ed88c4d9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="090ed17f-3285-42c4-9e02-758658dfe1c4"
+                LastKnownName="Repositroy"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="120f344d-0b63-4802-adfc-32ad8b174ab5"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="19bab502-daa8-4718-9bd9-4318410d55f2"
+                LastKnownName="Validator"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="0da7c260-b3ae-491e-ad0b-6367efdd5ac2"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="090ed17f-3285-42c4-9e02-758658dfe1c4"
+                LastKnownName="Repositroy"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a4633831-f76f-401e-b093-1b50cd146268"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="090ed17f-3285-42c4-9e02-758658dfe1c4"
+                LastKnownName="Repositroy"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a5d69cec-5d92-4e7a-a84f-a6999156e176"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="19bab502-daa8-4718-9bd9-4318410d55f2"
+                LastKnownName="Validator"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="f9f9ff83-d221-49fc-8a5e-b091341f7279"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f8cbc2cf-8459-416c-bd2e-97ed2ff825dd"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Timetable.Model.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="090ed17f-3285-42c4-9e02-758658dfe1c4"
+                LastKnownName="Repositroy"
+                LastKnownLocation="Timetable.Model.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="19bab502-daa8-4718-9bd9-4318410d55f2"
+            name="Validator"
+            isActor="false"
+            lifelineDisplayName="Validator">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="120f344d-0b63-4802-adfc-32ad8b174ab5"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a5d69cec-5d92-4e7a-a84f-a6999156e176"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Timetable.Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="090ed17f-3285-42c4-9e02-758658dfe1c4"
+            name="Repositroy"
+            isActor="false"
+            lifelineDisplayName="Repositroy">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="3fc461f8-fd0e-494d-8b2e-593c52de7aff"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f9f9ff83-d221-49fc-8a5e-b091341f7279"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="ed370e98-7393-4ff6-b56b-1b25837525a5"
+            name="Repository methods"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="120f344d-0b63-4802-adfc-32ad8b174ab5"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="0da7c260-b3ae-491e-ad0b-6367efdd5ac2"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="775fb7f8-ff4b-4b89-99d3-7b764a5e030c"
+            name="Repository result"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a4633831-f76f-401e-b093-1b50cd146268"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="Timetable.Model.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a5d69cec-5d92-4e7a-a84f-a6999156e176"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="Timetable.Model.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="27a63429-34d1-4cd1-9fb7-e637ed88c4d9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f8cbc2cf-8459-416c-bd2e-97ed2ff825dd"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0"
+        name="ScheduleAttribute"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c8dba5b6-9476-4c59-9ef9-4914a94a0ede"
+            name="TutorialType_Id">
+            <classMoniker
+              Id="b0ef6a02-9e42-4e49-b9cd-505d08d37c71"
+              LastKnownName="TutorialType"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="0e60570a-5fd4-48d4-898a-67804119afd5"
+            name="Tutorial_Id">
+            <classMoniker
+              Id="74fbfcc6-b47b-46b5-879a-8ec9a756ee05"
+              LastKnownName="Tutorial"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="54952970-b7ae-4532-8231-53f3d42e06c1">
+            <classMoniker
+              Id="358b0596-a3a2-45d6-a044-155f5c8b4763"
+              LastKnownName="Department"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="9937d1af-5606-4833-8187-6734cefcca6f"
+            name="Lecturer_Id">
+            <classMoniker
+              Id="856ae4de-d609-4e18-a9cf-79ed8986b9a6"
+              LastKnownName="Lecturer"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="48c01f20-bc66-44e1-9a96-9f9c804a3c5b"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="14852257-405d-4d59-a8bb-f678425db182"
+            name="TutorialType_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f2f06cc5-f90a-4190-b265-93553a52b0fa"
+            name="Tutorial_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7b97eb3f-8d21-407d-8403-84f443cfc54a"
+            name="HoursPerWeek"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8e6a248a-e3d3-400e-b9cd-f2093162d396"
+            name="SubgroupCount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dc18cada-d70f-4b43-b691-99520c26d9a7"
+            name="Lecturer_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="90b9296a-a9f6-49e7-8e4f-079a1dbed991"
+        name="WeekType"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="5ceb3342-80b9-4570-9521-05e4a7b60fed"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e4fcfc04-f234-4b61-a27f-f3cd735d8ed6"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="885566b3-3da5-42ed-966c-fed21a2601e1"
+        name="ScheduleAttributeToLecturers"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ff9019f0-0f35-4e06-ba16-8b93bfef7fef"
+            name="Lecturer_Id">
+            <classMoniker
+              Id="856ae4de-d609-4e18-a9cf-79ed8986b9a6"
+              LastKnownName="Lecturer"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="02936b1c-3aa1-4e72-950b-364050711024"
+            name="ScheduleAttribute_Id">
+            <classMoniker
+              Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0"
+              LastKnownName="ScheduleAttribute"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8adf4d43-2521-4cf6-8bd6-e8bfbf3220dd"
+            name="Lecturer_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e89ae1a5-f103-4877-b3d7-6cdf794e7489"
+            name="ScheduleAttribute_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e0db627e-ddcf-44ff-8948-33db1b5be051"
+        name="TutorialTargetsToGroups"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="2c589e8e-89b5-4c63-b700-83185eb2cec1"
+            name="TutorialTarget_Id">
+            <classMoniker
+              Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0"
+              LastKnownName="ScheduleAttribute"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="7bcf9816-ba4e-4303-8d6c-0ca1fb1e5e03"
+            name="Group_Id">
+            <classMoniker
+              Id="fd241728-fdd3-4daa-b60b-83f1a13c4513"
+              LastKnownName="Group"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="73a3665c-5899-43f7-a861-3ec82abc99cd"
+            name="TutorialTarget_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0a0a040f-efe5-4fc8-9293-45e27dbe42af"
+            name="Group_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="01917a25-c15e-4b44-ad23-10d4a08a06e9"
+        name="ScheduleAttributesToCourses"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="c47ad91e-65b6-4350-ad5e-64899f7c69c4"
+            name="ScheduleAttribute_Id">
+            <classMoniker
+              Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0"
+              LastKnownName="ScheduleAttribute"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="c7aa366e-3021-409c-bff5-c302db235d36"
+            name="Course_Id">
+            <classMoniker
+              Id="3f599575-f530-42fc-b187-988774fcb214"
+              LastKnownName="Course"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="20b7893d-75d4-4ea2-a8ba-27a8620fae8b"
+            name="Course_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="24efeb62-1197-4e2d-92da-9021c38d2d88"
+            name="ScheduleAttribute_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fd3c9158-8f10-442e-aa36-2c82a6742474"
+        name="ScheduleAttributesToAuditoriums"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b0f53706-d8a7-4cbb-a025-d0e9d2c12e32"
+            name="ScheduleAttribute_Id">
+            <classMoniker
+              Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0"
+              LastKnownName="ScheduleAttribute"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="44189923-60d8-4970-acec-517d0f61c5e0"
+            name="Auditorium_Id">
+            <classMoniker
+              Id="a59c87ba-cc9d-40f7-9d00-85b6af7b7d31"
+              LastKnownName="Auditoruim"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="551d11c4-1cdf-44d5-a836-99c472d46d4a"
+            name="Auditorium_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="72571b50-391d-48f7-ba48-163d4c54a8db"
+            name="ScheduleAttribute_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3a34ae45-d6e7-40b9-b932-9c4b9e7ca8e9"
+        name="ScheduleAttributesToFaculties"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="805d4c46-7470-41a7-8df9-334ae05bda5b"
+            name="Faculty_Id">
+            <classMoniker
+              Id="e10bbfbf-73ac-4a0a-ae92-e6d7a16df4cc"
+              LastKnownName="Faculty"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="c5ce0bba-0b07-49ab-a04b-66f00291ac9a"
+            name="ScheduleAttribute_Id">
+            <classMoniker
+              Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0"
+              LastKnownName="ScheduleAttribute"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5332e3de-8840-4019-b1aa-e86286835f31"
+            name="Faculty_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="56adbb79-9a9c-43ac-922e-2367af6a142f"
+            name="ScheduleAttribute_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ae182328-21ee-417e-a8ec-e579c475a482"
+        name="ScheduleAttributesToSpecialties"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="f8d96eab-f04d-4e88-9c95-a3ed1006945e"
+            name="ScheduleAttribute_Id">
+            <classMoniker
+              Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0"
+              LastKnownName="ScheduleAttribute"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="7d09b3b4-4179-4578-a1f4-952e8a04fd42"
+            name="Specialty_Id">
+            <classMoniker
+              Id="e77626b8-0235-4fcd-937f-f9540130a602"
+              LastKnownName="Speciality"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="d6a5297f-51db-4c9f-a4dd-6ef711946b90"
+            name="ScheduleAttribute_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a08612db-d248-4c3c-a161-4855d6afb070"
+            name="Specialty_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="590622df-133e-4862-9b21-520353f79e9d"
+        name="ScheduleReplacement"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d0ed7a9e-b259-4777-9302-39845d089000"
+            name="Schedule_Id">
+            <classMoniker
+              Id="d00c3f16-a383-49ed-bdbd-70861e4cdc4a"
+              LastKnownName="Schedule"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e48809ea-e9e9-4089-8a4b-0c1384cb7a9e"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d6b5e520-b0d2-431e-b175-dfe8483d02a3"
+            name="Schedule_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d1a6167f-c85a-4d81-b3f4-8eebbba931ab"
+        name="ScheduleAttributesToGroups"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="95564184-2b9f-46d3-a293-ae69502f1bf7">
+            <classMoniker
+              Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0"
+              LastKnownName="ScheduleAttribute"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+          <dependency
+            Id="c0c33493-d389-42ea-99ae-1b97e5b716d4">
+            <classMoniker
+              Id="fd241728-fdd3-4daa-b60b-83f1a13c4513"
+              LastKnownName="Group"
+              LastKnownLocation="Timetable.Model.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="08bd64b5-2c17-4f3e-8cf2-19b3b4817478"
+            name="Group_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="38de2776-013f-4e05-a85f-7f4d0569343f"
+            name="ScheduleAttribute_Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

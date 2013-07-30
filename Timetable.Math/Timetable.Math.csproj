@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30A21219-5B55-4812-8978-F99CE3A6FE6D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Timetable.Math</RootNamespace>
+    <AssemblyName>Timetable.Math</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllMethodText.cs" />
+    <Compile Include="Approximation\IApproximationBase.cs" />
+    <Compile Include="DataMining\AntColonyOptimization.cs" />
+    <Compile Include="DataMining\GeneticAlgorithm.cs" />
+    <Compile Include="DataMining\NeuralNetwork\ActivationFunctions\BipolarSigmoidFunction.cs" />
+    <Compile Include="DataMining\NeuralNetwork\ActivationFunctions\IActivationFunction.cs" />
+    <Compile Include="DataMining\NeuralNetwork\ActivationFunctions\SigmoidFunction.cs" />
+    <Compile Include="DataMining\NeuralNetwork\ActivationFunctions\ThresholdFunction.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Layers\ActivationLayer.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Layers\DistanceLayer.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Layers\Layer.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Learning\BackPropagationLearning.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Learning\DeltaRuleLearning.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Learning\ElasticNetworkLearning.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Learning\ISupervisedLearning.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Learning\IUnsupervisedLearning.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Learning\PerceptronLearning.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Learning\SelfOptimizationMapLearning.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Networks\ActivationNetwork.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Networks\DistanceNetwork.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Networks\Network.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Neurons\ActivationNeuron.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Neurons\DistanceNeuron.cs" />
+    <Compile Include="DataMining\NeuralNetwork\Neurons\Neuron.cs" />
+    <Compile Include="DoubleRange.cs" />
+    <Compile Include="IntRange.cs" />
+    <Compile Include="Math.cs" />
+    <Compile Include="Approximation\ApproximationBase.cs" />
+    <Compile Include="Approximation\Bisection.cs" />
+    <Compile Include="Approximation\Chord.cs" />
+    <Compile Include="Approximation\IterationMathod.cs" />
+    <Compile Include="Approximation\Newton.cs" />
+    <Compile Include="BisectionZeroFinder.cs" />
+    <Compile Include="Complex.cs" />
+    <Compile Include="ContinuedFraction.cs" />
+    <Compile Include="Curves\Curve.cs" />
+    <Compile Include="Curves\Histogram.cs" />
+    <Compile Include="DataMining\ClusterCentroid.cs" />
+    <Compile Include="DataMining\ClusterPoint.cs" />
+    <Compile Include="DataMining\CMeansAlgorithm.cs" />
+    <Compile Include="DataMining\FuzzyCMeansAlgorithm.cs" />
+    <Compile Include="DataMining\Genome.cs" />
+    <Compile Include="DataMining\GenomeComparer.cs" />
+    <Compile Include="DhbMath.cs" />
+    <Compile Include="DifferentialEquations\DifferentialEquationsBase.cs" />
+    <Compile Include="DifferentialEquations\EulerCorrected.cs" />
+    <Compile Include="DifferentialEquations\EulerModified.cs" />
+    <Compile Include="DifferentialEquations\EulerSimple.cs" />
+    <Compile Include="DifferentialEquations\RungeKutta4.cs" />
+    <Compile Include="Function.cs" />
+    <Compile Include="FunctionalIterator.cs" />
+    <Compile Include="FunctionDerivative.cs" />
+    <Compile Include="GammaFunction.cs" />
+    <Compile Include="Graphs\BellmanFord.cs" />
+    <Compile Include="Graphs\Deikstra2.cs" />
+    <Compile Include="Graphs\Dijkstra.cs" />
+    <Compile Include="Graphs\Kruskal.cs" />
+    <Compile Include="Graphs\Kruskal2.cs" />
+    <Compile Include="ICurve.cs" />
+    <Compile Include="IHistogram.cs" />
+    <Compile Include="IManyVariableFunction.cs" />
+    <Compile Include="IncompleteBetaFunction.cs" />
+    <Compile Include="IncompleteBetaFunctionFraction.cs" />
+    <Compile Include="IncompleteGammaFunction.cs" />
+    <Compile Include="IncompleteGammaFunctionFraction.cs" />
+    <Compile Include="IncompleteGammaFunctionSeries.cs" />
+    <Compile Include="InifiniteSeries.cs" />
+    <Compile Include="Integration\Chebishev.cs" />
+    <Compile Include="Integration\Simpson.cs" />
+    <Compile Include="Integration\Simpson2.cs" />
+    <Compile Include="Integration\Trapezium.cs" />
+    <Compile Include="Interpolation\BarycentricInterpolation.cs" />
+    <Compile Include="Interpolation\LagrangeInterpolator.cs" />
+    <Compile Include="Interpolation\NevilleInterpolator.cs" />
+    <Compile Include="Interpolation\NewtonInterpolator.cs" />
+    <Compile Include="Interpolation\SplineInterpolator.cs" />
+    <Compile Include="IOneVariableFunction.cs" />
+    <Compile Include="IParametrizedOneVariableFunction.cs" />
+    <Compile Include="IPointSeries.cs" />
+    <Compile Include="IPointSeriesWithErrors.cs" />
+    <Compile Include="IterativeProcess.cs" />
+    <Compile Include="LinearSystems\Gaus.cs" />
+    <Compile Include="LinearSystems\SecantLinear.cs" />
+    <Compile Include="LinearSystems\TDMAThomasAlgoritm.cs" />
+    <Compile Include="LinearSystems\Zeidel.cs" />
+    <Compile Include="MathExtensions.cs" />
+    <Compile Include="MatrixAlgebra\DhbIllegalDimension.cs" />
+    <Compile Include="MatrixAlgebra\DhbNonSymmetricComponents.cs" />
+    <Compile Include="MatrixAlgebra\DhbVector.cs" />
+    <Compile Include="MatrixAlgebra\JacobiTransformation.cs" />
+    <Compile Include="MatrixAlgebra\LargestEigenvalueFinder.cs" />
+    <Compile Include="MatrixAlgebra\LinearEquations.cs" />
+    <Compile Include="MatrixAlgebra\LUPDecomposition.cs" />
+    <Compile Include="MatrixAlgebra\Matrix.cs" />
+    <Compile Include="MatrixAlgebra\MatrixDeterminant.cs" />
+    <Compile Include="MatrixAlgebra\RMatrixLU.cs" />
+    <Compile Include="MatrixAlgebra\RMatrixLuInverse.cs" />
+    <Compile Include="MatrixAlgebra\SymmetricMatrix.cs" />
+    <Compile Include="NewtonZeroFinder.cs" />
+    <Compile Include="NonLinear\HalfDivision.cs" />
+    <Compile Include="NonLinear\MetodHord.cs" />
+    <Compile Include="NonLinear\Newton.cs" />
+    <Compile Include="NonLinear\Secant.cs" />
+    <Compile Include="Optimizing\Brent.cs" />
+    <Compile Include="Optimizing\GoldenSection.cs" />
+    <Compile Include="Optimizing\Pijavsky.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomGenerator\RandomGeneratorsMethod1.cs" />
+    <Compile Include="RandomGenerator\RandomGeneratorsMethod2.cs" />
+    <Compile Include="RandomGenerator\RandomGeneratorsMethod3.cs" />
+    <Compile Include="RandomGenerator\RandomGeneratorsMethod4.cs" />
+    <Compile Include="RandomGenerator\RandomGeneratorsMethod5.cs" />
+    <Compile Include="RCommState.cs" />
+    <Compile Include="Regression\EstimatedPolynomial.cs" />
+    <Compile Include="Regression\LinearRegression.cs" />
+    <Compile Include="Regression\PolynomialFunction.cs" />
+    <Compile Include="Regression\PolynomialLeastSquareFit.cs" />
+    <Compile Include="Regression\WeightedPoint.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sorting\BubbleSort.cs" />
+    <Compile Include="Statistics\BetaDistribution.cs" />
+    <Compile Include="Statistics\CauchyDistribution.cs" />
+    <Compile Include="Statistics\ChiSquareDistribution.cs" />
+    <Compile Include="Statistics\CorrelationPearson.cs" />
+    <Compile Include="Statistics\CorrelationSpearmansRank.cs" />
+    <Compile Include="Statistics\DescriptiveStatisticsADev.cs" />
+    <Compile Include="Statistics\DescriptiveStatisticsMedian.cs" />
+    <Compile Include="Statistics\DescriptiveStatisticsMoments.cs" />
+    <Compile Include="Statistics\DescriptiveStatisticsPercentile .cs" />
+    <Compile Include="Statistics\ExponentialDistribution.cs" />
+    <Compile Include="Statistics\FastStatisticalMoments.cs" />
+    <Compile Include="Statistics\FisherSnedecorDistribution.cs" />
+    <Compile Include="Statistics\FisherTippettDistribution.cs" />
+    <Compile Include="Statistics\FixedStatisticalMoments.cs" />
+    <Compile Include="Statistics\GammaDistribution.cs" />
+    <Compile Include="Statistics\HistogrammedDistribution.cs" />
+    <Compile Include="Statistics\LaplaceDistribution.cs" />
+    <Compile Include="Statistics\MitchellMooreGenerator.cs" />
+    <Compile Include="Statistics\NormalDistribution.cs" />
+    <Compile Include="Statistics\OffsetDistributionFunction.cs" />
+    <Compile Include="Statistics\ProbabilityDensityFunction.cs" />
+    <Compile Include="Statistics\RandomGenerator.cs" />
+    <Compile Include="Statistics\RandomIntegrator.cs" />
+    <Compile Include="Statistics\ScaledProbabilityDensityFunction.cs" />
+    <Compile Include="Statistics\StatisticalMoments.cs" />
+    <Compile Include="Statistics\StudentDistribution.cs" />
+    <Compile Include="Statistics\TriangularDistribution.cs" />
+    <Compile Include="Statistics\UniformDistribution.cs" />
+    <Compile Include="Statistics\WeibullDistribution.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uncategorized\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

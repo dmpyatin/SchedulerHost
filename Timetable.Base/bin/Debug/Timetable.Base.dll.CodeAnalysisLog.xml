@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 11.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="11.0">
+ <Targets>
+  <Target Name="C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\bin\Debug\Timetable.Base.dll">
+   <Modules>
+    <Module Name="timetable.base.dll">
+     <Namespaces>
+      <Namespace Name="Timetable.Base.Entities.Scheduler">
+       <Types>
+        <Type Name="Course" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-07-29 07:34:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="Course.cs" Line="15">'Course.Course()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Course..ctor()&#xD;&#xA;Course.set_ScheduleInfoes(ICollection&lt;ScheduleInfo&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Department" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-07-29 07:34:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="Departament.cs" Line="24">'Department.Department()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Department..ctor()&#xD;&#xA;Department.set_Lecturers(ICollection&lt;Lecturer&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Lecturer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-07-29 07:34:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="Lecturer.cs" Line="30">'Lecturer.Lecturer()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Lecturer..ctor()&#xD;&#xA;Lecturer.set_Departments(ICollection&lt;Department&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="Lecturer.cs" Line="30">'Lecturer.Lecturer()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Lecturer..ctor()&#xD;&#xA;Lecturer.set_ScheduleInfoes(ICollection&lt;ScheduleInfo&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ScheduleInfo" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-07-29 07:34:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="ScheduleInfo.cs" Line="73">'ScheduleInfo.ScheduleInfo()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ScheduleInfo..ctor()&#xD;&#xA;ScheduleInfo.set_Courses(ICollection&lt;Course&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="ScheduleInfo.cs" Line="73">'ScheduleInfo.ScheduleInfo()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ScheduleInfo..ctor()&#xD;&#xA;ScheduleInfo.set_Faculties(ICollection&lt;Faculty&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="ScheduleInfo.cs" Line="73">'ScheduleInfo.ScheduleInfo()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ScheduleInfo..ctor()&#xD;&#xA;ScheduleInfo.set_Groups(ICollection&lt;Group&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="ScheduleInfo.cs" Line="73">'ScheduleInfo.ScheduleInfo()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ScheduleInfo..ctor()&#xD;&#xA;ScheduleInfo.set_LikeAuditoriums(ICollection&lt;Auditorium&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="ScheduleInfo.cs" Line="73">'ScheduleInfo.ScheduleInfo()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ScheduleInfo..ctor()&#xD;&#xA;ScheduleInfo.set_Schedules(ICollection&lt;Schedule&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="ScheduleInfo.cs" Line="73">'ScheduleInfo.ScheduleInfo()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ScheduleInfo..ctor()&#xD;&#xA;ScheduleInfo.set_Specialities(ICollection&lt;Speciality&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Speciality" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-07-29 07:34:48Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="Speciality.cs" Line="27">'Speciality.Speciality()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Speciality..ctor()&#xD;&#xA;Speciality.set_Faculties(ICollection&lt;Faculty&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\Entities\Scheduler" File="Speciality.cs" Line="27">'Speciality.Speciality()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Speciality..ctor()&#xD;&#xA;Speciality.set_ScheduleInfoes(ICollection&lt;ScheduleInfo&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Do not call overridable methods in constructors</Name>
+   <Description>Virtual methods defined on the class should not be called from constructors. If a derived class has overridden the method, the derived class version will be called (before the derived class constructor is called).</Description>
+   <Resolution Name="Default">{0} contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="11.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

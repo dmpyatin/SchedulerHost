@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ccd57435-d497-4b6d-ad93-12ed2565d9e0" name="Classes" linkedPackageId="0daa5372-ece4-4141-aa10-133454aec0e5" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="36121b25-7365-4cdf-b975-012402c3a455" name="Auditoruim" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a59c87ba-cc9d-40f7-9d00-85b6af7b7d31" />
+        <suppliersInternal>
+          <dependency Id="fc4453d3-53a6-498a-a394-8cecab2ec74f" name="Building_Id">
+            <classMoniker Id="157b895e-842c-4dfa-b47e-2ba1542fdfee" LastKnownName="Building" />
+            <elementDefinition Id="8d5a5f99-6054-4bf3-bc78-fe2924c71005" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="ec8fc66c-8908-4191-ae04-a9da95816fb0" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="45df923b-bbb7-468c-8165-5642cf8b66f3" />
+          </property>
+          <property Id="fc2f920b-b31a-44b6-b211-573a012985cc" name="Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8569cc36-034d-4b85-a1d2-88a13d9ac889" />
+          </property>
+          <property Id="9708ab47-adb7-4412-88ba-445125489893" name="Capacity" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="adae5b6a-191a-4036-b60b-d0e1eadb9e58" />
+          </property>
+          <property Id="d161c22e-6dd7-4159-8b8e-d18d276284bb" name="Info" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7cc312de-4390-4a21-9ad6-0235a47dbec9" />
+          </property>
+          <property Id="d48f1dde-b936-4fa8-85e6-5b0038629f80" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="578f44c3-e557-4f95-8dbe-ad11075a5a0a" />
+          </property>
+          <property Id="cebcf11d-dc5b-4c3a-b1cf-8dde29b4c90d" name="Building_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="15f758ef-e1c0-414d-8588-10cd5c84901c" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="157b895e-842c-4dfa-b47e-2ba1542fdfee" name="Building" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b3f6718a-2c36-40d3-8976-47dd1e212de1" />
+        <ownedAttributesInternal>
+          <property Id="16fd7ff6-1bb1-4cb6-ba9b-57865e9e4c65" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7a6dd4e9-4e68-4493-b4e7-313d71ea45a9" />
+          </property>
+          <property Id="235dfcb3-1360-4246-99f0-8eed7c791c99" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f3ebd407-0cf3-40a9-8f76-ac7a15dd4142" />
+          </property>
+          <property Id="c3f04ed2-b143-4974-ac79-0c7b4cccdaf8" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0e61305e-6b32-4457-b85a-b89c135ec20d" />
+          </property>
+          <property Id="218f68fc-9aa3-4879-8af3-c6b27fe50ab4" name="Info" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ee90c2a4-4cb4-4088-a4a7-cd92deb7b20c" />
+          </property>
+          <property Id="4a601041-5021-4aeb-9db1-bbd860b710e4" name="ShortName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34298ec7-1d17-44cb-9dc4-406deebbf0d2" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bb147d9f-b5b5-431b-9221-17ae0a28c2b9" name="Tutorial" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="74fbfcc6-b47b-46b5-879a-8ec9a756ee05" />
+        <ownedAttributesInternal>
+          <property Id="7d376200-233d-4793-a2e6-297654a2ab6b" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b6d71559-69a0-4490-b02e-705745314628" />
+          </property>
+          <property Id="e097a91d-9c54-4fc4-98e2-7eedf782905f" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="785d7391-4215-4942-a9fd-2382c57164cd" />
+          </property>
+          <property Id="d613d337-9923-45ad-a5db-84297a97081e" name="ShortName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a5a44779-e445-442b-86e5-278fa4e59851" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0155cbe3-e370-426e-90a9-66bfa01593a6" name="TutorialType" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b0ef6a02-9e42-4e49-b9cd-505d08d37c71" />
+        <ownedAttributesInternal>
+          <property Id="3a50cfe5-8c9c-49ec-a491-921c3df0754e" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8c7562ca-2e19-49b8-b986-92054b070eae" />
+          </property>
+          <property Id="9bc2254a-9071-4180-873c-9d66750a3350" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="55164ace-27c2-46b1-9e34-e92fe91b9f49" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c8bba7fa-aae7-4610-a9aa-0c2a8471dbe9" name="Department" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="358b0596-a3a2-45d6-a044-155f5c8b4763" />
+        <suppliersInternal>
+          <dependency Id="7f7fb19a-2bb9-4816-b803-0d31516f1cde" name="Faculty_Id?">
+            <classMoniker Id="93d851ca-89c0-43b4-8905-7ab7f00b4a6c" LastKnownName="Faculty" />
+            <elementDefinition Id="7e8c3e47-a3a9-4c37-9d68-942ba25639db" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="13f92bea-16c6-490c-95cc-65d3ebb04642" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4bd2ef4e-1608-48c1-b464-ce315ebc1ab7" />
+          </property>
+          <property Id="0eadc6f5-fb17-47c1-a508-902b60c773c5" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b3d6b484-5f22-493c-832c-71c9400ac31e" />
+          </property>
+          <property Id="375a0126-4aa8-4f4e-910b-6f204ada7f54" name="ShortName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1cd12b8c-0f46-4471-aab6-dc5f8625036e" />
+          </property>
+          <property Id="9c2904d3-c1e5-4382-b286-55eab4b679e0" name="Faculty_Id?" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3be7b839-10c7-4af6-9425-ac450d863a60" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="93d851ca-89c0-43b4-8905-7ab7f00b4a6c" name="Faculty" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e10bbfbf-73ac-4a0a-ae92-e6d7a16df4cc" />
+        <ownedAttributesInternal>
+          <property Id="0699f4a0-3454-4e09-8358-44794ec6c10a" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="90454cfb-279c-4637-880d-a1a2cc695b28" />
+          </property>
+          <property Id="77986fbf-6be8-4097-8388-72d0ec1b9458" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9aabddb3-df6c-41e2-8d3f-9ba30991baba" />
+          </property>
+          <property Id="ab969909-f134-4977-bab2-ccc656688884" name="ShortName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="13fbdd40-1fc4-43c1-94dc-0c75b1c09c2d" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9ad24425-e440-441f-8c64-382872371934" name="Speciality" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e77626b8-0235-4fcd-937f-f9540130a602" />
+        <suppliersInternal>
+          <dependency Id="45981594-8e6f-4a11-93c4-b96aa5f126ab" name="Department_Id">
+            <classMoniker Id="c8bba7fa-aae7-4610-a9aa-0c2a8471dbe9" LastKnownName="Department" />
+            <elementDefinition Id="a390b11d-681e-482b-82d1-a70efbafeee2" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="521bcbb5-18f5-455f-98c8-75d5fc000dac" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="24066bd6-1ad6-43fe-af55-779dec90e20e" />
+          </property>
+          <property Id="9446a2a8-7a22-40fc-aa5a-82363267198f" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="123c4547-2b92-4930-a764-93a6d70f59b0" />
+          </property>
+          <property Id="d49bf3a0-6130-4b93-a890-02de2edfd591" name="ShortName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6cebfc95-595e-4e09-8fd6-1e55f1b140ad" />
+          </property>
+          <property Id="ec60f236-da98-4fb9-aa84-78ca5794ec85" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="77d01d40-394c-474c-8497-2ab0fedeecf3" />
+          </property>
+          <property Id="dbe995aa-dcfc-47e8-bba9-6f348aae4a14" name="Department_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c43d60d7-0b91-4940-afef-d395ac1c8947" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a20bfeb6-0192-4940-bd59-5c8983743648" name="Lecturer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="856ae4de-d609-4e18-a9cf-79ed8986b9a6" />
+        <suppliersInternal>
+          <dependency Id="071fb0cd-cc71-4f77-8ac1-50daa559fb66" name="Department_Id">
+            <classMoniker Id="c8bba7fa-aae7-4610-a9aa-0c2a8471dbe9" LastKnownName="Department" />
+            <elementDefinition Id="ea4afa10-21b2-4e3b-8475-0c6bf2d0293b" />
+          </dependency>
+          <dependency Id="bf5fec6e-df81-4f7b-a68a-263699960b44" name="Rank_Id">
+            <classMoniker Id="3ab62102-73d8-45f3-965f-fd889a236b51" LastKnownName="Rank" />
+            <elementDefinition Id="13147289-b2b0-4423-ba61-3051630780f2" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="a7e45202-3c2c-4aa1-9a7c-194a82fb6b13" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="06de56f2-1f20-4202-a8cf-58f02584cd9b" />
+          </property>
+          <property Id="72c33037-df38-4981-b99e-56f6d77eca79" name="Firstname" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dcf45dcc-72b3-4fa0-985c-aa7e15b4b34c" />
+          </property>
+          <property Id="a3f33879-eab1-43fc-b343-7d3ac7c33281" name="Middlename" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4d3eeb3d-09bb-4552-8794-60f271713a04" />
+          </property>
+          <property Id="5e709b5a-cb4d-4808-9f26-a9b165ba2a20" name="Lastname" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5f499246-2120-4061-b293-57611517df55" />
+          </property>
+          <property Id="dd1f7f4c-4127-4c18-9fcb-ecd97c613f6d" name="Contacts" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b5e30d9-c6a0-4eba-b80c-c19d85043c57" />
+          </property>
+          <property Id="b6b8cf97-f9da-436c-81f2-7a86dcd375da" name="Department_Id?" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5feebb05-f5b6-48c8-b7ed-8fe7c5081ce7" />
+          </property>
+          <property Id="13479306-425c-43df-88a8-84105a50fd6a" name="Rank_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eee2c0fb-53b5-449e-bdde-f3ee155c6641" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3ab62102-73d8-45f3-965f-fd889a236b51" name="Rank" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="29991283-53be-4812-821f-f2ced88e085e" />
+        <ownedAttributesInternal>
+          <property Id="4e3c1e93-bd7e-45f8-9e13-eedadd814210" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2a33888c-9e92-4ab5-a838-504cc65a1c34" />
+          </property>
+          <property Id="24d51b14-6aa3-4102-a4ff-61cdcca4974c" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="08effa94-0586-4ad2-bf70-45ff90ca8858" />
+          </property>
+          <property Id="601d21f5-4e0d-4114-9c5a-7002498be13c" name="Position" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="88986ca5-e088-4b73-b698-054733480eb3" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a5642766-3754-4716-b044-964c947c6e2f" name="Group" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fd241728-fdd3-4daa-b60b-83f1a13c4513" />
+        <suppliersInternal>
+          <dependency Id="4a9f3b3a-e95b-4876-ad7f-2dcacec2f3f2" name="Course_Id">
+            <classMoniker Id="3de5d185-7039-43c9-be99-ae5a8d3cc5df" LastKnownName="Course" />
+            <elementDefinition Id="8e1b1179-7c21-4559-8ffd-16bfcf98c1c5" />
+          </dependency>
+          <dependency Id="76ead324-ae39-415e-a127-bdea8edfbbdd" name="Speciality_Id">
+            <classMoniker Id="9ad24425-e440-441f-8c64-382872371934" LastKnownName="Speciality" />
+            <elementDefinition Id="558ba5c3-1a10-4dc3-93f2-bbd0bfae0105" />
+          </dependency>
+          <dependency Id="e049f515-d5a0-468c-932b-6357a9da8c64" name="Parent_Id">
+            <classMoniker Id="a5642766-3754-4716-b044-964c947c6e2f" LastKnownName="Group" />
+            <elementDefinition Id="786db648-33ba-431a-ab3d-d1fba94c54f0" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="5e6d2b4c-7890-4ada-8a65-224f1abce26f" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a43c8b89-bc44-404a-987e-516e29915e93" />
+          </property>
+          <property Id="0c4b775d-cdf7-4705-a703-999040fd3c79" name="Code" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1a0a8063-de15-4537-9a82-2bd355ef55a4" />
+          </property>
+          <property Id="6496afef-a7c3-483f-9c59-57178a17d87c" name="Course_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4eb0141d-d9d7-46c4-a54d-12f016591e51" />
+          </property>
+          <property Id="d55c1767-3831-4a20-b98a-f9f096ddd5de" name="Speciality_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c8cb567e-0808-4059-b498-325a5ad8d0c8" />
+          </property>
+          <property Id="0b7f5d72-8fd5-4413-87f5-0ba9658227c4" name="StudentsCount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6dfb0437-e681-4bd4-af9b-860c6a4e9199" />
+          </property>
+          <property Id="c6380e93-6002-4048-a24f-1ba37f91194a" name="Parent_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9d3c6edd-eb2b-44fa-8259-895372f23d21" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3de5d185-7039-43c9-be99-ae5a8d3cc5df" name="Course" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3f599575-f530-42fc-b187-988774fcb214" />
+        <ownedAttributesInternal>
+          <property Id="687a0fe9-633b-465c-b88b-b79163bf2f22" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8f88ec11-d5c4-4d91-9cd7-98281266e26c" />
+          </property>
+          <property Id="e08a16be-565c-429f-8f44-dd48edb0e9a1" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e650c86e-ab09-4375-a541-facdfcea0146" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0b738af9-ccfc-411c-ae81-04d77ee51328" name="Schedule" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d00c3f16-a383-49ed-bdbd-70861e4cdc4a" />
+        <suppliersInternal>
+          <dependency Id="73d0305d-aea9-4765-976d-65c996196358" name="Auditorium_Id">
+            <classMoniker Id="36121b25-7365-4cdf-b975-012402c3a455" LastKnownName="Auditoruim" />
+            <elementDefinition Id="543238ba-3611-46bc-85d1-14fd138b4056" />
+          </dependency>
+          <dependency Id="2a093b41-3076-4baf-b405-99ed2376757e" name="Time_Id">
+            <classMoniker Id="86d9717a-b3f3-4964-8fae-2a24fa9ffa9c" LastKnownName="Time" />
+            <elementDefinition Id="e2c3172f-b91b-4449-8667-0ac2a9b1446d" />
+          </dependency>
+          <dependency Id="28d5eabe-6b04-42f0-9a21-cbbe3e75ded1" name="WeekType_Id">
+            <classMoniker Id="1c54569e-9042-4810-9377-b41110adac9b" LastKnownName="WeekType" />
+            <elementDefinition Id="48cd9788-421c-4172-85c6-89f15b5df0f9" />
+          </dependency>
+          <dependency Id="97e63fe0-522a-4e6d-86e9-f50823607339" name="ScheduleAttribute_Id">
+            <classMoniker Id="0800796c-862a-43b9-967f-e32bff0a992c" LastKnownName="ScheduleAttribute" />
+            <elementDefinition Id="171af3db-6b39-42e9-a770-3810dcc3808f" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="6f94688d-49ec-445b-bff5-38888bf737f4" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3a8f67e3-2dcf-4fae-bdf7-3b9546bb8b3f" />
+          </property>
+          <property Id="7e2eb9d7-259a-4735-a7e0-c026098f7aee" name="Auditorium_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="29ed3095-1fa3-4ac5-8fc4-0cb80d3d7432" />
+          </property>
+          <property Id="a7512f77-0e78-47b0-a0bc-367b3586ec0a" name="Time_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e54de3ae-2bda-4f89-adc4-4ae64f81366b" />
+          </property>
+          <property Id="2b61a2b4-68f3-4817-ae1e-f26d8ae7ed47" name="DayOfWeek" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6d7657db-a7ef-4cef-9458-aad9e043fa9b" />
+          </property>
+          <property Id="688b0027-d373-45d7-a387-30c6eb8183fc" name="StartDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33f82651-3a80-431b-9448-bacb298fa568" />
+          </property>
+          <property Id="6540b90b-c79a-4ec8-85e7-6c09fdda5e43" name="EndDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="09a258c5-d6b9-4836-a657-4186aa6a30c4" />
+          </property>
+          <property Id="fa3fc911-0bc8-41ff-941e-77e35818f59c" name="WeekType_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1b57b50f-eed0-40de-9dbf-bd6a5dd3dd97" />
+          </property>
+          <property Id="f90fb01d-5ba2-4a42-b6b6-c17a6da0470e" name="ScheduleAttribute_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="52b4b218-7cc3-45a0-8138-24cf067107e3" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="86d9717a-b3f3-4964-8fae-2a24fa9ffa9c" name="Time" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9e6fa1a6-d9b4-4358-b0fc-e863ac19c1d6" />
+        <ownedAttributesInternal>
+          <property Id="60cf01b7-04dd-4e5e-b0cd-86e86dfd5b74" name="StartTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="138f10ef-43e8-4d04-a9e3-f98942372d1c" />
+          </property>
+          <property Id="94909b5c-eddd-4eaa-84ab-dced9d651644" name="EndTime" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="868eefe9-be12-4274-966f-569406e1e034" />
+          </property>
+          <property Id="03481bc7-fd3c-44dd-920a-fbd757dfd8d0" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="244102d3-1db5-4597-8d55-7923c48041bf" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8dffabcb-edc4-4ec9-8f52-2b94de3e2c16" name="AuditoriumApplicabilities" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1df31c08-84d6-458b-acb2-8cd85d1ca8f3" />
+        <suppliersInternal>
+          <dependency Id="fdfbd31d-b5cb-4fb3-b243-9b6b8abeac76" name="TutorialType_Id">
+            <classMoniker Id="0155cbe3-e370-426e-90a9-66bfa01593a6" LastKnownName="TutorialType" />
+            <elementDefinition Id="db37bdf5-e545-43ff-9c75-97f9b9bb9aba" />
+          </dependency>
+          <dependency Id="60f8bb5f-9afa-4388-bd54-4df823d73671" name="Auditorium_Id">
+            <classMoniker Id="36121b25-7365-4cdf-b975-012402c3a455" LastKnownName="Auditoruim" />
+            <elementDefinition Id="c0dafe13-ac85-415b-94f6-3be488cdbf30" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="c0674a1c-cc02-4f70-95b8-f550c105b578" name="Auditorium_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="30673d44-9fb5-4d53-974a-828b7d78c909" />
+          </property>
+          <property Id="d719588f-a88b-4a9f-a388-d4288c595e94" name="TutorialType_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="bf650fc3-4689-4bd9-8d1f-6b3d7c067292" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0800796c-862a-43b9-967f-e32bff0a992c" name="ScheduleAttribute" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="644f7d90-de0c-48ce-bbae-da92a34d0ea0" />
+        <suppliersInternal>
+          <dependency Id="aca4bed2-08ec-4d35-ae9c-46722535d52f" name="TutorialType_Id">
+            <classMoniker Id="0155cbe3-e370-426e-90a9-66bfa01593a6" LastKnownName="TutorialType" />
+            <elementDefinition Id="c8dba5b6-9476-4c59-9ef9-4914a94a0ede" />
+          </dependency>
+          <dependency Id="72669eba-a0e5-40a3-93a5-d1394de8c2e5" name="Tutorial_Id">
+            <classMoniker Id="bb147d9f-b5b5-431b-9221-17ae0a28c2b9" LastKnownName="Tutorial" />
+            <elementDefinition Id="0e60570a-5fd4-48d4-898a-67804119afd5" />
+          </dependency>
+          <dependency Id="17d81818-26e5-462d-9cdb-4ec1403d20d3">
+            <classMoniker Id="c8bba7fa-aae7-4610-a9aa-0c2a8471dbe9" LastKnownName="Department" />
+            <elementDefinition Id="54952970-b7ae-4532-8231-53f3d42e06c1" />
+          </dependency>
+          <dependency Id="a8da24a3-8dfe-414f-baf2-eee97dce8cc0" name="Lecturer_Id">
+            <classMoniker Id="a20bfeb6-0192-4940-bd59-5c8983743648" LastKnownName="Lecturer" />
+            <elementDefinition Id="9937d1af-5606-4833-8187-6734cefcca6f" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="ed8a9474-0a46-4679-a581-65c9350daabb" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="48c01f20-bc66-44e1-9a96-9f9c804a3c5b" />
+          </property>
+          <property Id="63575b92-8e78-414a-96da-617f9c337b35" name="TutorialType_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="14852257-405d-4d59-a8bb-f678425db182" />
+          </property>
+          <property Id="21a95250-8f9d-4538-ad80-14403a660880" name="Tutorial_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f2f06cc5-f90a-4190-b265-93553a52b0fa" />
+          </property>
+          <property Id="3cfedbe5-7630-4b47-9091-d202bcb30abf" name="HoursPerWeek" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7b97eb3f-8d21-407d-8403-84f443cfc54a" />
+          </property>
+          <property Id="dd258cbc-5f6c-4692-8423-9ed65f26a965" name="SubgroupCount" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8e6a248a-e3d3-400e-b9cd-f2093162d396" />
+          </property>
+          <property Id="e40f69d6-249b-4042-8425-707eae27dd27" name="Lecturer_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dc18cada-d70f-4b43-b691-99520c26d9a7" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1c54569e-9042-4810-9377-b41110adac9b" name="WeekType" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="90b9296a-a9f6-49e7-8e4f-079a1dbed991" />
+        <ownedAttributesInternal>
+          <property Id="f0391b2a-9584-4343-b268-e75ad543fc05" name="Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5ceb3342-80b9-4570-9521-05e4a7b60fed" />
+          </property>
+          <property Id="b9535796-0911-4513-a957-34bb2b8aae0e" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4fcfc04-f234-4b61-a27f-f3cd735d8ed6" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="68e9b1d9-a045-4b90-930f-b2662f34ab9c" name="ScheduleAttributesToCourses" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="01917a25-c15e-4b44-ad23-10d4a08a06e9" />
+        <suppliersInternal>
+          <dependency Id="0d1563c9-b1f2-431d-a57d-42e7bc9431f9" name="ScheduleAttribute_Id">
+            <classMoniker Id="0800796c-862a-43b9-967f-e32bff0a992c" LastKnownName="ScheduleAttribute" />
+            <elementDefinition Id="c47ad91e-65b6-4350-ad5e-64899f7c69c4" />
+          </dependency>
+          <dependency Id="4909cfd2-9235-47e4-bf32-d574fed3b07f" name="Course_Id">
+            <classMoniker Id="3de5d185-7039-43c9-be99-ae5a8d3cc5df" LastKnownName="Course" />
+            <elementDefinition Id="c7aa366e-3021-409c-bff5-c302db235d36" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="7c331758-1870-4730-8029-4cbd47c1267b" name="Course_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="20b7893d-75d4-4ea2-a8ba-27a8620fae8b" />
+          </property>
+          <property Id="21d2888b-a835-4e1d-9356-b5e6d39fae8f" name="ScheduleAttribute_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="24efeb62-1197-4e2d-92da-9021c38d2d88" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="612d742d-2124-481c-a0df-c5983f39d92e" name="ScheduleAttributesToAuditoriums" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fd3c9158-8f10-442e-aa36-2c82a6742474" />
+        <suppliersInternal>
+          <dependency Id="0b1b4788-3fa9-4199-9176-00eb6b6b7c84" name="ScheduleAttribute_Id">
+            <classMoniker Id="0800796c-862a-43b9-967f-e32bff0a992c" LastKnownName="ScheduleAttribute" />
+            <elementDefinition Id="b0f53706-d8a7-4cbb-a025-d0e9d2c12e32" />
+          </dependency>
+          <dependency Id="b722271d-b297-465b-8082-2f4d11d2559f" name="Auditorium_Id">
+            <classMoniker Id="36121b25-7365-4cdf-b975-012402c3a455" LastKnownName="Auditoruim" />
+            <elementDefinition Id="44189923-60d8-4970-acec-517d0f61c5e0" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="9128e92b-4528-462d-9df5-3ae1413dd995" name="Auditorium_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="551d11c4-1cdf-44d5-a836-99c472d46d4a" />
+          </property>
+          <property Id="22ab0d77-32e0-4a88-989d-d0c4c78b337d" name="ScheduleAttribute_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="72571b50-391d-48f7-ba48-163d4c54a8db" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9940b287-3669-48df-90f5-e9c35b98a557" name="ScheduleAttributesToFaculties" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3a34ae45-d6e7-40b9-b932-9c4b9e7ca8e9" />
+        <suppliersInternal>
+          <dependency Id="5008f27d-6253-4974-aeab-06ed7a78cf4e" name="Faculty_Id">
+            <classMoniker Id="93d851ca-89c0-43b4-8905-7ab7f00b4a6c" LastKnownName="Faculty" />
+            <elementDefinition Id="805d4c46-7470-41a7-8df9-334ae05bda5b" />
+          </dependency>
+          <dependency Id="b4a75b63-32e1-43ac-bd20-adf2a3d33362" name="ScheduleAttribute_Id">
+            <classMoniker Id="0800796c-862a-43b9-967f-e32bff0a992c" LastKnownName="ScheduleAttribute" />
+            <elementDefinition Id="c5ce0bba-0b07-49ab-a04b-66f00291ac9a" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="167473b9-d2c1-4ca0-88b1-6a0d45dc7356" name="Faculty_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5332e3de-8840-4019-b1aa-e86286835f31" />
+          </property>
+          <property Id="f987f59c-f5c7-4366-8984-8fa262291463" name="ScheduleAttribute_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="56adbb79-9a9c-43ac-922e-2367af6a142f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cf9d0453-a57d-4a79-831a-f477c292dc18" name="ScheduleAttributesToSpecialties" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ae182328-21ee-417e-a8ec-e579c475a482" />
+        <suppliersInternal>
+          <dependency Id="192135e1-7160-4d93-b18c-8f0c58a96a7b" name="ScheduleAttribute_Id">
+            <classMoniker Id="0800796c-862a-43b9-967f-e32bff0a992c" LastKnownName="ScheduleAttribute" />
+            <elementDefinition Id="f8d96eab-f04d-4e88-9c95-a3ed1006945e" />
+          </dependency>
+          <dependency Id="8751b2ff-76bb-4c1d-897c-03ffde91468a" name="Specialty_Id">
+            <classMoniker Id="9ad24425-e440-441f-8c64-382872371934" LastKnownName="Speciality" />
+            <elementDefinition Id="7d09b3b4-4179-4578-a1f4-952e8a04fd42" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="c37a1d70-01ff-4379-a3ee-10dbad47df8d" name="ScheduleAttribute_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d6a5297f-51db-4c9f-a4dd-6ef711946b90" />
+          </property>
+          <property Id="0094d31b-7b65-4666-919f-0f6a8df088b3" name="Specialty_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a08612db-d248-4c3c-a161-4855d6afb070" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="351f16de-b286-479f-a75e-f3511b71415f" name="ScheduleAttributesToGroups" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d1a6167f-c85a-4d81-b3f4-8eebbba931ab" />
+        <suppliersInternal>
+          <dependency Id="5468861e-3d05-4095-b4c2-08bec8a72e7d">
+            <classMoniker Id="0800796c-862a-43b9-967f-e32bff0a992c" LastKnownName="ScheduleAttribute" />
+            <elementDefinition Id="95564184-2b9f-46d3-a293-ae69502f1bf7" />
+          </dependency>
+          <dependency Id="bd42db2c-09f0-47c5-b0f7-2e367a72fe69">
+            <classMoniker Id="a5642766-3754-4716-b044-964c947c6e2f" LastKnownName="Group" />
+            <elementDefinition Id="c0c33493-d389-42ea-99ae-1b97e5b716d4" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="dcf57eda-b19d-4a11-a4fc-c1616b4cb036" name="Group_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="08bd64b5-2c17-4f3e-8cf2-19b3b4817478" />
+          </property>
+          <property Id="16656732-74fb-4934-86a4-d73d499824ac" name="ScheduleAttribute_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="38de2776-013f-4e05-a85f-7f4d0569343f" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0daa5372-ece4-4141-aa10-133454aec0e5" name="Timetable.Model">
+    <elementDefinition Id="37eafb3e-86bd-4662-9de3-8598bead3b72" />
+    <profileInstances>
+      <packageHasProfileInstances Id="8487836d-302a-4b94-9570-784013d5c500">
+        <profileInstance Id="5b29e761-91bb-42dc-a18f-08903ff10db9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c4271056-4917-40b9-98a0-82b60b3bc70a">
+        <profileInstance Id="21fb0ddd-e9f2-4ecd-a658-0ea10e29f57c" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5d783769-af12-4d55-9650-05a6acb0d8c7">
+        <profileInstance Id="19117339-19b4-4881-aa32-2ebe652555cd" name="CSharpProfile">
+          <elementDefinition Id="8a9ea48b-ec73-434f-b0ef-453fe6890315" />
+        </profileInstance>
+        <elementDefinition Id="2a225dfc-1d8c-4c01-95c1-42c284cbfb47" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

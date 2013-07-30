@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+  dslVersion="1.0.0.0"
+  Id="fa0620fd-4d34-4aca-8dc7-0fdaf5629d17"
+  name="Interfaces"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9e102450-a740-43e4-990c-9cdae8291f7d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace=Timetable.Base.Interfaces"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c938ee8d-3eaa-4493-8f72-fbb2a5453f4c"
+        LastKnownName="Services"
+        LastKnownLocation="Package2_0122.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4379875d-5994-4aa6-b818-723a873411f4"
+        LastKnownName="Repositories"
+        LastKnownLocation="Package6_0122.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a6c8252a-e0aa-4a99-ba43-fac88a2a236e"
+        LastKnownName="Entities"
+        LastKnownLocation="Package16_0128.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a425ca1f-2f00-4e1f-8f41-86a8d98ab0ad"
+        LastKnownName="DataSources"
+        LastKnownLocation="Package19_0128.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

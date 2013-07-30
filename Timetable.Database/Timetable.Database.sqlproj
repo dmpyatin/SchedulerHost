@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Timetable.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{fe7071be-4a27-452a-aa1e-d2e7104c882c}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Timetable.Database</RootNamespace>
+    <AssemblyName>Timetable.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <DacApplicationName>PetrSU.Timetable</DacApplicationName>
+    <DacVersion>2.0.0.0</DacVersion>
+    <DacDescription>Database for PetrSU Timetable system</DacDescription>
+    <GenerateCreateScript>True</GenerateCreateScript>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="DefaultData" />
+    <Folder Include="PostDeployment" />
+    <Folder Include="PostDeployment\InsertData" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\AuditoriumApplicabilities.sql" />
+    <Build Include="Tables\Groups.sql" />
+    <Build Include="Tables\Lecturers.sql" />
+    <Build Include="Tables\TutorialTypes.sql" />
+    <Build Include="Tables\Tutorials.sql" />
+    <Build Include="Tables\Specialities.sql" />
+    <Build Include="Tables\Auditoriums.sql" />
+    <Build Include="Tables\Departments.sql" />
+    <Build Include="Tables\Faculties.sql" />
+    <Build Include="Tables\Buildings.sql" />
+    <Build Include="Tables\Logs.sql" />
+    <Build Include="Tables\Users.sql" />
+    <PostDeploy Include="PostDeployment\PostDeployment.sql" />
+    <Build Include="Tables\Ranks.sql" />
+    <Build Include="Tables\Courses.sql" />
+    <Build Include="Tables\Times.sql" />
+    <Build Include="Tables\Schedules.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Auditories.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\TutorialTypes.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Building.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Courses.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Departments.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Faculties.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Groups.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Lecturers.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Times.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Ranks.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Specialities.sql" />
+    <BuildExtensionConfiguration Include="PostDeployment\InsertData\Tutorials.sql" />
+    <Build Include="Tables\WeekTypes.sql" />
+    <Build Include="Tables\ScheduleAttributes.sql" />
+    <Build Include="Tables\SheduleAttributesToAuditoriums.sql" />
+    <Build Include="Tables\ScheduleAttributesToSpecialities.sql" />
+    <Build Include="Tables\ScheduleAttributesToFaculties.sql" />
+    <Build Include="Tables\ScheduleAttributesToCourses.sql" />
+    <Build Include="Tables\ScheduleAttributesToGroups.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Timetable.Database.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Timetable.publish.xml" />
+    <None Include="DefaultData\Departments.csv" />
+    <None Include="DefaultData\Faculties.csv" />
+    <None Include="DefaultData\Auditoriums.csv" />
+    <None Include="DefaultData\Groups.csv" />
+    <None Include="DefaultData\Housings.csv" />
+    <None Include="DefaultData\Lecturers.csv" />
+    <None Include="DefaultData\Pairs.csv" />
+    <None Include="DefaultData\Posts.csv" />
+    <None Include="DefaultData\Shifts.csv" />
+    <None Include="DefaultData\Specialities.csv" />
+    <None Include="DefaultData\StudyTypes.csv" />
+    <None Include="DefaultData\SubGroups.csv" />
+    <None Include="DefaultData\Subjects.csv" />
+    <None Include="DefaultData\SubjectsAndLecturers.xlsx" />
+    <None Include="Timetable.Database.publish.xml" />
+    <None Include="PostDeployment\InsertData\WeekTypes.sql" />
+  </ItemGroup>
+</Project>

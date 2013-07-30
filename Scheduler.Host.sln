@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timetable.Base", "Timetable.Base\Timetable.Base.csproj", "{ABDB4F76-D271-433B-AB27-C8ED9CE1DF84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timetable.Data", "Timetable.DataEntities\Timetable.Data.csproj", "{562EAD51-A27A-47DE-9CF6-554D0D793FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timetable.Host", "Timetable.Host\Timetable.Host.csproj", "{779ABE6E-1C0E-4E8A-8ED7-3CC94D716460}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timetable.Optimization", "Timetable.Optimization\Timetable.Optimization.csproj", "{A1FD1CA5-1775-4D07-8B4C-9C086BE1E8B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Optimization", "Optimization", "{D6961118-D1AD-4E55-BCC1-7A7358656F86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timetable.Optimization.Workbench", "Timetable.Optimization.Workbench\Timetable.Optimization.Workbench.csproj", "{C267765E-BD76-4452-801F-5667BD45C037}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timetablle.Host.Tests", "Scheduler.Tests\Timetablle.Host.Tests.csproj", "{72326F74-2554-4BED-8867-9FCC1B397633}"
+	ProjectSection(ProjectDependencies) = postProject
+		{779ABE6E-1C0E-4E8A-8ED7-3CC94D716460} = {779ABE6E-1C0E-4E8A-8ED7-3CC94D716460}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{17D0C657-480A-4D09-9E11-17A4DF2F838B}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://univsched1:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Timetable.Base\\Timetable.Base.csproj
+		SccProjectName1 = Timetable.Base
+		SccLocalPath1 = Timetable.Base
+		SccProjectUniqueName2 = Timetable.DataEntities\\Timetable.Data.csproj
+		SccProjectName2 = Timetable.DataEntities
+		SccLocalPath2 = Timetable.DataEntities
+		SccProjectUniqueName3 = Timetable.Optimization\\Timetable.Optimization.csproj
+		SccProjectTopLevelParentUniqueName3 = Scheduler.Host.sln
+		SccProjectName3 = Timetable.Optimization
+		SccLocalPath3 = Timetable.Optimization
+		SccProjectUniqueName4 = Timetable.Host\\Timetable.Host.csproj
+		SccProjectName4 = Timetable.Host
+		SccLocalPath4 = Timetable.Host
+		SccProjectUniqueName5 = Timetable.Optimization.Workbench\\Timetable.Optimization.Workbench.csproj
+		SccProjectTopLevelParentUniqueName5 = Scheduler.Host.sln
+		SccProjectName5 = Timetable.Optimization.Workbench
+		SccLocalPath5 = Timetable.Optimization.Workbench
+		SccProjectUniqueName6 = Scheduler.Tests\\Timetablle.Host.Tests.csproj
+		SccProjectTopLevelParentUniqueName6 = Scheduler.Host.sln
+		SccProjectName6 = Scheduler.Tests
+		SccLocalPath6 = Scheduler.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABDB4F76-D271-433B-AB27-C8ED9CE1DF84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABDB4F76-D271-433B-AB27-C8ED9CE1DF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABDB4F76-D271-433B-AB27-C8ED9CE1DF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABDB4F76-D271-433B-AB27-C8ED9CE1DF84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562EAD51-A27A-47DE-9CF6-554D0D793FB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562EAD51-A27A-47DE-9CF6-554D0D793FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562EAD51-A27A-47DE-9CF6-554D0D793FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562EAD51-A27A-47DE-9CF6-554D0D793FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{779ABE6E-1C0E-4E8A-8ED7-3CC94D716460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{779ABE6E-1C0E-4E8A-8ED7-3CC94D716460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{779ABE6E-1C0E-4E8A-8ED7-3CC94D716460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{779ABE6E-1C0E-4E8A-8ED7-3CC94D716460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1FD1CA5-1775-4D07-8B4C-9C086BE1E8B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FD1CA5-1775-4D07-8B4C-9C086BE1E8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FD1CA5-1775-4D07-8B4C-9C086BE1E8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FD1CA5-1775-4D07-8B4C-9C086BE1E8B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C267765E-BD76-4452-801F-5667BD45C037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C267765E-BD76-4452-801F-5667BD45C037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C267765E-BD76-4452-801F-5667BD45C037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C267765E-BD76-4452-801F-5667BD45C037}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72326F74-2554-4BED-8867-9FCC1B397633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72326F74-2554-4BED-8867-9FCC1B397633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72326F74-2554-4BED-8867-9FCC1B397633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72326F74-2554-4BED-8867-9FCC1B397633}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A1FD1CA5-1775-4D07-8B4C-9C086BE1E8B4} = {D6961118-D1AD-4E55-BCC1-7A7358656F86}
+		{C267765E-BD76-4452-801F-5667BD45C037} = {D6961118-D1AD-4E55-BCC1-7A7358656F86}
+		{72326F74-2554-4BED-8867-9FCC1B397633} = {17D0C657-480A-4D09-9E11-17A4DF2F838B}
+	EndGlobalSection
+EndGlobal
