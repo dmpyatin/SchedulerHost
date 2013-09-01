@@ -35,10 +35,12 @@ namespace Timetable.Host.Services
             {
                 schedulesCount = schedules.Where(x => x.WeekTypeId == 1 || x.WeekTypeId == 2).Count();
             }
+
             if (schedule.WeekTypeId == 3)
             {
                 schedulesCount = schedules.Where(x => x.WeekTypeId == 1 || x.WeekTypeId == 3).Count();
             }
+
 
             if (schedulesCount == 0)
             {
