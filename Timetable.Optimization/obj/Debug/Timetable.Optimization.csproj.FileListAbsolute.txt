@@ -10,3 +10,15 @@ C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Optimization\bin\D
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Optimization\obj\Debug\Timetable.Optimization.csprojResolveAssemblyReference.cache
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Optimization\obj\Debug\Timetable.Optimization.dll
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Optimization\obj\Debug\Timetable.Optimization.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\bin\Debug\Timetable.Optimization.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\bin\Debug\Timetable.Optimization.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\bin\Debug\Timetable.Optimization.dll.CodeAnalysisLog.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\bin\Debug\Timetable.Optimization.dll.lastcodeanalysissucceeded
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\bin\Debug\Ninject.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\bin\Debug\Timetable.Base.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\bin\Debug\Timetable.Base.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\bin\Debug\Ninject.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\bin\Debug\Ninject.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\obj\Debug\Timetable.Optimization.csprojResolveAssemblyReference.cache
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\obj\Debug\Timetable.Optimization.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization\obj\Debug\Timetable.Optimization.pdb

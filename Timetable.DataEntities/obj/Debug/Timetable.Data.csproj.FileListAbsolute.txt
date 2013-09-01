@@ -28,3 +28,33 @@ C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.DataEntities\obj\D
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Foreign_keys_updated.resources
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.AddStartEndTimeToSchedules.resources
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Add_AutoDeleteField_In_Schedules.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Timetable.Data.dll.config
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Timetable.Data.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Timetable.Data.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Timetable.Data.dll.CodeAnalysisLog.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Timetable.Data.dll.lastcodeanalysissucceeded
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\EntityFramework.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Ninject.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Timetable.Base.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\WebActivator.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Timetable.Base.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\EntityFramework.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Ninject.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\bin\Debug\Ninject.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.csprojResolveAssemblyReference.cache
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Foreign_keys_updated.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.AddStartEndTimeToSchedules.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Add_AutoDeleteField_In_Schedules.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Remove_StudyYear_entity.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Add_StudyYear_entity.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Initial_create.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Add_branches.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Create_many_to_many_for_lecturers_and_departments.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Create_many_to_many_for_faculties_and_specialities.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Add_StudyYears_and_AuditoriumTypes.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Auth.Add_users_and_roles.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Resources.Messages.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.csproj.GenerateResource.Cache
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.pdb

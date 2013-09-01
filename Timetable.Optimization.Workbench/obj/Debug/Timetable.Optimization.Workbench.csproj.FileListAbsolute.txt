@@ -15,3 +15,20 @@ C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Optimization.Workb
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Optimization.Workbench\obj\Debug\Timetable.Optimization.Workbench.csprojResolveAssemblyReference.cache
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Optimization.Workbench\obj\Debug\Timetable.Optimization.Workbench.exe
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Optimization.Workbench\obj\Debug\Timetable.Optimization.Workbench.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Timetable.Optimization.Workbench.exe.config
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Timetable.Optimization.Workbench.exe
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Timetable.Optimization.Workbench.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\EntityFramework.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Timetable.Base.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Timetable.Data.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Timetable.Optimization.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Ninject.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Timetable.Base.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Timetable.Data.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Timetable.Optimization.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\EntityFramework.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Ninject.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\bin\Debug\Ninject.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\obj\Debug\Timetable.Optimization.Workbench.csprojResolveAssemblyReference.cache
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\obj\Debug\Timetable.Optimization.Workbench.exe
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Optimization.Workbench\obj\Debug\Timetable.Optimization.Workbench.pdb
