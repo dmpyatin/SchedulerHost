@@ -49,6 +49,8 @@ namespace Timetable.Data.Context
 
         public IDbSet<StudyYear> StudyYears { get; set; }
 
+        public IDbSet<TimetableEntity> TimetableEntities { get; set; }
+
         #endregion
         
         public SchedulerContext()
@@ -80,6 +82,7 @@ namespace Timetable.Data.Context
             WeekTypes = Set<WeekType>();
             AuditoriumTypes = Set<AuditoriumType>();
             StudyYears = Set<StudyYear>();
+            TimetableEntities = Set<TimetableEntity>();
 
             base.Initialize();
         }
@@ -200,6 +203,10 @@ namespace Timetable.Data.Context
         IQueryable<StudyYear> ISchedulerDatabase.StudyYears
         {
             get { return StudyYears; }
+        }
+        IQueryable<TimetableEntity> ISchedulerDatabase.TimetableEntities
+        {
+            get { return TimetableEntities; }
         }
 
         #endregion

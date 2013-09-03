@@ -12,3 +12,17 @@ C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\bin\Debug\Sys
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\obj\Debug\Timetable.Base.csprojResolveAssemblyReference.cache
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\obj\Debug\Timetable.Base.dll
 C:\Users\pyatin\Downloads\New folder\Scheduler.Host\Timetable.Base\obj\Debug\Timetable.Base.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\Timetable.Base.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\Timetable.Base.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\Timetable.Base.dll.CodeAnalysisLog.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\Timetable.Base.dll.lastcodeanalysissucceeded
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\Ninject.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\System.Web.Http.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\Ninject.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\Ninject.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\System.Web.Http.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\obj\Debug\Timetable.Base.csprojResolveAssemblyReference.cache
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\obj\Debug\Timetable.Base.dll
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\obj\Debug\Timetable.Base.pdb

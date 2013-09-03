@@ -75,6 +75,7 @@
     <Compile Include="Entities\Scheduler\Schedule.cs" />
     <Compile Include="Entities\Scheduler\ScheduleInfo.cs" />
     <Compile Include="Entities\Scheduler\StudyYear.cs" />
+    <Compile Include="Entities\Scheduler\TimetableEntity.cs" />
     <Compile Include="Entities\Scheduler\TutorialType.cs" />
     <Compile Include="Entities\Scheduler\Time.cs" />
     <Compile Include="Entities\Scheduler\Speciality.cs" />

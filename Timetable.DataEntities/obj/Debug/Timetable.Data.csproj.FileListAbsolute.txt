@@ -58,3 +58,4 @@ C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\
 C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.csproj.GenerateResource.Cache
 C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.dll
 C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.pdb
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.AddingTimetaeEntity.resources

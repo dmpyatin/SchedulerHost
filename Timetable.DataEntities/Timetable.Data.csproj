@@ -120,6 +120,10 @@
     <Compile Include="Migrations\201307120626393_Add_AutoDeleteField_In_Schedules.Designer.cs">
       <DependentUpon>201307120626393_Add_AutoDeleteField_In_Schedules.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201309030713534_AddingTimetaeEntity.cs" />
+    <Compile Include="Migrations\201309030713534_AddingTimetaeEntity.Designer.cs">
+      <DependentUpon>201309030713534_AddingTimetaeEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Schedule\201305122003080_Remove_StudyYear_entity.cs" />
     <Compile Include="Migrations\Schedule\201305122003080_Remove_StudyYear_entity.Designer.cs">
       <DependentUpon>201305122003080_Remove_StudyYear_entity.cs</DependentUpon>
@@ -184,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201307120626393_Add_AutoDeleteField_In_Schedules.resx">
       <DependentUpon>201307120626393_Add_AutoDeleteField_In_Schedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201309030713534_AddingTimetaeEntity.resx">
+      <DependentUpon>201309030713534_AddingTimetaeEntity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\Schedule\201305122003080_Remove_StudyYear_entity.resx">
       <DependentUpon>201305122003080_Remove_StudyYear_entity.cs</DependentUpon>

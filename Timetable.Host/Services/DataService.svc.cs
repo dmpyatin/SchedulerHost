@@ -14,6 +14,12 @@ namespace Timetable.Host.Services
     {
         #region Operations implementation
 
+        public IQueryable<TimetableEntity> GetTimetableEntities()
+        {
+            return Database.TimetableEntities
+                .Where(x => x.IsActual);
+        }
+
         public bool ValidateSchedule(Schedule schedule)
         {
             int schedulesCount = 0;

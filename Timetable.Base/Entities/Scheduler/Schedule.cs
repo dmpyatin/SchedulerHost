@@ -41,5 +41,11 @@ namespace Timetable.Base.Entities.Scheduler
 
         [DataMember(Name = "AutoDelete")]
         public bool AutoDelete { get; set; }
+
+        [DataMember(Name = "TimetableEntity")]
+        public virtual TimetableEntity Timetable { get; set; }
+
+        [DataMember(Name = "TimetableEntityId")]
+        public int TimetableEntityId { get; set; }
     }
 }

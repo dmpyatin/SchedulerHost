@@ -40,5 +40,7 @@ namespace Timetable.Base.Interfaces.DataSources
         IQueryable<AuditoriumType> AuditoriumTypes { get; }
 
         IQueryable<StudyYear> StudyYears { get; }
+
+        IQueryable<TimetableEntity> TimetableEntities { get; }
     }
 }
