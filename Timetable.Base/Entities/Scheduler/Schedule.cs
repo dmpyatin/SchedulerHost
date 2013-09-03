@@ -46,6 +46,6 @@ namespace Timetable.Base.Entities.Scheduler
         public virtual TimetableEntity Timetable { get; set; }
 
         [DataMember(Name = "TimetableEntityId")]
-        public int TimetableEntityId { get; set; }
+        public int? TimetableEntityId { get; set; }
     }
 }

@@ -124,6 +124,10 @@
     <Compile Include="Migrations\201309030713534_AddingTimetaeEntity.Designer.cs">
       <DependentUpon>201309030713534_AddingTimetaeEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201309031344534_MakeTimetableIdNullable.cs" />
+    <Compile Include="Migrations\201309031344534_MakeTimetableIdNullable.Designer.cs">
+      <DependentUpon>201309031344534_MakeTimetableIdNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Schedule\201305122003080_Remove_StudyYear_entity.cs" />
     <Compile Include="Migrations\Schedule\201305122003080_Remove_StudyYear_entity.Designer.cs">
       <DependentUpon>201305122003080_Remove_StudyYear_entity.cs</DependentUpon>
@@ -191,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201309030713534_AddingTimetaeEntity.resx">
       <DependentUpon>201309030713534_AddingTimetaeEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201309031344534_MakeTimetableIdNullable.resx">
+      <DependentUpon>201309031344534_MakeTimetableIdNullable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\Schedule\201305122003080_Remove_StudyYear_entity.resx">
       <DependentUpon>201305122003080_Remove_StudyYear_entity.cs</DependentUpon>

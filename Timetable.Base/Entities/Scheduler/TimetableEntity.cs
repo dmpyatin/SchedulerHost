@@ -11,7 +11,5 @@ namespace Timetable.Base.Entities.Scheduler
 
         [DataMember(Name = "IsActive")]
         public bool IsActive { get; set; }
-
-       
     }
 }
