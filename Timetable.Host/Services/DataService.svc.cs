@@ -432,6 +432,20 @@ namespace Timetable.Host.Services
 
         }
 
+        public IQueryable<Schedule> GetSchedulesForGroupOnlyId(
+           Group group,
+           StudyYear studyYear,
+           int semester,
+           DateTime StartDate,
+           DateTime EndDate)
+        {
+            return GetSchedules()
+                .Where(x => x.ScheduleInfo.StudyYear.Id == studyYear.Id)
+                .Where(x => x.ScheduleInfo.Semester == semester)
+                .Where(x => x.ScheduleInfo.Groups.Any(y => y.Id.Equals(group.Id)));
+
+        }
+
         public IQueryable<Schedule> GetSchedulesForSpeciality(
             Faculty faculty,
             Course course,

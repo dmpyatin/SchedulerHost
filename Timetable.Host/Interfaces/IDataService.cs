@@ -12,6 +12,16 @@ namespace Timetable.Host.Interfaces
         [OperationContract]
         [ApplyDataContractResolver]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        IQueryable<Schedule> GetSchedulesForGroupOnlyId(
+           Group group,
+           StudyYear studyYear,
+           int semester,
+           DateTime StartDate,
+           DateTime EndDate);
+
+        [OperationContract]
+        [ApplyDataContractResolver]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
         IQueryable<TimetableEntity> GetTimetableEntities();
 
         [OperationContract]
