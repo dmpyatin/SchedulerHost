@@ -91,5 +91,11 @@ namespace Timetable.Data.Context
 
             Set(entity.GetType()).Attach(entity);
         }
+
+
+        public IEnumerable<TEntity> RawSqlQuery<TEntity>(string query, params object[] parameters) where TEntity : BaseEntity
+        {
+            return Database.SqlQuery(typeof(TEntity), query, parameters).Cast<TEntity>();
+        }
     }
 }

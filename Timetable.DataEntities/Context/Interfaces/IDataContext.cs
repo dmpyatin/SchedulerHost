@@ -16,5 +16,7 @@ namespace Timetable.Data.Context.Interfaces
         DbSet<TEntity> Set<TEntity>() where TEntity : BaseEntity;
 
         DbEntityEntry<TEntity> Entry<TEntity>(TEntity entity) where TEntity : BaseEntity;
+
+        IEnumerable<TEntity> RawSqlQuery<TEntity>(string query, params object[] parameters) where TEntity : BaseEntity;
     }
 }

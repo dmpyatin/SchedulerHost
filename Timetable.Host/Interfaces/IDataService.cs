@@ -17,6 +17,11 @@ namespace Timetable.Host.Interfaces
         [OperationContract]
         [ApplyDataContractResolver]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        IQueryable<Group> GetGroupsByCode(string code);
+
+        [OperationContract]
+        [ApplyDataContractResolver]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
         bool ValidateSchedule(Schedule schedule);
 
         [OperationContract]
