@@ -195,9 +195,9 @@ namespace Timetable.Host.Services
                 .FirstOrDefault(x => x.Id == groupId);
         }
 
-        public IQueryable<Group> GetGroupsByCode(string code)
+        public IQueryable<Group> GetGroupsByCode(string code, int count)
         {
-            return Database.Groups.Where(x => x.Code.Contains(code));
+            return Database.Groups.Where(x => x.Code.Contains(code)).Take(count);
         }
 
         public IQueryable<Group> GetsSubGroupsByGroupId(int groupId)

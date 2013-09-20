@@ -17,7 +17,7 @@ namespace Timetable.Host.Interfaces
         [OperationContract]
         [ApplyDataContractResolver]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
-        IQueryable<Group> GetGroupsByCode(string code);
+        IQueryable<Group> GetGroupsByCode(string code, int count);
 
         [OperationContract]
         [ApplyDataContractResolver]
