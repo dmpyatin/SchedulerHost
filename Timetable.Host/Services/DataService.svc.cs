@@ -442,6 +442,7 @@ namespace Timetable.Host.Services
             return GetSchedules()
                 .Where(x => x.ScheduleInfo.StudyYear.Id == studyYear.Id)
                 .Where(x => x.ScheduleInfo.Semester == semester)
+                .Where(x => x.StartDate <= EndDate && x.EndDate >= StartDate)
                 .Where(x => x.ScheduleInfo.Groups.Any(y => y.Id.Equals(group.Id)));
 
         }
