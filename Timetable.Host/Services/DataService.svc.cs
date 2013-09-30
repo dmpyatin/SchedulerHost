@@ -474,16 +474,12 @@ namespace Timetable.Host.Services
             StudyYear studyYear,
             int semester,
             DateTime StartDate,
-            DateTime EndDate,
-            string SubGroup)
+            DateTime EndDate)
         {
             var result =  GetSchedules()
                 .Where(x => x.ScheduleInfo.StudyYear.Id == studyYear.Id)
                 .Where(x => x.ScheduleInfo.Semester == semester)
                 .Where(x => x.ScheduleInfo.Lecturer.Id.Equals(lecturer.Id));
-
-            if (SubGroup != null)
-                result = result.Where(x => x.SubGroup == SubGroup);
 
             return result;
         }
@@ -493,18 +489,14 @@ namespace Timetable.Host.Services
             StudyYear studyYear,
             int semester,
             DateTime StartDate,
-            DateTime EndDate,
-            string SubGroup)
+            DateTime EndDate)
         {
             var result = GetSchedules()
                .Where(x => x.ScheduleInfo.StudyYear.Id == studyYear.Id)
                .Where(x => x.ScheduleInfo.Semester == semester)
                .Where(x => x.Auditorium.Id.Equals(auditorium.Id));
 
-            if (SubGroup != null)
-                result = result.Where(x => x.SubGroup == SubGroup);
-           
-       
+         
             return result;
         }
 
