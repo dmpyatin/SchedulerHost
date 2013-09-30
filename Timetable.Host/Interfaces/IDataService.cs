@@ -233,7 +233,8 @@ namespace Timetable.Host.Interfaces
             StudyYear studyYear,
             int semester,
             DateTime StartDate,
-            DateTime EndDate);
+            DateTime EndDate,
+            string SubGroup);
 
         [OperationContract]
         [ApplyDataContractResolver]
@@ -261,7 +262,8 @@ namespace Timetable.Host.Interfaces
             StudyYear studyYear,
             int semester,
             DateTime StartDate,
-            DateTime EndDate);
+            DateTime EndDate,
+            string SubGroup);
 
         [OperationContract]
         [ApplyDataContractResolver]
@@ -271,7 +273,8 @@ namespace Timetable.Host.Interfaces
             StudyYear studyYear,
             int semester,
             DateTime StartDate,
-            DateTime EndDate);
+            DateTime EndDate,
+            string SubGroup);
 
         [OperationContract]
         [ApplyDataContractResolver]

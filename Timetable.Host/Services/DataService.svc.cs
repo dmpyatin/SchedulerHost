@@ -421,15 +421,19 @@ namespace Timetable.Host.Services
             StudyYear studyYear,
             int semester,
             DateTime StartDate,
-            DateTime EndDate)
+            DateTime EndDate,
+            string SubGroup)
         {
-            return GetSchedules()
+            var result =  GetSchedules()
                 .Where(x => x.ScheduleInfo.StudyYear.Id == studyYear.Id)
                 .Where(x => x.ScheduleInfo.Semester == semester)
                 .Where(x => x.ScheduleInfo.Faculties.Any(y => y.Id.Equals(faculty.Id))
                             && x.ScheduleInfo.Courses.Any(y => y.Id.Equals(course.Id))
                             && x.ScheduleInfo.Groups.Any(y => y.Id.Equals(group.Id)));
+            if (SubGroup != "")
+                result = result.Where(x => x.SubGroup == SubGroup);
 
+            return result;
         }
 
         public IQueryable<Schedule> GetSchedulesForGroupOnlyId(
@@ -470,12 +474,18 @@ namespace Timetable.Host.Services
             StudyYear studyYear,
             int semester,
             DateTime StartDate,
-            DateTime EndDate)
+            DateTime EndDate,
+            string SubGroup)
         {
-            return GetSchedules()
+            var result =  GetSchedules()
                 .Where(x => x.ScheduleInfo.StudyYear.Id == studyYear.Id)
                 .Where(x => x.ScheduleInfo.Semester == semester)
                 .Where(x => x.ScheduleInfo.Lecturer.Id.Equals(lecturer.Id));
+
+            if (SubGroup != "")
+                result = result.Where(x => x.SubGroup == SubGroup);
+
+            return result;
         }
 
         public IQueryable<Schedule> GetSchedulesForAuditorium(
@@ -483,13 +493,18 @@ namespace Timetable.Host.Services
             StudyYear studyYear,
             int semester,
             DateTime StartDate,
-            DateTime EndDate)
+            DateTime EndDate,
+            string SubGroup)
         {
             var result = GetSchedules()
-                .Where(x => x.ScheduleInfo.StudyYear.Id == studyYear.Id)
-                .Where(x => x.ScheduleInfo.Semester == semester)
-                .Where(x => x.Auditorium.Id.Equals(auditorium.Id));
+               .Where(x => x.ScheduleInfo.StudyYear.Id == studyYear.Id)
+               .Where(x => x.ScheduleInfo.Semester == semester)
+               .Where(x => x.Auditorium.Id.Equals(auditorium.Id));
 
+            if (SubGroup != "")
+                result = result.Where(x => x.SubGroup == SubGroup);
+           
+       
             return result;
         }
 
