@@ -47,5 +47,8 @@ namespace Timetable.Base.Entities.Scheduler
 
         [DataMember(Name = "TimetableEntityId")]
         public int? TimetableEntityId { get; set; }
+
+        [DataMember(Name = "SubGroup")]
+        public string SubGroup { get; set; }
     }
 }

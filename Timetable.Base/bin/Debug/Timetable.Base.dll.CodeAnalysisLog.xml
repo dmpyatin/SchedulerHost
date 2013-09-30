@@ -12,7 +12,7 @@
          <Members>
           <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-19 20:13:27Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-30 17:01:24Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\Entities\Scheduler" File="Course.cs" Line="15">'Course.Course()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Course..ctor()&#xD;&#xA;Course.set_ScheduleInfoes(ICollection&lt;ScheduleInfo&gt;):Void</Issue>
             </Message>
            </Messages>
@@ -23,7 +23,7 @@
          <Members>
           <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-19 20:13:27Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-30 17:01:24Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\Entities\Scheduler" File="Departament.cs" Line="24">'Department.Department()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Department..ctor()&#xD;&#xA;Department.set_Lecturers(ICollection&lt;Lecturer&gt;):Void</Issue>
             </Message>
            </Messages>
@@ -34,7 +34,7 @@
          <Members>
           <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-19 20:13:27Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-30 17:01:24Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\Entities\Scheduler" File="Lecturer.cs" Line="30">'Lecturer.Lecturer()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Lecturer..ctor()&#xD;&#xA;Lecturer.set_Departments(ICollection&lt;Department&gt;):Void</Issue>
              <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\Entities\Scheduler" File="Lecturer.cs" Line="30">'Lecturer.Lecturer()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Lecturer..ctor()&#xD;&#xA;Lecturer.set_ScheduleInfoes(ICollection&lt;ScheduleInfo&gt;):Void</Issue>
             </Message>
@@ -46,7 +46,7 @@
          <Members>
           <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-19 20:13:27Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-30 17:01:24Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\Entities\Scheduler" File="ScheduleInfo.cs" Line="73">'ScheduleInfo.ScheduleInfo()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ScheduleInfo..ctor()&#xD;&#xA;ScheduleInfo.set_Courses(ICollection&lt;Course&gt;):Void</Issue>
              <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\Entities\Scheduler" File="ScheduleInfo.cs" Line="73">'ScheduleInfo.ScheduleInfo()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ScheduleInfo..ctor()&#xD;&#xA;ScheduleInfo.set_Faculties(ICollection&lt;Faculty&gt;):Void</Issue>
              <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\Entities\Scheduler" File="ScheduleInfo.cs" Line="73">'ScheduleInfo.ScheduleInfo()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;ScheduleInfo..ctor()&#xD;&#xA;ScheduleInfo.set_Groups(ICollection&lt;Group&gt;):Void</Issue>
@@ -62,7 +62,7 @@
          <Members>
           <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-19 20:13:27Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2013-09-30 17:01:24Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\Entities\Scheduler" File="Speciality.cs" Line="27">'Speciality.Speciality()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Speciality..ctor()&#xD;&#xA;Speciality.set_Faculties(ICollection&lt;Faculty&gt;):Void</Issue>
              <Issue Certainty="95" Level="CriticalWarning" Path="c:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.Base\Entities\Scheduler" File="Speciality.cs" Line="27">'Speciality.Speciality()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;Speciality..ctor()&#xD;&#xA;Speciality.set_ScheduleInfoes(ICollection&lt;ScheduleInfo&gt;):Void</Issue>
             </Message>

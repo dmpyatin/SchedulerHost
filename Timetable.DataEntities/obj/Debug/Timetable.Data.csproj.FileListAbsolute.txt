@@ -60,3 +60,4 @@ C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\
 C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.pdb
 C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.AddingTimetaeEntity.resources
 C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.MakeTimetableIdNullable.resources
+C:\Users\pyatin\Documents\GitHub\SchedulerHost\Timetable.DataEntities\obj\Debug\Timetable.Data.Migrations.Schedule.Add_sbgroups.resources
