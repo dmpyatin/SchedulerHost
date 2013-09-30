@@ -430,7 +430,7 @@ namespace Timetable.Host.Services
                 .Where(x => x.ScheduleInfo.Faculties.Any(y => y.Id.Equals(faculty.Id))
                             && x.ScheduleInfo.Courses.Any(y => y.Id.Equals(course.Id))
                             && x.ScheduleInfo.Groups.Any(y => y.Id.Equals(group.Id)));
-            if (SubGroup != "")
+            if (SubGroup != null)
                 result = result.Where(x => x.SubGroup == SubGroup);
 
             return result;
@@ -482,7 +482,7 @@ namespace Timetable.Host.Services
                 .Where(x => x.ScheduleInfo.Semester == semester)
                 .Where(x => x.ScheduleInfo.Lecturer.Id.Equals(lecturer.Id));
 
-            if (SubGroup != "")
+            if (SubGroup != null)
                 result = result.Where(x => x.SubGroup == SubGroup);
 
             return result;
@@ -501,7 +501,7 @@ namespace Timetable.Host.Services
                .Where(x => x.ScheduleInfo.Semester == semester)
                .Where(x => x.Auditorium.Id.Equals(auditorium.Id));
 
-            if (SubGroup != "")
+            if (SubGroup != null)
                 result = result.Where(x => x.SubGroup == SubGroup);
            
        
