@@ -22,37 +22,27 @@ namespace Timetable.Host.Services
 
         public bool ValidateSchedule(Schedule schedule)
         {
-            int schedulesCount = 0;
+            var schedulesCount = 0;
             var schedules = Database.Schedules.Where(
                     x => x.IsActual &&
                     x.AuditoriumId == schedule.AuditoriumId &&
                     x.PeriodId == schedule.PeriodId &&
                     x.DayOfWeek == schedule.DayOfWeek &&
-                    (x.StartDate >= schedule.StartDate && x.StartDate <= schedule.EndDate ||
-                     x.EndDate >= schedule.StartDate && x.EndDate <= schedule.EndDate)
-                    
+                   (x.StartDate >= schedule.StartDate && x.StartDate <= schedule.EndDate ||
+                    x.EndDate >= schedule.StartDate && x.EndDate <= schedule.EndDate)
                     );
 
+
             if (schedule.WeekTypeId == 1)
-            {
                 schedulesCount = schedules.Count();
-            }
             if (schedule.WeekTypeId == 2)
-            {
                 schedulesCount = schedules.Where(x => x.WeekTypeId == 1 || x.WeekTypeId == 2).Count();
-            }
-
             if (schedule.WeekTypeId == 3)
-            {
                 schedulesCount = schedules.Where(x => x.WeekTypeId == 1 || x.WeekTypeId == 3).Count();
-            }
-
 
             if (schedulesCount == 0)
-            {
                 return true;
-            }
-
+        
             return false;
         }
 
@@ -89,37 +79,19 @@ namespace Timetable.Host.Services
             Time time,
             TutorialType tutorialType,
             AuditoriumType auditoriumType,
-            int capacity)
+            int capacity,
+            DateTime startDate,
+            DateTime endDate)
         {
-            //IQueryable<Auditorium> auditoriums;
-
-            /*
-            if (tutorialType == null)
-            {
-                auditoriums = Database.Auditoriums
-               .Where(x => x.Building.Id == building.Id)
-               .Where(x => x.Capacity >= capacity)
-               .Where(x => x.TutorialApplicabilities.Any(y => y.Id == tutorialType.Id));
-            }
-            else
-            {
-                auditoriums = Database.Auditoriums
-                .Where(x => x.Building.Id == building.Id)
-                .Where(x => x.Capacity >= capacity);
-            }
-
-             var freeAuditoriums = Database.Schedules
-                 .Where(x => x.Period.Id == time.Id)
-                 .Where(x => x.DayOfWeek == dayOfWeek)
-                 .Where(x => ! auditoriums.Any(y => y.Id == x.Id))
-                 .Select(x => x.Auditorium);*/
-
+           
             IQueryable<Auditorium> freeAuditoriums;
             IQueryable<Auditorium> scheduledAuditoriums;
 
             if (weekType.Id == 1)
             {
                 scheduledAuditoriums = Database.Schedules
+                     .Where(x => x.IsActual)
+                     .Where(x => x.StartDate <= endDate && x.EndDate >= startDate) 
                      .Where(x => x.Period.Id == time.Id)
                      .Where(x => x.DayOfWeek == dayOfWeek)
                      .Where(x => (x.WeekType.Id == weekType.Id || x.WeekType.Id == 2 || x.WeekType.Id == 3))
@@ -128,6 +100,8 @@ namespace Timetable.Host.Services
             else
             {
                 scheduledAuditoriums = Database.Schedules
+                     .Where(x => x.IsActual)
+                     .Where(x => x.StartDate <= endDate && x.EndDate >= startDate) 
                      .Where(x => x.Period.Id == time.Id)
                      .Where(x => x.DayOfWeek == dayOfWeek)
                      .Where(x => (x.WeekType.Id == weekType.Id || x.WeekType.Id == 1))
@@ -382,6 +356,86 @@ namespace Timetable.Host.Services
         #endregion
 
         #region Schedules
+
+        public IQueryable<Schedule> GetSchedulesForAll(
+                                Lecturer lecturer, 
+                                Auditorium auditorium,
+                                IEnumerable<Group> groups,
+                                WeekType weekType,
+                                string subGroup,
+                                DateTime startDate,
+                                DateTime endDate
+                                )
+        {
+            var result = GetSchedules().Where(x => x.IsActual);
+            if(lecturer != null)
+                result = result.Where(x => x.ScheduleInfo.Lecturer.Id == lecturer.Id);
+            if(auditorium != null)
+                result = result.Where(x => x.Auditorium.Id == auditorium.Id);
+            foreach(var group in groups)
+                    result = result.Where(x => x.ScheduleInfo.Groups.Any(y => y.Id == group.Id));
+            if(subGroup != null)
+                    result = result.Where(x => x.SubGroup == null || x.SubGroup == subGroup);
+            if(startDate != null)
+                    result = result.Where(x => x.EndDate >= startDate);
+            if(endDate != null)
+                    result = result.Where(x => x.StartDate <= endDate);
+
+            if(weekType != null)
+                    if(weekType.Id == 2)
+                        result = result.Where(x => x.WeekType.Id != 3);
+                    else if(weekType.Id == 3)
+                        result = result.Where(x => x.WeekType.Id != 2);
+                    
+            //TODO: order by priority
+            var query = result.GroupBy(x => new { x.DayOfWeek, x.Period.Id });
+
+            //TODO: improuve speed
+            var answer = new List<Schedule>();
+            foreach(var q in query)
+                answer.Add(q.OrderBy(x => x.CreatedDate).First());
+
+            return answer.AsQueryable();
+        }
+
+
+        public IQueryable<Schedule> GetSchedulesForDayTimeDate(
+                                int? dayOfWeek, 
+                                Time period,
+                                WeekType weekType,
+                                Lecturer lecturer, 
+                                Auditorium auditorium,
+                                IEnumerable<Group> groups,
+                                string subGroup,
+                                DateTime startDate,
+                                DateTime endDate
+            )
+        {
+            var result = GetSchedules().Where(x => x.IsActual);
+
+            if (dayOfWeek != null)
+                result = result.Where(x => x.DayOfWeek == dayOfWeek);
+
+            if(period != null)
+                result = result.Where(x => x.Period.Id == period.Id);
+
+            if (lecturer != null)
+                result = result.Where(x => x.ScheduleInfo.Lecturer.Id == lecturer.Id);
+            if (auditorium != null)
+                result = result.Where(x => x.Auditorium.Id == auditorium.Id);
+            foreach (var group in groups)
+                result = result.Where(x => x.ScheduleInfo.Groups.Any(y => y.Id == group.Id));
+            if (subGroup != null)
+                result = result.Where(x => x.SubGroup == null || x.SubGroup == subGroup);
+
+            if (startDate != null)
+                result = result.Where(x => x.EndDate >= startDate);
+            if (endDate != null)
+                result = result.Where(x => x.StartDate <= endDate);
+
+            //TODO: order by priority
+            return result.OrderBy(x => x.CreatedDate);
+        }
 
         public int CountScheduleCollisions(
             int day,

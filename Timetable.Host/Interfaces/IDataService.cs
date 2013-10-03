@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Web;
@@ -9,6 +10,36 @@ namespace Timetable.Host.Interfaces
     [ServiceContract]
     public interface IDataService: IBaseService
     {
+
+        [OperationContract]
+        [ApplyDataContractResolver]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        IQueryable<Schedule> GetSchedulesForDayTimeDate(
+                                int? dayOfWeek,
+                                Time period,
+                                WeekType weekType,
+                                Lecturer lecturer,
+                                Auditorium auditorium,
+                                IEnumerable<Group> groups,
+                                string subGroup,
+                                DateTime startDate,
+                                DateTime endDate
+            );
+
+        [OperationContract]
+        [ApplyDataContractResolver]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        IQueryable<Schedule> GetSchedulesForAll(
+                                Lecturer lecturer,
+                                Auditorium auditorium,
+                                IEnumerable<Group> groups,
+                                WeekType weekType,
+                                string subGroup,
+                                DateTime startDate,
+                                DateTime endDate
+                                );
+
+
         [OperationContract]
         [ApplyDataContractResolver]
         [WebGet(ResponseFormat = WebMessageFormat.Json)]
@@ -56,7 +87,9 @@ namespace Timetable.Host.Interfaces
             Time time,
             TutorialType tutorialType,
             AuditoriumType auditoriumType,
-            int capacity);
+            int capacity,
+            DateTime startDate,
+            DateTime endDate);
 
         [OperationContract]
         [ApplyDataContractResolver]
