@@ -363,8 +363,8 @@ namespace Timetable.Host.Services
                                 IEnumerable<Group> groups,
                                 WeekType weekType,
                                 string subGroup,
-                                DateTime startDate,
-                                DateTime endDate
+                                DateTime? startDate,
+                                DateTime? endDate
                                 )
         {
             var schedules = GetSchedules().Where(x => x.IsActual);

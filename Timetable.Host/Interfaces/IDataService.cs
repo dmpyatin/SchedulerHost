@@ -35,8 +35,8 @@ namespace Timetable.Host.Interfaces
                                 IEnumerable<Group> groups,
                                 WeekType weekType,
                                 string subGroup,
-                                DateTime startDate,
-                                DateTime endDate
+                                DateTime? startDate,
+                                DateTime? endDate
                                 );
 
 
