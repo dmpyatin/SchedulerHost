@@ -404,7 +404,7 @@ namespace Timetable.Host.Services
                         result = result.Where(x => x.WeekType.Id != 2);
                     
             //TODO: order by priority
-            var query = result.GroupBy(x => new Schedule(){ DayOfWeek = x.DayOfWeek, Period = x.Period});
+            var query = result.GroupBy(x => new { x.DayOfWeek, x.Period.Id }).Include("ScheduleInfo");
 
             //TODO: improuve speed
             var answer = new List<Schedule>();
