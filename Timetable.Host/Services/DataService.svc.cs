@@ -404,14 +404,14 @@ namespace Timetable.Host.Services
                         result = result.Where(x => x.WeekType.Id != 2);
                     
             //TODO: order by priority
-            var query = result.GroupBy(x => new { x.DayOfWeek, x.Period.Id });
+            var query = result.GroupBy(x => new Schedule(){ DayOfWeek = x.DayOfWeek, Period = x.Period});
 
             //TODO: improuve speed
             var answer = new List<Schedule>();
             foreach(var q in query)
                 answer.Add(q.OrderBy(x => x.CreatedDate).First());
 
-            return result;
+            return answer.AsQueryable();
         }
 
 
