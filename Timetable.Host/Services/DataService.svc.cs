@@ -402,16 +402,12 @@ namespace Timetable.Host.Services
                         result = result.Where(x => x.WeekType.Id != 3);
                     else if(weekType.Id == 3)
                         result = result.Where(x => x.WeekType.Id != 2);
-                    
-            //TODO: order by priority
-            var query = result.GroupBy(x => new { x.DayOfWeek, x.Period.Id });
 
-            //TODO: improuve speed
-            var answer = new List<Schedule>();
-            foreach(var q in query)
-                answer.Add(q.OrderBy(x => x.CreatedDate).First());
 
-            return result;
+            var query = result.AsQueryable().GroupBy(x => new { x.DayOfWeek, x.Period, x.WeekType });
+            var answer = query.Select(q => q.OrderBy(x => x.CreatedDate).First()).AsQueryable();
+
+            return answer;
         }
 
 
