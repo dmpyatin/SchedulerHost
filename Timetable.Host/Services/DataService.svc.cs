@@ -367,13 +367,29 @@ namespace Timetable.Host.Services
                                 DateTime endDate
                                 )
         {
-            var result = GetSchedules().Where(x => x.IsActual);
-            if(lecturer != null)
-                result = result.Where(x => x.ScheduleInfo.Lecturer.Id == lecturer.Id);
-            if(auditorium != null)
-                result = result.Where(x => x.Auditorium.Id == auditorium.Id);
-            foreach(var group in groups)
-                    result = result.Where(x => x.ScheduleInfo.Groups.Any(y => y.Id == group.Id));
+            var schedules = GetSchedules().Where(x => x.IsActual);
+            IQueryable<Schedule> auditoriumsSchedules;
+            IQueryable<Schedule> lecturersSchedules;
+            IQueryable<Schedule> groupsSchedules;
+            IQueryable<Schedule> result = GetSchedules().Where(x => x.Id == -1);
+
+            if (lecturer != null)
+            {
+                lecturersSchedules = schedules.Where(x => x.ScheduleInfo.Lecturer.Id == lecturer.Id);
+                result = result.Union(lecturersSchedules);
+            }
+            if (auditorium != null)
+            {
+                auditoriumsSchedules = schedules.Where(x => x.Auditorium.Id == auditorium.Id);
+                result = result.Union(auditoriumsSchedules);
+            }
+            foreach (var group in groups)
+            {
+                groupsSchedules = schedules.Where(x => x.ScheduleInfo.Groups.Any(y => y.Id == group.Id));
+                result = result.Union(groupsSchedules);
+            }
+
+          
             if(subGroup != null)
                     result = result.Where(x => x.SubGroup == null || x.SubGroup == subGroup);
             if(startDate != null)
