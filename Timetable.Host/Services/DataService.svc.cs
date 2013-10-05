@@ -411,7 +411,7 @@ namespace Timetable.Host.Services
             foreach(var q in query)
                 answer.Add(q.OrderBy(x => x.CreatedDate).First());
 
-            return answer.AsQueryable();
+            return result;
         }
 
 
