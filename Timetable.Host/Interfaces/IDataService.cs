@@ -22,8 +22,8 @@ namespace Timetable.Host.Interfaces
                                 Auditorium auditorium,
                                 IEnumerable<Group> groups,
                                 string subGroup,
-                                DateTime startDate,
-                                DateTime endDate
+                                DateTime? startDate,
+                                DateTime? endDate
             );
 
         [OperationContract]

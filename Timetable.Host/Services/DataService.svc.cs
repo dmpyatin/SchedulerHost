@@ -419,8 +419,8 @@ namespace Timetable.Host.Services
                                 Auditorium auditorium,
                                 IEnumerable<Group> groups,
                                 string subGroup,
-                                DateTime startDate,
-                                DateTime endDate
+                                DateTime? startDate,
+                                DateTime? endDate
             )
         {
             var result = GetSchedules().Where(x => x.IsActual);
