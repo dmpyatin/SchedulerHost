@@ -404,7 +404,7 @@ namespace Timetable.Host.Services
                         result = result.Where(x => x.WeekType.Id != 2);
 
 
-            var query = result.AsQueryable().GroupBy(x => new { x.DayOfWeek, x.Period, x.WeekType });
+            var query = result.ToList().GroupBy(x => new { x.DayOfWeek, x.Period, x.WeekType });
             var answer = query.Select(q => q.OrderBy(x => x.CreatedDate).First()).AsQueryable();
 
             return answer;
