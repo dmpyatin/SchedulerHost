@@ -421,8 +421,7 @@ namespace Timetable.Host.Services
                                 string subGroup,
                                 DateTime? startDate,
                                 DateTime? endDate
-            )
-
+            
         {
             var schedules = GetSchedules().Where(x => x.IsActual);
 
