@@ -422,6 +422,7 @@ namespace Timetable.Host.Services
                                 DateTime? startDate,
                                 DateTime? endDate
             )
+
         {
             var schedules = GetSchedules().Where(x => x.IsActual);
 
