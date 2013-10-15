@@ -10,6 +10,14 @@ namespace Timetable.Host.Interfaces
     [ServiceContract]
     public interface IDataService: IBaseService
     {
+        [OperationContract]
+        [ApplyDataContractResolver]
+        [WebGet(ResponseFormat = WebMessageFormat.Json)]
+        IQueryable<ScheduleInfo> GetScheduleInfoesForGroups(
+            IEnumerable<Group> groups,
+            TutorialType tutorialtype,
+            StudyYear studyYear,
+            int semester);
 
         [OperationContract]
         [ApplyDataContractResolver]

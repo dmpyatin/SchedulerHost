@@ -304,6 +304,19 @@ namespace Timetable.Host.Services
                 .Where(x => x.TutorialType.Id.Equals(tutorialtype.Id));
         }
 
+        public IQueryable<ScheduleInfo> GetScheduleInfoesForGroups(
+            IEnumerable<Group> groups,
+            TutorialType tutorialtype,
+            StudyYear studyYear,
+            int semester)
+        {
+            return GetScheduleInfoes()
+                .Where(x => x.StudyYear.Id == studyYear.Id)
+                .Where(x => x.Semester == semester)
+                .Where(x => x.Groups.Any(y => groups.Any(z => z.Id.Equals(y.Id))))
+                .Where(x => x.TutorialType.Id.Equals(tutorialtype.Id));
+        }
+
 
 
         public IQueryable<ScheduleInfo> GetScheduleInfoesForDepartment(
