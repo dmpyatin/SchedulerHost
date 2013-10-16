@@ -313,8 +313,8 @@ namespace Timetable.Host.Services
             return GetScheduleInfoes()
                 .Where(x => x.StudyYear.Id == studyYear.Id)
                 .Where(x => x.Semester == semester)
-                .Where(x => x.Groups.Any(y => groups.Any(z => z.Id.Equals(y.Id))))
                 .Where(x => x.TutorialType.Id.Equals(tutorialtype.Id));
+            //.Where(x => x.Groups.Any(y => groups.Any(z => z.Id.Equals(y.Id))))
         }
 
 
