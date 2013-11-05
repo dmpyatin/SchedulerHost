@@ -310,11 +310,25 @@ namespace Timetable.Host.Services
             StudyYear studyYear,
             int semester)
         {
-            return GetScheduleInfoes()
+            
+            var result = GetScheduleInfoes()
                 .Where(x => x.StudyYear.Id == studyYear.Id)
                 .Where(x => x.Semester == semester)
                 .Where(x => x.TutorialType.Id.Equals(tutorialtype.Id));
+
+            IEnumerable<ScheduleInfo> tempResult = Database.ScheduleInfoes.Where(x => x.Id == -1);
+
+            foreach(var g in groups){
+                tempResult = tempResult.Union(result.Where(x => x.Groups.Any(y => y.Id == g.Id)));
+            }
+
+
+            foreach (var r in tempResult)
+                r.SubgroupCount = Database.Schedules.Where(x => x.ScheduleInfo.Id == r.Id).Count();
             //.Where(x => x.Groups.Any(y => groups.Any(z => z.Id.Equals(y.Id))))
+
+
+            return tempResult.AsQueryable();
         }
 
 
@@ -385,6 +399,7 @@ namespace Timetable.Host.Services
             IQueryable<Schedule> lecturersSchedules;
             IQueryable<Schedule> groupsSchedules;
             IQueryable<Schedule> result = GetSchedules().Where(x => x.Id == -1);
+            
 
             if (lecturer != null)
             {
@@ -419,6 +434,12 @@ namespace Timetable.Host.Services
 
             //var query = result.ToList().GroupBy(x => new { x.DayOfWeek, x.Period, x.WeekType });
             //var answer = query.Select(q => q.OrderBy(x => x.CreatedDate).First()).AsQueryable();
+
+          
+            foreach (var r in result)
+                r.ScheduleInfo.SubgroupCount = result.Where(x => x.IsActual && x.WeekType.Id.Equals(r.WeekTypeId) &&
+                                                                    x.Period.Id.Equals(r.PeriodId) &&
+                                                                    x.DayOfWeek.Equals(r.DayOfWeek)).Count();
 
             return result;
         }
@@ -468,6 +489,9 @@ namespace Timetable.Host.Services
 
             if (subGroup != null)
                 result = result.Where(x => x.SubGroup == null || x.SubGroup == subGroup);
+
+            if(weekType != null)
+                result = result.Where(x => x.WeekType.Id == weekType.Id);
 
             if (startDate != null)
                 result = result.Where(x => x.EndDate >= startDate);
