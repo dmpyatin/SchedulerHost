@@ -436,8 +436,7 @@ namespace Timetable.Host.Services
             //var answer = query.Select(q => q.OrderBy(x => x.CreatedDate).First()).AsQueryable();
 
             var res = result.ToList();
-            foreach (var r in res)
-                r.UpdatedDate = new DateTime(2000, 1, 1);
+     
 
             return res.AsQueryable();
         }
