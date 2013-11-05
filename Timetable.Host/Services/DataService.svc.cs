@@ -437,9 +437,7 @@ namespace Timetable.Host.Services
 
           
             foreach (var r in result)
-                r.ScheduleInfo.SubgroupCount = result.Where(x => x.IsActual && x.WeekType.Id.Equals(r.WeekTypeId) &&
-                                                                    x.Period.Id.Equals(r.PeriodId) &&
-                                                                    x.DayOfWeek.Equals(r.DayOfWeek)).Count();
+                r.ScheduleInfo.SubgroupCount = 3;
 
             return result;
         }
