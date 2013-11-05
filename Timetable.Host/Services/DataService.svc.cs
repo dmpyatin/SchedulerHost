@@ -435,10 +435,10 @@ namespace Timetable.Host.Services
             //var query = result.ToList().GroupBy(x => new { x.DayOfWeek, x.Period, x.WeekType });
             //var answer = query.Select(q => q.OrderBy(x => x.CreatedDate).First()).AsQueryable();
 
-            var res = result.ToList();
+           
      
 
-            return res.AsQueryable();
+            return result;
         }
 
 
