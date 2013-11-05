@@ -263,8 +263,10 @@ namespace Timetable.Host.Services
 
         public ScheduleInfo GetScheduleInfoById(int id)
         {
-            return GetScheduleInfoes()
+            var result = GetScheduleInfoes()
                 .FirstOrDefault(scheduleInfo => scheduleInfo.Id == id);
+            result.SubgroupCount = Database.Schedules.Where(x => x.ScheduleInfo.Id == result.Id).Count();
+            return result;
         }
 
         public IQueryable<ScheduleInfo> GetScheduleInfoesForCourse(
